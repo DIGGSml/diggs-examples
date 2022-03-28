@@ -1,6 +1,6 @@
 <Diggs xmlns="http://diggsml.org/schemas/2.5.a"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a-dev/Complete.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
@@ -400,7 +400,7 @@
         <locality>
 		  <Locality gml:id="DGS5793-1234-300D-3EDC-1F955">  
             <station></station>
-            <offset uom="ft"></offset>
+            <offset uom="ft">0</offset>
             <offsetDirection></offsetDirection>
 		  </Locality>
         </locality>
@@ -593,13 +593,6 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
-        <locality>
-		  <Locality gml:id="DGS831C-11AE-3308-7460-63C35">  
-            <station></station>
-            <offset uom="ft"></offset>
-            <offsetDirection></offsetDirection>
-		  </Locality>
-        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-003-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -789,13 +782,6 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
-        <locality>
-		  <Locality gml:id="DGS2E01-1558-2F8B-ACF6-1AECB">  
-            <station></station>
-            <offset uom="ft"></offset>
-            <offsetDirection></offsetDirection>
-		  </Locality>
-        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-006-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -985,13 +971,6 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
-        <locality>
-		  <Locality gml:id="DGS9F87-15C8-341F-6E12-32140">  
-            <station></station>
-            <offset uom="ft"></offset>
-            <offsetDirection></offsetDirection>
-		  </Locality>
-        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-008-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -1181,13 +1160,6 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
-        <locality>
-		  <Locality gml:id="DGS1FB5-469-4292-B457-2E4CA">  
-            <station></station>
-            <offset uom="ft"></offset>
-            <offsetDirection></offsetDirection>
-		  </Locality>
-        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-009-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -3237,6 +3209,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS7C18-7CA-1B0-9223-677DD">
+                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGSA216-1EF-2B8D-ED28-55574">
+                                    <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS48BC-583-36D9-4343-19AD3">
                                     <!--attempting to insert field properties here...-->
@@ -3255,18 +3239,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS7C18-7CA-1B0-9223-677DD">
-                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGSA216-1EF-2B8D-ED28-55574">
-                                    <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3297,6 +3269,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS66B6-1017-3EC9-6241-203AD">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS5CD5-5EA-330C-882-1378C">
+                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS5FFD-164F-2CF0-E7BB-3D2C">
                                     <!--attempting to insert field properties here...-->
@@ -3315,18 +3299,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS66B6-1017-3EC9-6241-203AD">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS5CD5-5EA-330C-882-1378C">
-                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3465,6 +3437,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS36FE-14F8-3D04-1D53-14BBB">
+                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS4E50-7AB-1977-650F-484C6">
+                                    <codeValue>some clay, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS5E62-12D3-2A3A-2732-2F81C">
                                     <!--attempting to insert field properties here...-->
@@ -3483,18 +3467,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS36FE-14F8-3D04-1D53-14BBB">
-                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS4E50-7AB-1977-650F-484C6">
-                                    <codeValue>some clay, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3569,6 +3541,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS581F-CF7-DF9-844B-5B2B6">
+                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS3A9C-6F0-30B1-B810-47156">
+                                    <codeValue>some clay, little stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS7C19-32C-2148-E2A3-23F95">
                                     <!--attempting to insert field properties here...-->
@@ -3587,18 +3571,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS581F-CF7-DF9-844B-5B2B6">
-                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS3A9C-6F0-30B1-B810-47156">
-                                    <codeValue>some clay, little stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3629,6 +3601,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS2797-A64-378D-5E24-5EF83">
+                                    <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS7D2-1E5-2E4E-7C95-5FDAE">
+                                    <codeValue>some sand, trace gravel and stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS172D-A2A-41-7825-5D0DC">
                                     <!--attempting to insert field properties here...-->
@@ -3647,18 +3631,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS2797-A64-378D-5E24-5EF83">
-                                    <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS7D2-1E5-2E4E-7C95-5FDAE">
-                                    <codeValue>some sand, trace gravel and stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3805,6 +3777,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS49F9-1913-3980-1EE9-6822D">
+                                    <codeValue>stone fragments with sand and silt</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS36A3-17AD-1BC-F9D7-37B5A">
+                                    <codeValue>little clay</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS7960-AA2-230D-4257-3A568">
                                     <!--attempting to insert field properties here...-->
@@ -3823,18 +3807,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS49F9-1913-3980-1EE9-6822D">
-                                    <codeValue>stone fragments with sand and silt</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS36A3-17AD-1BC-F9D7-37B5A">
-                                    <codeValue>little clay</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3865,6 +3837,30 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS7DAA-64B-D05-9F36-1D2B2">
+                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS15E4-8CA-4290-AA64-12A36">
+                                    <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS7DAA-64B-D05-9F36-1D2B21">
+                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS15E4-8CA-4290-AA64-12A361">
+                                    <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS1A3C-1956-2088-569A-123E6">
                                     <!--attempting to insert field properties here...-->
@@ -3883,18 +3879,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS7DAA-64B-D05-9F36-1D2B2">
-                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS15E4-8CA-4290-AA64-12A36">
-                                    <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3925,6 +3909,18 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS7E1D-D30-2ECB-7A6E-5F738">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGSA009-13DD-32EC-81B8-16217">
+                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS731D-466-8DD-C962-13976">
                                     <!--attempting to insert field properties here...-->
@@ -3943,18 +3939,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS7E1D-D30-2ECB-7A6E-5F738">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGSA009-13DD-32EC-81B8-16217">
-                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -3985,6 +3969,18 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS653D-76F-2E76-9696-9F02">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS450A-1179-B4E-2275-32797">
+                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS5952-840-2053-3D5B-11A90">
                                     <!--attempting to insert field properties here...-->
@@ -4003,18 +3999,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS653D-76F-2E76-9696-9F02">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS450A-1179-B4E-2275-32797">
-                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4089,6 +4073,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS42A-17AF-3F39-2E5A-673C1">
+                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS8B3F-18FF-DE6-9A5D-2BF0B">
+                                    <codeValue>some clay</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS7270-1274-4E16-47A8-3DC97">
                                     <!--attempting to insert field properties here...-->
@@ -4107,18 +4103,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS42A-17AF-3F39-2E5A-673C1">
-                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS8B3F-18FF-DE6-9A5D-2BF0B">
-                                    <codeValue>some clay</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4149,6 +4133,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS32E0-2F-309E-1B0C-298D1">
+                                    <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS11D5-AE5-2C75-9546-11278">
+                                    <codeValue>little sand</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS26CC-2D8-84-A5CD-5ED29">
                                     <!--attempting to insert field properties here...-->
@@ -4167,18 +4163,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS32E0-2F-309E-1B0C-298D1">
-                                    <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS11D5-AE5-2C75-9546-11278">
-                                    <codeValue>little sand</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4209,6 +4193,18 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS34EC-1024-4180-A3D-2FDDE">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS6D96-1103-FB-4233-22AC5">
+                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS7505-161-395B-378A-129C2">
                                     <!--attempting to insert field properties here...-->
@@ -4227,18 +4223,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS34EC-1024-4180-A3D-2FDDE">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS6D96-1103-FB-4233-22AC5">
-                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4269,6 +4253,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS9A21-14DD-2F80-C8AE-5340D">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS49F8-579-3745-F06-683F1">
+                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS8F3E-1668-F4C-88BD-1FCB1">
                                     <!--attempting to insert field properties here...-->
@@ -4287,18 +4283,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS9A21-14DD-2F80-C8AE-5340D">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS49F8-579-3745-F06-683F1">
-                                    <codeValue></codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4373,6 +4357,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS46E0-1166-36D3-5D0-5D0A6">
+                                    <codeValue>stone fragments with sand and silt</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS8EA1-12B3-257C-D92-9AB2">
+                                    <codeValue>little clay</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS75DD-258-2D98-61DD-41919">
                                     <!--attempting to insert field properties here...-->
@@ -4391,18 +4387,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS46E0-1166-36D3-5D0-5D0A6">
-                                    <codeValue>stone fragments with sand and silt</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS8EA1-12B3-257C-D92-9AB2">
-                                    <codeValue>little clay</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4433,6 +4417,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS3133-1231-25FC-90A8-554B2">
+                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS48F6-11E8-4C5B-B93F-4C027">
+                                    <codeValue>little sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS8552-6D-283D-8539-1583B">
                                     <!--attempting to insert field properties here...-->
@@ -4451,18 +4447,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS3133-1231-25FC-90A8-554B2">
-                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS48F6-11E8-4C5B-B93F-4C027">
-                                    <codeValue>little sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4493,6 +4477,18 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS182D-528-4AEE-31DE-3020E">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS2731-418-416D-F67F-55F2D">
+                                    <codeValue>little stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS3252-A8E-B6A-6E9E-4A64">
                                     <!--attempting to insert field properties here...-->
@@ -4511,18 +4507,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS182D-528-4AEE-31DE-3020E">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS2731-418-416D-F67F-55F2D">
-                                    <codeValue>little stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4633,6 +4617,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS956B-24B-381C-2CED-990">
+                                    <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS2009-7E1-4613-98E6-3BDA6">
+                                    <codeValue>little sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS7ADB-AE9-267F-5709-26884">
                                     <!--attempting to insert field properties here...-->
@@ -4651,18 +4647,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS956B-24B-381C-2CED-990">
-                                    <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS2009-7E1-4613-98E6-3BDA6">
-                                    <codeValue>little sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4693,6 +4677,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS22F0-102F-BE2-EA00-3C705">
+                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS9347-FAE-E33-1C8D-3FBD0">
+                                    <codeValue>little sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS839E-14B8-3DDB-F1E5-43639">
                                     <!--attempting to insert field properties here...-->
@@ -4711,18 +4707,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS22F0-102F-BE2-EA00-3C705">
-                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS9347-FAE-E33-1C8D-3FBD0">
-                                    <codeValue>little sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -4753,6 +4737,18 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
+                            <constituent>
+                                <Constituent gml:id="DGS442F-175B-27A6-DF1C-25C5">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS6CFF-13F1-3F8A-3925-2E85B">
+                                    <codeValue>little stone fragments</codeValue> <!-- Minor Constituent1 -->
+                                    <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
                             <fieldProperties>
                                 <FieldProperties gml:id="DGS3F3D-16E7-1358-6E8A-23D18">
                                     <!--attempting to insert field properties here...-->
@@ -4771,18 +4767,6 @@ Now need xslt to parse sample snippet:
                                     </otherFieldProperty>
                                 </FieldProperties>
                             </fieldProperties>
-	                        <constituent>
-                                <Constituent gml:id="DGS442F-175B-27A6-DF1C-25C5">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS6CFF-13F1-3F8A-3925-2E85B">
-                                    <codeValue>little stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>

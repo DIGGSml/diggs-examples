@@ -5,7 +5,7 @@
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a-dev/Complete.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
     gml:id="bcd">
 
     <documentInformation>
@@ -25,16 +25,22 @@
             <gml:name>B-7</gml:name>
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#project_1"/>
+            <locality>
+                <Locality gml:id="l1">
+                    <station>1137</station>
+                    <offset uom="ft">20</offset>
+                </Locality>
+            </locality>
             <referencePoint>
                 <PointLocation gml:id="b7-1" srsDimension="3"
                     srsName="urn:diggs:def:crs:DIGGS:0.1:26911_5703">
                     <gml:pos>387416.665116977 3742645.12297961 6</gml:pos>
                 </PointLocation>
             </referencePoint>
-           <centerLine>
-                 <LinearExtent gml:id="b7-cl" srsDimension="3"
+            <centerLine>
+                <LinearExtent gml:id="b7-cl" srsDimension="3"
                     srsName="urn:diggs:def:crs:DIGGS:0.1:26911_5703">
-                    <gml:posList>387416.665116977 3742645.12297961 6 87416.665116977
+                    <gml:posList>387416.665116977 3742645.12297961 6 387416.665116977
                         3742645.12297961 1.44</gml:posList>
                 </LinearExtent>
             </centerLine>
@@ -160,7 +166,7 @@
                                         <Property index="1" gml:id="p1">
                                             <propertyName>LL</propertyName>
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#liquid_limit">liquid_limit</propertyClass>
+                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#liquid_limit">liquid limit</propertyClass>
                                         </Property>
                                         <Property index="2" gml:id="p2">
                                             <propertyName>PL</propertyName>
@@ -195,7 +201,7 @@
                         </ResultSet>
                     </results>
                 </TestResult>
-            </outcome>   
+            </outcome>
             <procedure>
                 <diggs_geo:AtterbergLimitsTest gml:id="b7-s1-atterberg-procedure">
                     <diggs_geo:casagrandeTrial>
@@ -205,15 +211,15 @@
                             <diggs_geo:blowCount>16</diggs_geo:blowCount>
                             <diggs_geo:waterContent uom="%">35.2</diggs_geo:waterContent>
                         </diggs_geo:CasagrandeTrial>
-                      </diggs_geo:casagrandeTrial>
-                     <diggs_geo:casagrandeTrial>
+                    </diggs_geo:casagrandeTrial>
+                    <diggs_geo:casagrandeTrial>
                         <diggs_geo:CasagrandeTrial gml:id="tr2">
                             <diggs_geo:trialNo>2</diggs_geo:trialNo>
                             <diggs_geo:isManual>true</diggs_geo:isManual>
                             <diggs_geo:blowCount>22</diggs_geo:blowCount>
                             <diggs_geo:waterContent uom="%">28.6</diggs_geo:waterContent>
                         </diggs_geo:CasagrandeTrial>
-                      </diggs_geo:casagrandeTrial>
+                    </diggs_geo:casagrandeTrial>
                     <diggs_geo:casagrandeTrial>
                         <diggs_geo:CasagrandeTrial gml:id="tr3">
                             <diggs_geo:blowCount>27</diggs_geo:blowCount>
@@ -221,13 +227,13 @@
                         </diggs_geo:CasagrandeTrial>
                     </diggs_geo:casagrandeTrial>
                     <diggs_geo:casagrandeTrial>
-                     <diggs_geo:CasagrandeTrial gml:id="tr4">
-                        <diggs_geo:trialNo>2</diggs_geo:trialNo>
-                        <diggs_geo:isManual>true</diggs_geo:isManual>
-                        <diggs_geo:blowCount>32</diggs_geo:blowCount>
-                        <diggs_geo:waterContent uom="%">17.4</diggs_geo:waterContent>
-                    </diggs_geo:CasagrandeTrial>
-                   </diggs_geo:casagrandeTrial>
+                        <diggs_geo:CasagrandeTrial gml:id="tr4">
+                            <diggs_geo:trialNo>2</diggs_geo:trialNo>
+                            <diggs_geo:isManual>true</diggs_geo:isManual>
+                            <diggs_geo:blowCount>32</diggs_geo:blowCount>
+                            <diggs_geo:waterContent uom="%">17.4</diggs_geo:waterContent>
+                        </diggs_geo:CasagrandeTrial>
+                    </diggs_geo:casagrandeTrial>
                     <diggs_geo:plasticLimitTrial>
                         <diggs_geo:PlasticLimitTrial gml:id="pl1">
                             <diggs_geo:trialNo>1</diggs_geo:trialNo>
@@ -249,7 +255,75 @@
                             <diggs_geo:waterContent uom="%">11.4</diggs_geo:waterContent>
                         </diggs_geo:PlasticLimitTrial>
                     </diggs_geo:plasticLimitTrial>
-                 </diggs_geo:AtterbergLimitsTest>
+                </diggs_geo:AtterbergLimitsTest>
+            </procedure>
+            <procedure>
+                <diggs_geo:WaterContentTest gml:id="wc1">
+                    <testProcedureMethod>
+                        <Specification gml:id="wc2">
+                            <gml:name>ASTM-D2216</gml:name>
+                        </Specification>
+                    </testProcedureMethod>
+                </diggs_geo:WaterContentTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="tt2">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#p1"/>
+            <outcome>
+                <TestResult gml:id="tt3">
+                    <location>
+                        <LinearExtent gml:id="pl5" srsDimension="1" srsName="#sr123">
+                            <gml:posList>32 33.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters gml:id="s1">
+                                    <properties>
+                                        <Property index="1" gml:id="pps1">
+                                            <propertyName>N</propertyName>
+                                            <typeData>integer</typeData>
+                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#n_value">N-value (raw)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues cs="," decimal="." ts=" ">34</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <diggs_geo:DrivenPenetrationTest gml:id="prospt">
+                    <diggs_geo:penetrationTestType>SPT</diggs_geo:penetrationTestType>
+                    <diggs_geo:hammerMass uom="lbm">140</diggs_geo:hammerMass>
+                    <diggs_geo:hammerDropHeight uom="in">30</diggs_geo:hammerDropHeight>
+                    <diggs_geo:driveSet>
+                        <diggs_geo:DriveSet gml:id="ds1">
+                            <diggs_geo:index>1</diggs_geo:index>
+                            <diggs_geo:blowCount>10</diggs_geo:blowCount>
+                            <diggs_geo:penetration uom="in">6</diggs_geo:penetration>
+                        </diggs_geo:DriveSet>
+                    </diggs_geo:driveSet>
+                    <diggs_geo:driveSet>
+                        <diggs_geo:DriveSet gml:id="ds2">
+                            <diggs_geo:index>2</diggs_geo:index>
+                            <diggs_geo:blowCount>14</diggs_geo:blowCount>
+                            <diggs_geo:penetration uom="in">6</diggs_geo:penetration>
+                        </diggs_geo:DriveSet>
+                    </diggs_geo:driveSet>
+                    <diggs_geo:driveSet>
+                        <diggs_geo:DriveSet gml:id="ds3">
+                            <diggs_geo:index>3</diggs_geo:index>
+                            <diggs_geo:blowCount>20</diggs_geo:blowCount>
+                            <diggs_geo:penetration uom="in">6</diggs_geo:penetration>
+                        </diggs_geo:DriveSet>
+                    </diggs_geo:driveSet>
+                </diggs_geo:DrivenPenetrationTest>
             </procedure>
         </Test>
     </measurement>
