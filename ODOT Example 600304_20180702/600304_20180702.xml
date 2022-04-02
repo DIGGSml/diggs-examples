@@ -1,12 +1,12 @@
-<Diggs xmlns="http://diggsml.org/schemas/2.5.a"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+<?xml version="1.0" encoding="UTF-8"?>
+<Diggs xmlns="http://diggsml.org/schemas/2.5.a" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
+    xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
-    xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
-    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
-    xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
-    gml:id="NTM1YTEwMzUtYmRmZS00NTIxLTk1OWItZjk4NGEwOWRjZDcx">
+    xmlns:witsml="http://www.witsml.org/schemas/131"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+    gml:id="bcd">
 
     <documentInformation>
         <DocumentInformation gml:id="DGS527F-F32-104B-CE7E-B0C0">
@@ -400,7 +400,6 @@
         <locality>
 		  <Locality gml:id="DGS5793-1234-300D-3EDC-1F955">  
             <station></station>
-            <offset uom="ft">0</offset>
             <offsetDirection></offsetDirection>
 		  </Locality>
         </locality>
@@ -593,6 +592,11 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
+        <locality>
+		  <Locality gml:id="DGS831C-11AE-3308-7460-63C35">  
+            <station></station><offsetDirection></offsetDirection>
+		  </Locality>
+        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-003-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -782,6 +786,11 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
+        <locality>
+		  <Locality gml:id="DGS2E01-1558-2F8B-ACF6-1AECB">  
+            <station></station><offsetDirection></offsetDirection>
+		  </Locality>
+        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-006-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -971,6 +980,11 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
+        <locality>
+		  <Locality gml:id="DGS9F87-15C8-341F-6E12-32140">  
+            <station></station><offsetDirection></offsetDirection>
+		  </Locality>
+        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-008-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -1160,6 +1174,11 @@
 	            <parameterValue></parameterValue>
 	        </Parameter>
 	    </otherSamplingFeatureProperty>
+        <locality>
+		  <Locality gml:id="DGS1FB5-469-4292-B457-2E4CA">  
+            <station></station><offsetDirection></offsetDirection>
+		  </Locality>
+        </locality>
 		<referencePoint>
 			<PointLocation gml:id="B-009-0-16-pl">
 				<!-- CK: Note about the 'srsName' attribute via Dan Ponti (03/07/2017):
@@ -3209,7 +3228,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS7C18-7CA-1B0-9223-677DD">
                                     <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3269,7 +3288,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS66B6-1017-3EC9-6241-203AD">
                                     <codeValue></codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3437,7 +3456,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS36FE-14F8-3D04-1D53-14BBB">
                                     <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3542,15 +3561,15 @@ Now need xslt to parse sample snippet:
                                 </Color>
                             </color>
                             <constituent>
-                                <Constituent gml:id="DGS581F-CF7-DF9-844B-5B2B6">
-                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
                                 <Constituent gml:id="DGS3A9C-6F0-30B1-B810-47156">
                                     <codeValue>some clay, little stone fragments</codeValue> <!-- Minor Constituent1 -->
                                     <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
+	                        <constituent>
+                                <Constituent gml:id="DGS581F-CF7-DF9-844B-5B2B6">
+                                    <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
                                 </Constituent>
                             </constituent>
                             <fieldProperties>
@@ -3601,7 +3620,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS2797-A64-378D-5E24-5EF83">
                                     <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3777,7 +3796,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS49F9-1913-3980-1EE9-6822D">
                                     <codeValue>stone fragments with sand and silt</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3837,7 +3856,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS7DAA-64B-D05-9F36-1D2B2">
                                     <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3845,18 +3864,6 @@ Now need xslt to parse sample snippet:
                             </constituent>
                             <constituent>
                                 <Constituent gml:id="DGS15E4-8CA-4290-AA64-12A36">
-                                    <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
-                                    <abundanceCode>Minor</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS7DAA-64B-D05-9F36-1D2B21">
-                                    <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
-                                <Constituent gml:id="DGS15E4-8CA-4290-AA64-12A361">
                                     <codeValue>some sand, trace stone fragments</codeValue> <!-- Minor Constituent1 -->
                                     <abundanceCode>Minor</abundanceCode>
                                 </Constituent>
@@ -3909,7 +3916,7 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS7E1D-D30-2ECB-7A6E-5F738">
                                     <codeValue></codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -3969,7 +3976,7 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS653D-76F-2E76-9696-9F02">
                                     <codeValue></codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4073,7 +4080,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS42A-17AF-3F39-2E5A-673C1">
                                     <codeValue>sandy silt</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4133,7 +4140,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS32E0-2F-309E-1B0C-298D1">
                                     <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4193,7 +4200,7 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS34EC-1024-4180-A3D-2FDDE">
                                     <codeValue></codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4254,15 +4261,15 @@ Now need xslt to parse sample snippet:
                                 </Color>
                             </color>
                             <constituent>
-                                <Constituent gml:id="DGS9A21-14DD-2F80-C8AE-5340D">
-                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
                                 <Constituent gml:id="DGS49F8-579-3745-F06-683F1">
                                     <codeValue></codeValue> <!-- Minor Constituent1 -->
                                     <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
+	                        <constituent>
+                                <Constituent gml:id="DGS9A21-14DD-2F80-C8AE-5340D">
+                                    <codeValue></codeValue> <!-- Primary Major Constituent -->
+                                    <abundanceCode>Major</abundanceCode>
                                 </Constituent>
                             </constituent>
                             <fieldProperties>
@@ -4357,7 +4364,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>gray</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS46E0-1166-36D3-5D0-5D0A6">
                                     <codeValue>stone fragments with sand and silt</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4417,7 +4424,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS3133-1231-25FC-90A8-554B2">
                                     <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4477,7 +4484,7 @@ Now need xslt to parse sample snippet:
                                     <colorName></colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS182D-528-4AEE-31DE-3020E">
                                     <codeValue></codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4617,7 +4624,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS956B-24B-381C-2CED-990">
                                     <codeValue>silty clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4677,7 +4684,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown and gray mottled</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS22F0-102F-BE2-EA00-3C705">
                                     <codeValue>silt and clay</codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -4737,7 +4744,7 @@ Now need xslt to parse sample snippet:
                                     <colorName>brown</colorName> <!--Primary Color1 -->
                                 </Color>
                             </color>
-                            <constituent>
+	                        <constituent>
                                 <Constituent gml:id="DGS442F-175B-27A6-DF1C-25C5">
                                     <codeValue></codeValue> <!-- Primary Major Constituent -->
                                     <abundanceCode>Major</abundanceCode>
@@ -8432,7 +8439,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS811E-360-2FA-47B4-593AF">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">31.5</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                   <diggs_geo:hydrometerReading uom="Mg/m3">310.5</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.10000038</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0071</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">42.28321838</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8443,7 +8450,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS7074-84E-4CFE-6E39-1F92C">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">28</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+                <diggs_geo:hydrometerReading uom="Mg/m3">280</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.29999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0042</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">36.83182907</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8564,7 +8571,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS8462-12C3-464B-F035-608F0">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">33</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">330</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.39999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.007</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">41.22977066</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8575,7 +8582,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS43B7-178E-48E6-75-325F1">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">29</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">290</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.5</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0042</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">35.43339157</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8696,7 +8703,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS9828-1939-4A3B-7FBD-4FBDA">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">29</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">290</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.5</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0072</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">36.59954834</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8707,7 +8714,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS500E-E03-30F0-C627-4206B">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">26</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">260</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.60000038</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0043</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">32.12284851</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8828,9 +8835,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS3A94-1334-4EBF-673E-2FD7D">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">25</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
-			                    <diggs_geo:temperature uom="degC">20.70000076</diggs_geo:temperature><!--Temperature-->
-			                    <diggs_geo:particleDiameter uom="mm">0.0074</diggs_geo:particleDiameter><!--Particle_Size-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">250</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:percentPassing uom="%">26.29352951</diggs_geo:percentPassing><!--Percent_Finer-->
 			                </diggs_geo:Sedimentation>
 			            </diggs_geo:sedimentationData>
@@ -8839,7 +8844,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS319B-1993-34B9-DDC-47AD7">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">21</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">210</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.70000076</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0044</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">21.1133709</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8960,7 +8965,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS9518-7F0-1F99-78C-43CB4">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">35</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">350</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.70000076</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0069</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">46.6657486</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -8971,7 +8976,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS708A-10EC-22F0-E62-5396A">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">31</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">310</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.70000076</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0041</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">40.50592041</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9098,7 +9103,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS743E-A1C-4CDF-ECFC-63020">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">18</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">180</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.79999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0078</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">14.24818039</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9109,7 +9114,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS34E0-AF7-7C3-C6-4D70E">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">15</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">150</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.79999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0046</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">11.04380989</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9230,7 +9235,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS33ED-7C2-70C-9E48-524B9">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">31</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">310</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.79999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0071</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">39.68030167</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9241,7 +9246,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS7318-1385-1E44-6D7D-1B8EB">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">27</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">270</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.79999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0042</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">33.65430832</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9344,7 +9349,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS70A4-7A9-354F-BE70-DE55">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">23</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">230</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.79999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0075</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">28.93096924</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9355,7 +9360,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS57AF-AE9-2268-7533-47085">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">19.5</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">195</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.89999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0044</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">23.4666996</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9458,7 +9463,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS6293-DC5-404-1BE5-88BB">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">38</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">380</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.89999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0067</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">54.20689011</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9469,7 +9474,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS9762-1124-1D1F-39FE-671E3">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">34</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">340</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.79999924</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.004</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">47.65153885</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9596,7 +9601,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS747F-AC2-1CA3-A172-16E43">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">22</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">220</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">21</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0075</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">19.00012016</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9607,7 +9612,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS1AEA-B95-349C-7B29-40528">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">19</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">190</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.89999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0044</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">15.68698025</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9716,7 +9721,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS74EE-1394-1548-1575-25158">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">35</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">350</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.89999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0069</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">48.49234009</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9727,7 +9732,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS3403-89F-7B-6EF7-505B4">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">31</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">310</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.89999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0041</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">42.10665131</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9836,7 +9841,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS66B6-17E9-10B-140A-45AA0">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">38</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">380</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">20.89999962</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0067</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">47.11394119</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9847,7 +9852,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS5339-ADB-4095-D5F7-CA8E">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">34</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">340</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">21</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.004</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">41.51850128</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9956,7 +9961,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS6F32-6A9-3039-9A37-1375E">
 			                    <diggs_geo:elapsedTime uom="min">40</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">37</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">370</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">21</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.0068</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">50.68613815</diggs_geo:percentPassing><!--Percent_Finer-->
@@ -9967,7 +9972,7 @@ Now need xslt to parse sample snippet:
 			                <diggs_geo:Sedimentation gml:id="DGS66DB-CD-8FD-8B8E-E031">
 			                    <diggs_geo:elapsedTime uom="min">120</diggs_geo:elapsedTime><!--Time-->
                                 <!-- the element for hydrometerReading is requiring me to select from a picklist of values within the diggs schema for the uom attribute. Since i have no idea what it should be, we are just putting in the first value from the list to satisfy the diggs validation...-->
-			                    <diggs_geo:hydrometerReading uom="10Mg/m3">33</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
+			                    <diggs_geo:hydrometerReading uom="Mg/m3">330</diggs_geo:hydrometerReading><!--Hydrometer_ Reading-->
 			                    <diggs_geo:temperature uom="degC">21.10000038</diggs_geo:temperature><!--Temperature-->
 			                    <diggs_geo:particleDiameter uom="mm">0.004</diggs_geo:particleDiameter><!--Particle_Size-->
 			                    <diggs_geo:percentPassing uom="%">44.48744965</diggs_geo:percentPassing><!--Percent_Finer-->

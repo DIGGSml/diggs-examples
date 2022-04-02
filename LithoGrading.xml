@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Diggs xmlns="http://diggsml.org/schemas/2.5.a"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+<Diggs xmlns="http://diggsml.org/schemas/2.5.a" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
+	xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
 	xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
-	xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
-	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
-	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
-	xmlns:glrov="http://www.opengis.net/gml/3.3/lrov" gml:id="DGS9504-1393-3FB1-2777-2AA73">
+	xmlns:witsml="http://www.witsml.org/schemas/131"
+	xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+	gml:id="bcd">
+	
 	<documentInformation>
 		<DocumentInformation gml:id="DGS652E-8F8-2AED-60A5-3CBE0">
 			<creationDate>2017-03-11</creationDate>
@@ -1293,7 +1294,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_YP1_B1_150"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_YP1_B1_150"/>
-			<classification>Rock</classification>
+			<classification>Soil</classification>
 			<initialContainer>
 				<Container gml:id="DGS26E-14C7-2D28-8E00-4F5C4">
 					<containerLabel>B1-150</containerLabel>
@@ -1346,6 +1347,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_YP2_B1_20"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_YP2_B1_20"/>
+			<classification>Soil</classification>
 			<initialContainer>
 				<Container gml:id="DGS7C19-32C-2148-E2A3-23F94">
 					<containerType>Bag</containerType>
@@ -1364,6 +1366,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_YP2_B2_20"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_YP2_B2_20"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS5A63-131F-21C8-6DE0-32A4B">
 					<length uom="ft">3</length>
@@ -1377,6 +1380,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_HSR_N-B1_125"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_HSR_N-B1_125"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS581F-CF7-DF9-844B-5B2B6">
 					<length uom="ft">1</length>
@@ -1390,6 +1394,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_HSR_N-B2_125"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_HSR_N-B2_125"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS3A9C-6F0-30B1-B810-47156">
 					<length uom="ft">2</length>
@@ -1403,6 +1408,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_HSR-S-B1_120"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_HSR-S-B1_120"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS8ECF-AC9-462C-B131-4013B">
 					<length uom="ft">1</length>
@@ -1416,6 +1422,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_HSR-S-B1_210"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_HSR-S-B1_210"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS9C90-597-179B-341A-1979A">
 					<length uom="ft">3</length>
@@ -1429,6 +1436,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_HSR-S-B1_340"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_HSR-S-B1_340"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS2C25-C87-46EA-A629-5FBA2">
 					<length uom="ft">2</length>
@@ -1447,6 +1455,7 @@
 			<projectRef xlink:href="#p_Boliva_4"/>
 			<samplingActivityRef xlink:href="#sa_p_Boliva_4_P040U_23.25"/>
 			<sampleProducedRef xlink:href="#sp_p_Boliva_4_P040U_23.25"/>
+			<classification>Soil</classification>
 			<sampleDimensions>
 				<SampleDimensions gml:id="DGS172D-A2A-41-7825-5D0DC">
 					<length uom="ft">1</length>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<Diggs xmlns="http://diggsml.org/schemas/2.5.a"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+<Diggs xmlns="http://diggsml.org/schemas/2.5.a" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
+    xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
-    xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
-    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
-    xmlns:glrov="http://www.opengis.net/gml/3.3/lrov" gml:id="DGS765F-DA6-2E5C-4987-1FA95">
+    xmlns:witsml="http://www.witsml.org/schemas/131"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+    gml:id="bcd">
+    
     <documentInformation>
         <DocumentInformation gml:id="abc">
             <creationDate>2017-09-30</creationDate>
@@ -141,8 +141,7 @@
                                     <crossSectionalArea uom="cm2">24.7</crossSectionalArea>
                                     <dimensionMeasurementTechnique>Calipers</dimensionMeasurementTechnique>
                                     <dryUnitWeight uom="lbf/ft3">105</dryUnitWeight>
-                                    <dryWeight uom="gf
-                                        ">92</dryWeight>
+                                    <dryWeight uom="gf">92</dryWeight>
                                     <diameter uom="cm">5</diameter>
                                     <height uom="cm">9</height>
                                     <percentSaturation uom="%">72</percentSaturation>

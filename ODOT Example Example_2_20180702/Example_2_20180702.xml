@@ -1,12 +1,12 @@
-<Diggs xmlns="http://diggsml.org/schemas/2.5.a"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a-dev/Complete.xsd"
+<?xml version="1.0" encoding="UTF-8"?>
+<Diggs xmlns="http://diggsml.org/schemas/2.5.a" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
+    xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
-    xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
-    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:diggs="http://diggsml.org/schemas/2.5.a"
-    xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
-    gml:id="NTM1YTEwMzUtYmRmZS00NTIxLTk1OWItZjk4NGEwOWRjZDcx">
+    xmlns:witsml="http://www.witsml.org/schemas/131"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+    gml:id="bcd">
 
     <documentInformation>
         <DocumentInformation gml:id="DGS765F-DA6-2E5C-4987-1FA95">
@@ -10623,15 +10623,15 @@ Now need xslt to parse sample snippet:
                                 </Color>
                             </color>
                             <constituent>
-                                <Constituent gml:id="DGS446-15B9-3B8A-A49C-AF3C">
-                                    <codeValue></codeValue> <!-- Type-->
-                                    <abundanceCode>Major</abundanceCode>
-                                </Constituent>
-                            </constituent>
-                            <constituent>
                                 <Constituent gml:id="DGS4649-161A-420-DA0D-35E04">
                                     <codeValue></codeValue> <!--Type Modifier -->
                                     <abundanceCode>Minor</abundanceCode>
+                                </Constituent>
+                            </constituent>
+                            <constituent>
+                                <Constituent gml:id="DGS446-15B9-3B8A-A49C-AF3C">
+                                    <codeValue></codeValue> <!-- Type-->
+                                    <abundanceCode>Major</abundanceCode>
                                 </Constituent>
                             </constituent>
                             <fieldProperties>
@@ -11494,7 +11494,7 @@ Now need xslt to parse sample snippet:
                                             <codeValue></codeValue> <!--Type Modifier -->
                                             <abundanceCode>Minor</abundanceCode>
                                         </Constituent>
-                                    </constituent>
+                                    </constituent>	
                                      <constituent>
                                         <Constituent gml:id="DGS729E-FDE-19DC-DA49-4EAAA">
                                             <codeValue>45</codeValue> <!--Interbed Percent -->
@@ -11515,7 +11515,7 @@ Now need xslt to parse sample snippet:
                                     <rockStrength>very weak</rockStrength> <!-- Compressive Strength1 -->
                                     <rockWeathering>severely</rockWeathering> <!-- Primary Weathering -->
 		                               </FieldProperties>
-		                           </fieldProperties>		
+		                           </fieldProperties>	
 		                       </Lithology>
 		                   </lithology>
 		               </ComponentLithology>
@@ -12974,7 +12974,7 @@ Now need xslt to parse sample snippet:
                                             <codeValue></codeValue> <!--Type Modifier -->
                                             <abundanceCode>Minor</abundanceCode>
                                         </Constituent>
-                                    </constituent>
+                                    </constituent>	
                                      <constituent>
                                         <Constituent gml:id="DGSA082-1CC-1BDD-1851-536F5">
                                             <codeValue>45</codeValue> <!--Interbed Percent -->
@@ -12995,7 +12995,7 @@ Now need xslt to parse sample snippet:
                                     <rockStrength>very weak</rockStrength> <!-- Compressive Strength1 -->
                                     <rockWeathering>severely</rockWeathering> <!-- Primary Weathering -->
 		                               </FieldProperties>
-		                           </fieldProperties>		
+		                           </fieldProperties>	
 		                       </Lithology>
 		                   </lithology>
 		               </ComponentLithology>
