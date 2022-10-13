@@ -5,7 +5,7 @@
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.5.a/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.5.a/Complete.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.5.a http://diggsml.org/schemas/2.5.a/Kernel.xsd"
     gml:id="bcd">
    
 
@@ -161,38 +161,32 @@
                                         <Property index="1" gml:id="p1">
                                             <propertyName>LL</propertyName>
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#liquid_limit">liquid_limit</propertyClass>
+                                            <propertyClass codeSpace="https://www.diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">liquid_limit</propertyClass>
                                         </Property>
                                         <Property index="2" gml:id="p2">
                                             <propertyName>PL</propertyName>
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#plastic_limit">plastic limit</propertyClass>
+                                            <propertyClass codeSpace="https://www.diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">plastic_limit</propertyClass>
                                         </Property>
                                         <Property index="3" gml:id="p3">
                                             <propertyName>PI</propertyName>
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#plasticity_index">plasticity index</propertyClass>
+                                            <propertyClass codeSpace="https://www.diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">plasticity_index</propertyClass>
                                         </Property>
                                         <Property index="4" gml:id="p4">
                                             <propertyName>Symbol from plasticity chart</propertyName>
                                             <typeData>string</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#uscs_symbol">uUSCS symbol</propertyClass>
+                                            <propertyClass codeSpace="https://www.diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">uscs_symbol_425</propertyClass>
                                         </Property>
                                         <Property index="5" gml:id="p5">
                                             <propertyName>LI</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#liquidity_index">liquidity index</propertyClass>
-                                        </Property>
-                                        <Property index="6" gml:id="p6">
-                                            <propertyName>Natural M/C</propertyName>
-                                            <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/terms/DIGGSTestPropertyDefinitions.xml#water_content_natural">natural water content</propertyClass>
-                                            <uom>%</uom>
+                                            <propertyClass codeSpace="https://www.diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">liquidity_index</propertyClass>
                                         </Property>
                                     </properties>
                                 </PropertyParameters>
                             </parameters>
-                            <dataValues cs="," decimal="." ts=" ">25,12,13,"CL",0.66,20.2</dataValues>
+                            <dataValues cs="," decimal="." ts=" ">25,12,13,"CL",0.66</dataValues>
                         </ResultSet>
                     </results>
                 </TestResult>
