@@ -5,7 +5,8 @@
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.6/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6-dev/Diggs.xsd" gml:id="bcd">
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/main/Diggs.xsd"
+    gml:id="bcd">
     <documentInformation>
         <DocumentInformation gml:id="bcd-di">
             <creationDate>2023-10-01</creationDate>
@@ -19,19 +20,19 @@
             <projectRef xlink:href="#proj1"/>
             <referencePoint>
                 <PointLocation gml:id="Trackline1-rp" srsDimension="2"
-                    srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                    srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                     <gml:pos>380100 3750750</gml:pos>
                 </PointLocation>
             </referencePoint>
             <centerLine>
                 <LinearExtent gml:id="Trackline1-cl" srsDimension="2"
-                    srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                    srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                     <gml:posList>380100 3750750 380600 3760750</gml:posList>
                 </LinearExtent>
             </centerLine>
             <linearReferencing>
                 <LinearSpatialReferenceSystem gml:id="Trackline1-lsr">
-                    <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                    <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:Trackline1-lsr</gml:identifier>
                     <glr:linearElement xlink:href="#Trackline1-cl"/>
                     <glr:lrm>
                         <glr:LinearReferencingMethod gml:id="Trackline1-lsr-lrm">
@@ -53,30 +54,30 @@
             <projectRef xlink:href="#proj2"/>
             <referencePoint>
                 <PointLocation gml:id="Multitrack-rp" srsDimension="2"
-                    srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                    srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                     <gml:pos>380250 3750250</gml:pos>
                 </PointLocation>
             </referencePoint>
-            <tracklines>
+            <trackline>
                 <GP_Trackline gml:id="T1">
                     <gml:name>T1</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
                         <PointLocation gml:id="T1-rp" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:pos>380280 3750430</gml:pos>
                         </PointLocation>
                     </referencePoint>
                     <centerLine>
                         <LinearExtent gml:id="T1-cl" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:posList>380280 3750430 380280 3750250</gml:posList>
                         </LinearExtent>
                     </centerLine>
                     <linearReferencing>
                         <LinearSpatialReferenceSystem gml:id="T1-lsr">
-                            <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                            <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:T1-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#T1-cl"/>
                             <glr:lrm>
                                 <glr:LinearReferencingMethod gml:id="T1-lsr-lrm">
@@ -90,25 +91,27 @@
                     <sensorMix>receivers</sensorMix>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
+            </trackline>
+            <trackline>
                 <GP_Trackline gml:id="T2">
                     <gml:name>T2</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
                         <PointLocation gml:id="T2-rp" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:pos>380340 3750430</gml:pos>
                         </PointLocation>
                     </referencePoint>
                     <centerLine>
                         <LinearExtent gml:id="T2-cl" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:posList>380340 3750430 380340 3750250</gml:posList>
                         </LinearExtent>
                     </centerLine>
                     <linearReferencing>
                         <LinearSpatialReferenceSystem gml:id="T2-lsr">
-                            <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                            <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:T2-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#T2-cl"/>
                             <glr:lrm>
                                 <glr:LinearReferencingMethod gml:id="T2-lsr-lrm">
@@ -122,25 +125,27 @@
                     <sensorMix>receivers</sensorMix>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
+            </trackline>
+            <trackline>
                 <GP_Trackline gml:id="T3">
                     <gml:name>T3</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
                         <PointLocation gml:id="T3-rp" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:pos>380400 3750430</gml:pos>
                         </PointLocation>
                     </referencePoint>
                     <centerLine>
                         <LinearExtent gml:id="T3-cl" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:posList>380400 3750430 380400 3750250</gml:posList>
                         </LinearExtent>
                     </centerLine>
                     <linearReferencing>
                         <LinearSpatialReferenceSystem gml:id="T3-lsr">
-                            <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                            <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:T1-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#T3-cl"/>
                             <glr:lrm>
                                 <glr:LinearReferencingMethod gml:id="T3-lsr-lrm">
@@ -154,25 +159,27 @@
                     <sensorMix>receivers</sensorMix>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
+            </trackline>
+            <trackline>
                 <GP_Trackline gml:id="SA">
                     <gml:name>SA</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
                         <PointLocation gml:id="SA-rp" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:pos>380250 3750280</gml:pos>
                         </PointLocation>
                     </referencePoint>
                     <centerLine>
                         <LinearExtent gml:id="SA-cl" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:posList>380250 3750280 380430 3750280</gml:posList>
                         </LinearExtent>
                     </centerLine>
                     <linearReferencing>
                         <LinearSpatialReferenceSystem gml:id="SA-lsr">
-                            <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                            <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:SA-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#SA-cl"/>
                             <glr:lrm>
                                 <glr:LinearReferencingMethod gml:id="SA-lsr-lrm">
@@ -186,25 +193,27 @@
                     <sensorMix>sources</sensorMix>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
+            </trackline>
+            <trackline>
                 <GP_Trackline gml:id="SB">
                     <gml:name>SA</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
                         <PointLocation gml:id="SB-rp" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:pos>380250 3750340</gml:pos>
                         </PointLocation>
                     </referencePoint>
                     <centerLine>
                         <LinearExtent gml:id="SB-cl" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:posList>380250 3750340 380430 3750340</gml:posList>
                         </LinearExtent>
                     </centerLine>
                     <linearReferencing>
                         <LinearSpatialReferenceSystem gml:id="SB-lsr">
-                            <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                            <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:SB-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#SB-cl"/>
                             <glr:lrm>
                                 <glr:LinearReferencingMethod gml:id="SB-lsr-lrm">
@@ -218,25 +227,27 @@
                     <sensorMix>sources</sensorMix>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
+            </trackline>
+            <trackline>
                 <GP_Trackline gml:id="SC">
                     <gml:name>SA</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
                         <PointLocation gml:id="SC-rp" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:pos>380250 3750400</gml:pos>
                         </PointLocation>
                     </referencePoint>
                     <centerLine>
                         <LinearExtent gml:id="SC-cl" srsDimension="2"
-                            srsName="http:http://www.opengis.net/def/crs/EPSG/0/26911">
+                            srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
                             <gml:posList>380250 3750400 380430 3750400</gml:posList>
                         </LinearExtent>
                     </centerLine>
                     <linearReferencing>
                         <LinearSpatialReferenceSystem gml:id="SC-lsr">
-                            <gml:identifier codeSpace="urn:x-diggs:def:authority:DIGGSINC">urn:diggs:def:fi:DIGGSINC:Trackline1-lsr</gml:identifier>
+                            <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:SC-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#SC-cl"/>
                             <glr:lrm>
                                 <glr:LinearReferencingMethod gml:id="SC-lsr-lrm">
@@ -250,15 +261,31 @@
                     <sensorMix>sources</sensorMix>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
-            </tracklines>
+            </trackline>
         </GP_MultiTrack>
     </samplingFeature>
+    
+    <!-- No raw data transfer, only display  survey location -->
+    <measurement>
+        <GeophysicalFieldSurvey gml:id="res0">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#proj1"/>
+            <samplingFeatureRef xlink:href="#Trackline-1"/>
+            <processedGeophysicalResultsRef xlink:href="#ProcessedERT"/>
+            <outcome>
+                <GP_SurveyResult gml:id="res0-results"/>
+            </outcome>
+            <geophysicalMethod>electrical resistivity tomography (ERT)</geophysicalMethod>
+        </GeophysicalFieldSurvey>
+    </measurement>
+    
 
-    <!-- Simplest field survey transfer (no samplingFeature reference) -->
+    <!-- Raw data transfer only (no samplingFeature reference) -->
     <measurement>
         <GeophysicalFieldSurvey gml:id="res1">
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#proj1"/>
+            <processedGeophysicalResultsRef xlink:href="#ProcessedERT"/>
             <outcome>
                 <GP_SurveyResult gml:id="res1-results">
                     <dataPackage>
@@ -267,13 +294,14 @@
                                 <GP_FieldDataFile gml:id="res1-df">
                                     <gml:description>Zip of Geometrics .ts data files</gml:description>
                                     <gml:name>Res1.zip</gml:name>
-                                    <fileURL>http://myserver.com/data/res1-df.zip</fileURL>
+                                    <fileURL>./res1-df.zip</fileURL>
                                     <creatingApplication>
                                         <SoftwareApplication gml:id="eh5">
                                             <gml:name>Geometrics EH5Pro</gml:name>
                                         </SoftwareApplication>
                                     </creatingApplication>
                                     <mimeType>application/zip</mimeType>
+                                    <compression>gzip</compression>
                                 </GP_FieldDataFile>
                             </files>
                         </DataPackage>
@@ -298,7 +326,7 @@
                                 <GP_FieldDataFile gml:id="res2-df">
                                     <gml:description>Zip of Geometrics .ts data files</gml:description>
                                     <gml:name>Res1.zip</gml:name>
-                                    <fileURL>http://myserver.com/data/res1-df.zip</fileURL>
+                                    <fileURL>./res1-df.zip</fileURL>
                                     <creatingApplication>
                                         <SoftwareApplication gml:id="eh5-2">
                                             <gml:name>Geometrics EH5Pro</gml:name>
@@ -347,7 +375,7 @@
                                     <gml:description>Zip of Geometrics .ts data files</gml:description>
                                     <gml:name>Res1.zip</gml:name>
                                     <fileURL>http://myserver.com/data/res1-df.zip</fileURL>
-                                    <creatingApplication >
+                                    <creatingApplication>
                                         <SoftwareApplication gml:id="eh5-1">
                                             <gml:name>Geometrics EH5Pro</gml:name>
                                         </SoftwareApplication>
@@ -376,6 +404,8 @@
                             <receiverType>electrode</receiverType>
                             <isGroup>false</isGroup>
                         </GP_Receiver>
+                    </receiverEquipment>
+                    <receiverEquipment>
                         <GP_Receiver gml:id="P2">
                             <class>voltage electrode</class>
                             <serialNumber>12346</serialNumber>
@@ -402,6 +432,8 @@
                             <sourceType>nonimpulsive</sourceType>
                             <isGroup>false</isGroup>
                         </GP_Source>
+                    </sourceEquipment>
+                    <sourceEquipment>
                         <GP_Source gml:id="C2">
                             <class>curremt electrode</class>
                             <serialNumber>23457</serialNumber>
@@ -422,18 +454,18 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noReceiverStations>2</noReceiverStations>
                                     <noReceivers>2</noReceivers>
-                                    <receiverGeometry>
-                                        <ReceiverGeometry gml:id="res3-fp-rg">
+                                    <receiverLocations>
+                                        <ReceiverLocations gml:id="res3-fp-rg">
                                             <receiverRef xlink:href="#P1"/>
                                             <receiverRef xlink:href="#P2"/>
-                                            <receiverLocations>
+                                            <locations>
                                                 <MultiPointLocation gml:id="res3-fp-r"
                                                   srsName="#Trackline1-lsr" srsDimension="1">
                                                   <gml:posList> 230 270 </gml:posList>
                                                 </MultiPointLocation>
-                                            </receiverLocations>
-                                        </ReceiverGeometry>
-                                    </receiverGeometry>
+                                            </locations>
+                                        </ReceiverLocations>
+                                    </receiverLocations>
                                 </ReceiverInfo>
                             </receiverInfo>
                             <sourceInfo>
@@ -441,18 +473,18 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noSourceStations>2</noSourceStations>
                                     <noSources>2</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="res3-fp-sg">
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="res3-fp-sg">
                                             <sourceRef xlink:href="#C1"/>
                                             <sourceRef xlink:href="#C2"/>
-                                            <sourceLocations>
+                                            <locations>
                                                 <MultiPointLocation gml:id="res3-fp-s"
                                                   srsName="#Trackline1-lsr" srsDimension="1">
                                                   <gml:posList>200 300</gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                             </sourceInfo>
                         </Configuration>
@@ -462,7 +494,7 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noReceiverStations>2</noReceiverStations>
                                     <noReceivers>2</noReceivers>
-                                    <receiverGeometry xlink:href="#res3-fp-rg"/>
+                                    <receiverLocations xlink:href="#res3-fp-rg"/>
                                 </ReceiverInfo>
                             </receiverInfo>
                             <sourceInfo>
@@ -470,18 +502,18 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noSourceStations>2</noSourceStations>
                                     <noSources>2</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="res3-fp-sg2">
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="res3-fp-sg2">
                                             <sourceRef xlink:href="#C1"/>
                                             <sourceRef xlink:href="#C2"/>
-                                            <sourceLocations>
+                                            <locations>
                                                 <MultiPointLocation gml:id="res3-fp-s2"
                                                   srsName="#Trackline1-lsr" srsDimension="1">
                                                   <gml:posList>150 350</gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                             </sourceInfo>
                         </Configuration>
@@ -491,7 +523,7 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noReceiverStations>2</noReceiverStations>
                                     <noReceivers>2</noReceivers>
-                            <receiverGeometry xlink:href="#res3-fp-rg"/>
+                                    <receiverLocations xlink:href="#res3-fp-rg"/>
                                 </ReceiverInfo>
                             </receiverInfo>
                             <sourceInfo>
@@ -499,18 +531,18 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noSourceStations>2</noSourceStations>
                                     <noSources>2</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="res3-fp-rg3">
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="res3-fp-rg3">
                                             <sourceRef xlink:href="#C1"/>
                                             <sourceRef xlink:href="#C2"/>
-                                            <sourceLocations>
+                                            <locations>
                                                 <MultiPointLocation gml:id="res3-fp-s3"
-                                                    srsName="#Trackline1-lsr" srsDimension="1">
-                                                    <gml:posList>100 400</gml:posList>
+                                                  srsName="#Trackline1-lsr" srsDimension="1">
+                                                  <gml:posList>100 400</gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                             </sourceInfo>
                         </Configuration>
@@ -520,7 +552,7 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noReceiverStations>2</noReceiverStations>
                                     <noReceivers>2</noReceivers>
-                                    <receiverGeometry xlink:href="#res3-fp-rg"/>
+                                    <receiverLocations xlink:href="#res3-fp-rg"/>
                                 </ReceiverInfo>
                             </receiverInfo>
                             <sourceInfo>
@@ -528,18 +560,18 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noSourceStations>2</noSourceStations>
                                     <noSources>2</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="res3-fp-sg4">
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="res3-fp-sg4">
                                             <sourceRef xlink:href="#C1"/>
                                             <sourceRef xlink:href="#C2"/>
-                                            <sourceLocations>
+                                            <locations>
                                                 <MultiPointLocation gml:id="res3-fp-s4"
-                                                    srsName="#Trackline1-lsr" srsDimension="1">
-                                                    <gml:posList>50 450</gml:posList>
+                                                  srsName="#Trackline1-lsr" srsDimension="1">
+                                                  <gml:posList>50 450</gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                             </sourceInfo>
                         </Configuration>
@@ -547,9 +579,9 @@
                             <receiverInfo>
                                 <ReceiverInfo>
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
-                                     <noReceiverStations>2</noReceiverStations>
+                                    <noReceiverStations>2</noReceiverStations>
                                     <noReceivers>2</noReceivers>
-                                    <receiverGeometry xlink:href="#res3-fp-rg"/>
+                                    <receiverLocations xlink:href="#res3-fp-rg"/>
                                 </ReceiverInfo>
                             </receiverInfo>
                             <sourceInfo>
@@ -557,18 +589,18 @@
                                     <samplingFeatureRef xlink:href="#Trackline-1"/>
                                     <noSourceStations>2</noSourceStations>
                                     <noSources>2</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="res3-fp-sg5">
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="res3-fp-sg5">
                                             <sourceRef xlink:href="#C1"/>
                                             <sourceRef xlink:href="#C2"/>
-                                            <sourceLocations>
+                                            <locations>
                                                 <MultiPointLocation gml:id="res3-fp-s5"
-                                                    srsName="#Trackline1-lsr" srsDimension="1">
-                                                    <gml:posList>0 500</gml:posList>
+                                                  srsName="#Trackline1-lsr" srsDimension="1">
+                                                  <gml:posList>0 500</gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                             </sourceInfo>
                         </Configuration>
@@ -577,13 +609,13 @@
             </procedure>
         </GeophysicalFieldSurvey>
     </measurement>
-    
-<!-- Seismic survey -->
+
+    <!-- Seismic survey -->
     <measurement>
         <GeophysicalFieldSurvey gml:id="seis">
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#proj2"/>
-            <samplingFeatureRef xlink:href="#Multitrack"/>            
+            <samplingFeatureRef xlink:href="#Multitrack"/>
             <outcome>
                 <GP_SurveyResult gml:id="seis-sr">
                     <dataPackage>
@@ -605,6 +637,7 @@
                     <gml:description>Grid array of 21 geophones connected to Geometrics Geode Exploration eeismograph</gml:description>
                     <receiverEquipment>
                         <GP_Receiver gml:id="geophone-1-21">
+                            <gml:description>All 21 geophones in this survey are reated as a group as all are functionally identical</gml:description>
                             <otherEquipmentProperty>
                                 <Parameter>
                                     <parameterName>geophone frequency</parameterName>
@@ -618,7 +651,7 @@
                     </receiverEquipment>
                     <sourceEquipment>
                         <GP_Source gml:id="hammer">
-                            <gml:description>2o lb sledge hammer using rubber strike plate</gml:description>
+                            <gml:description>20 lb sledge hammer using rubber strike plate</gml:description>
                             <otherEquipmentProperty>
                                 <Parameter>
                                     <parameterName>hammer weight</parameterName>
@@ -641,141 +674,194 @@
                             <receiverInfo>
                                 <ReceiverInfo>
                                     <samplingFeatureRef xlink:href="#T1"/>
-                                     <receiverIntervals>
-                                        <Spacing>
+                                    <receiverSpacing>
+                                        <SensorSpacing>
                                             <minSpacing uom="m">30</minSpacing>
                                             <maxSpacing uom="m">30</maxSpacing>
-                                        </Spacing>
-                                    </receiverIntervals>
+                                        </SensorSpacing>
+                                    </receiverSpacing>
                                     <noReceiverStations>7</noReceiverStations>
                                     <noReceivers>7</noReceivers>
-                                    <receiverGeometry>
-                                        <ReceiverGeometry gml:id="seis-t1-rg">
+                                    <receiverLocations>
+                                        <ReceiverLocations gml:id="seis-t1-rg">
                                             <receiverRef xlink:href="#geophone-1-21"/>
-                                            <receiverLocations>
-                                                <MultiPointLocation gml:id="seis-t1" srsDimension="1" srsName="#T1-lsr">
-                                                    <gml:posList>0 30 60 90 120 150 180</gml:posList>
+                                            <locations>
+                                                <MultiPointLocation gml:id="seis-t1"
+                                                  srsDimension="1" srsName="#T1-lsr">
+                                                  <gml:posList>0 30 60 90 120 150 180</gml:posList>
                                                 </MultiPointLocation>
-                                            </receiverLocations>
-                                        </ReceiverGeometry>
-                                    </receiverGeometry>
+                                            </locations>
+                                        </ReceiverLocations>
+                                    </receiverLocations>
                                 </ReceiverInfo>
                                 <ReceiverInfo>
                                     <samplingFeatureRef xlink:href="#T2"/>
-                                    <receiverIntervals>
-                                        <Spacing>
+                                    <receiverSpacing>
+                                        <SensorSpacing>
                                             <minSpacing uom="m">30</minSpacing>
                                             <maxSpacing uom="m">30</maxSpacing>
-                                        </Spacing>
-                                    </receiverIntervals>
+                                        </SensorSpacing>
+                                    </receiverSpacing>
                                     <noReceiverStations>7</noReceiverStations>
                                     <noReceivers>7</noReceivers>
-                                    <receiverGeometry>
-                                        <ReceiverGeometry gml:id="seis-t2-rg">
+                                    <receiverLocations>
+                                        <ReceiverLocations gml:id="seis-t2-rg">
                                             <receiverRef xlink:href="#geophone-1-21"/>
-                                            <receiverLocations>
-                                                <MultiPointLocation gml:id="seis-t2" srsDimension="1" srsName="#T2-lsr">
-                                                    <gml:posList>0 30 60 90 120 150 180</gml:posList>
+                                            <locations>
+                                                <MultiPointLocation gml:id="seis-t2"
+                                                  srsDimension="1" srsName="#T2-lsr">
+                                                  <gml:posList>0 30 60 90 120 150 180</gml:posList>
                                                 </MultiPointLocation>
-                                            </receiverLocations>
-                                        </ReceiverGeometry>
-                                    </receiverGeometry>
+                                            </locations>
+                                        </ReceiverLocations>
+                                    </receiverLocations>
                                 </ReceiverInfo>
                                 <ReceiverInfo>
                                     <samplingFeatureRef xlink:href="#T3"/>
-                                    <receiverIntervals>
-                                        <Spacing>
+                                    <receiverSpacing>
+                                        <SensorSpacing>
                                             <minSpacing uom="m">30</minSpacing>
                                             <maxSpacing uom="m">30</maxSpacing>
-                                        </Spacing>
-                                    </receiverIntervals>
+                                        </SensorSpacing>
+                                    </receiverSpacing>
                                     <noReceiverStations>7</noReceiverStations>
                                     <noReceivers>7</noReceivers>
-                                    <receiverGeometry>
-                                        <ReceiverGeometry gml:id="seis-t3-rg">
+                                    <receiverLocations>
+                                        <ReceiverLocations gml:id="seis-t3-rg">
                                             <receiverRef xlink:href="#geophone-1-21"/>
-                                            <receiverLocations>
-                                                <MultiPointLocation gml:id="seis-t3" srsDimension="1" srsName="#T3-lsr">
-                                                    <gml:posList>0 30 60 90 120 150 180</gml:posList>
+                                            <locations>
+                                                <MultiPointLocation gml:id="seis-t3"
+                                                  srsDimension="1" srsName="#T3-lsr">
+                                                  <gml:posList>0 30 60 90 120 150 180</gml:posList>
                                                 </MultiPointLocation>
-                                            </receiverLocations>
-                                        </ReceiverGeometry>
-                                    </receiverGeometry>
+                                            </locations>
+                                        </ReceiverLocations>
+                                    </receiverLocations>
                                 </ReceiverInfo>
                             </receiverInfo>
                             <sourceInfo>
                                 <SourceInfo>
                                     <samplingFeatureRef xlink:href="#SA"/>
-                                    <sourceIntervals>
-                                        <Spacing>
+                                    <sourceSpacing>
+                                        <SensorSpacing>
                                             <minSpacing uom="m">60</minSpacing>
                                             <maxSpacing uom="m">60</maxSpacing>
-                                        </Spacing>
-                                    </sourceIntervals>
+                                        </SensorSpacing>
+                                    </sourceSpacing>
                                     <noSourceStations>4</noSourceStations>
                                     <noSources>1</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="seis-sa-sg">
-                                            <sourceRef xlink:href="hammer"/>
-                                            <sourceLocations>
-                                                <MultiPointLocation gml:id="seis-sa-s" srsDimension="1" srsName="#SA-lsr">
-                                                    <gml:posList>
-                                                        0 60 120 180
-                                                    </gml:posList>
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="seis-sa-sg">
+                                            <sourceRef xlink:href="#hammer"/>
+                                            <locations>
+                                                <MultiPointLocation gml:id="seis-sa-s"
+                                                  srsDimension="1" srsName="#SA-lsr">
+                                                  <gml:posList> 0 60 120 180 </gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                                 <SourceInfo>
                                     <samplingFeatureRef xlink:href="#SB"/>
-                                    <sourceIntervals>
-                                        <Spacing>
+                                    <sourceSpacing>
+                                        <SensorSpacing>
                                             <minSpacing uom="m">60</minSpacing>
                                             <maxSpacing uom="m">60</maxSpacing>
-                                        </Spacing>
-                                    </sourceIntervals>
+                                        </SensorSpacing>
+                                    </sourceSpacing>
                                     <noSourceStations>4</noSourceStations>
                                     <noSources>1</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="seis-sb-sg">
-                                            <sourceRef xlink:href="hammer"/>
-                                            <sourceLocations>
-                                                <MultiPointLocation gml:id="seis-sb-s" srsDimension="1" srsName="#SB-lsr">
-                                                    <gml:posList>
-                                                        0 60 120 180
-                                                    </gml:posList>
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="seis-sb-sg">
+                                            <sourceRef xlink:href="#hammer"/>
+                                            <locations>
+                                                <MultiPointLocation gml:id="seis-sb-s"
+                                                  srsDimension="1" srsName="#SB-lsr">
+                                                  <gml:posList> 0 60 120 180 </gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
                                 <SourceInfo>
                                     <samplingFeatureRef xlink:href="#SC"/>
-                                    <sourceIntervals>
-                                        <Spacing>
+                                    <sourceSpacing>
+                                        <SensorSpacing>
                                             <minSpacing uom="m">60</minSpacing>
                                             <maxSpacing uom="m">60</maxSpacing>
-                                        </Spacing>
-                                    </sourceIntervals>
+                                        </SensorSpacing>
+                                    </sourceSpacing>
                                     <noSourceStations>4</noSourceStations>
                                     <noSources>1</noSources>
-                                    <sourceGeometry>
-                                        <SourceGeometry gml:id="seis-sc-sg">
-                                            <sourceRef xlink:href="hammer"/>
-                                            <sourceLocations>
-                                                <MultiPointLocation gml:id="seis-sc-s" srsDimension="1" srsName="#SC-lsr">
-                                                    <gml:posList>
-                                                        0 60 120 180
-                                                    </gml:posList>
+                                    <sourceLocations>
+                                        <SourceLocations gml:id="seis-sc-sg">
+                                            <sourceRef xlink:href="#hammer"/>
+                                            <locations>
+                                                <MultiPointLocation gml:id="seis-sc-s"
+                                                  srsDimension="1" srsName="#SC-lsr">
+                                                  <gml:posList> 0 60 120 180 </gml:posList>
                                                 </MultiPointLocation>
-                                            </sourceLocations>
-                                        </SourceGeometry>
-                                    </sourceGeometry>
+                                            </locations>
+                                        </SourceLocations>
+                                    </sourceLocations>
                                 </SourceInfo>
-                            </sourceInfo>                           
+                            </sourceInfo>
                         </Configuration>
                     </configurations>
+                </GP_FieldProcedure>
+            </procedure>
+        </GeophysicalFieldSurvey>
+    </measurement>
+    <measurement>
+        <GeophysicalFieldSurvey gml:id="oyo">
+            <gml:description>OYO suspension logging in borehole B-1</gml:description>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#proj1"/>
+            <samplingFeatureRef xlink:href="#B1"/>
+            <outcome>
+                <GP_SurveyResult gml:id="oyo-result"/>
+                <!-- Result not shown here -->
+            </outcome>
+            <geophysicalMethod>borehole seismic downhole source</geophysicalMethod>
+            <procedure>
+                <GP_FieldProcedure gml:id="oyo-proc">
+                    <dataAcquisitionSystem>
+                        <GP_DataAcquisitionSystem gml:id="oyo-equip">
+                            <gml:name>OYO Suspension Logging Tool</gml:name>
+                            <modelNumber>OYO PS-160</modelNumber>
+                        </GP_DataAcquisitionSystem>
+                    </dataAcquisitionSystem>
+                    <platforms>
+                        <Platform>
+                            <receiverType>geophone</receiverType>
+                            <noReceivers>2</noReceivers>
+                            <receiverArrayOrientation>parallel</receiverArrayOrientation>
+                            <receiverSpacing>
+                                <SensorSpacing>
+                                    <minSpacing uom="m">1</minSpacing>
+                                    <maxSpacing uom="m">1</maxSpacing>
+                                </SensorSpacing>
+                            </receiverSpacing>
+                            <sourceType>impulsive</sourceType>
+                            <noSources>1</noSources>
+                            <sourceReceiverOrientation>parallel</sourceReceiverOrientation>
+                            <minSourceReceiverSpacing uom="m">4</minSourceReceiverSpacing>
+                            <maxSourceReceiverSpacing uom="m">5</maxSourceReceiverSpacing>
+                            <platformMovement>
+                                <PlatformMovement>
+                                    <samplingFeatiureRef xlink:href="#Borehole-1"/>
+                                    <locations>
+                                        <MultiPointLocation gml:id="oyo-l" srsName="#B1-lsr-lrm"
+                                            srsDimension="1">
+                                            <gml:posList>10 9.5 9 8.5 8 7.5 7 6.5 6 5.5
+                                                5</gml:posList>
+                                        </MultiPointLocation>
+                                    </locations>
+                                </PlatformMovement>
+                            </platformMovement>
+                        </Platform>
+                    </platforms>
                 </GP_FieldProcedure>
             </procedure>
         </GeophysicalFieldSurvey>

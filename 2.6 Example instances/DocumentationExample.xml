@@ -5,7 +5,8 @@
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.6/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6-dev/Diggs.xsd" gml:id="DocExample">
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/schema-dev/main/Diggs.xsd"
+    gml:id="DocExample">
 
     <!-- Document Information object -->
     <documentInformation>
@@ -95,7 +96,7 @@
             <status>Final</status>
             <role>
                 <Role>
-                    <rolePerformed>Logger</rolePerformed>
+                    <rolePerformed codeSpace="http://diggsml.org/codes/roles-diggs.xml#logger">Logger</rolePerformed>
                     <businessAssociate>
                         <BusinessAssociate gml:id="DGS4DF9-330-41FA-9E28-4B844">
                             <gml:name>Williams</gml:name>
@@ -105,7 +106,7 @@
             </role>
             <role>
                 <Role>
-                    <rolePerformed codeSpace="Diggs">Drilling Contractor</rolePerformed>
+                    <rolePerformed codeSpace="http://diggsml.org/codes/roles-diggs.xml#drilling_contractor">Drilling Contractor</rolePerformed>
                     <businessAssociate>
                         <BusinessAssociate gml:id="DGS418F-493-1C3C-665E-65EC6">
                             <gml:name>ODOT</gml:name>
@@ -115,7 +116,7 @@
             </role>
             <role>
                 <Role>
-                    <rolePerformed codeSpace="Diggs">Driller</rolePerformed>
+                    <rolePerformed codeSpace="http://diggsml.org/codes/roles-diggs.xml#operator">Operator</rolePerformed>
                     <businessAssociate>
                         <BusinessAssociate gml:id="DGS8550-1150-D7F-B5B5-48AB7">
                             <gml:name>Carey</gml:name>
@@ -476,7 +477,7 @@
             </sampleDimensions>
         </Sample>
     </sample>
-    
+
     <sample>
         <Sample gml:id="Sample_B-001-0-20_1.50_1_SS_">
             <gml:description>Reddish brown sandy silt, A-4a (1)</gml:description>
@@ -494,7 +495,7 @@
             </sampleDimensions>
         </Sample>
     </sample>
-    
+
 
     <!-- Material description and notes -->
 
@@ -918,7 +919,7 @@
             </geoUnitObservation>
         </GeoUnitSystem>
     </observation>
-    
+
     <observation>
         <!-- observation applied to a sample in order to descxribe the ODOT class determined for the sample -->
         <LithologySystem gml:id="Lithosys_SS-1">
@@ -963,7 +964,7 @@
                                             <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">n_value</propertyClass>
                                         </Property>
                                         <Property index="2" gml:id="DGS1A35-BC5-C26-F243-5944E">
-                                             <propertyName>N60</propertyName>
+                                            <propertyName>N60</propertyName>
                                             <typeData>long</typeData>
                                             <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">n1_60</propertyClass>
                                         </Property>
@@ -1424,7 +1425,7 @@
                                                   gml:id="prop1_Water_Levels_Piezometer_B-001-0-20">
                                                   <gml:name>Depth to Water</gml:name>
                                                   <typeData>double</typeData>
-                                                  <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml">depth_to_water</propertyClass>
+                                                  <propertyClass codeSpace="http://diggsml.org/prope/properties-diggs.xml#water_depth">Water Depthepth</propertyClass>
                                                   <uom>ft</uom>
                                                 </Property>
                                             </properties>
@@ -1441,6 +1442,11 @@
                         <Sensor gml:id="tape">
                             <gml:name>steel tape</gml:name>
                             <class>tape</class>
+                            <detector>
+                                <Detector gml:id="metric">
+                                    <measurand codeSpace="http://diggsml.org/prope/properties-diggs.xml#water_depth">Water Depth</measurand>
+                                </Detector>
+                            </detector>
                         </Sensor>
                     </sensor>
                 </Reading>
@@ -1457,7 +1463,8 @@
             <outcome>
                 <TestResult gml:id="Result_Atterberg_SS-1">
                     <location>
-                        <LinearExtent srsDimension="1" srsName="B-001-0-20-lsr" gml:id="DGS14C8-DDA-156-D66F-1E2F3">
+                        <LinearExtent srsDimension="1" srsName="B-001-0-20-lsr"
+                            gml:id="DGS14C8-DDA-156-D66F-1E2F3">
                             <gml:posList>1.50 2.58</gml:posList>
                         </LinearExtent>
                     </location>
@@ -1508,8 +1515,9 @@
                             <sampleRef xlink:href="#Sample_B-001-0-20_1.50_1_SS_"/>
                         </SoilSpecimen>
                     </specimen>
-                    <diggs_geo:percentRetainedNo40>30</diggs_geo:percentRetainedNo40> <!-- Based on gradation data -->
-                </diggs_geo:AtterbergLimitsTest> 
+                    <diggs_geo:percentRetainedNo40>30</diggs_geo:percentRetainedNo40>
+                    <!-- Based on gradation data -->
+                </diggs_geo:AtterbergLimitsTest>
             </procedure>
         </Test>
     </measurement>
@@ -1519,11 +1527,12 @@
             <gml:name>Natural Water Content SS-1</gml:name>
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#Project_600819"/>
-            <samplingFeatureRef xlink:href="#Location_B-001-0-20"/>            
+            <samplingFeatureRef xlink:href="#Location_B-001-0-20"/>
             <outcome>
                 <TestResult gml:id="Result_WC_SS-1">
                     <location>
-                        <PointLocation srsDimension="1" srsName="lsr-B-001-0-20" gml:id="DGS360-42E-1B85-E6B3-8AA1">
+                        <PointLocation srsDimension="1" srsName="lsr-B-001-0-20"
+                            gml:id="DGS360-42E-1B85-E6B3-8AA1">
                             <gml:pos>1.50</gml:pos>
                         </PointLocation>
                     </location>
@@ -1555,12 +1564,13 @@
                             <accredtingBody>AASHTO</accredtingBody>
                         </Specification>
                     </testProcedureMethod>
-                    <specimen xlink:href="#Spec_Sample_B-001-0-20_1.50_1_SS_"/> <!-- Uses same specimen as for Atterberg tests above -->
-               </diggs_geo:WaterContentTest> 
+                    <specimen xlink:href="#Spec_Sample_B-001-0-20_1.50_1_SS_"/>
+                    <!-- Uses same specimen as for Atterberg tests above -->
+                </diggs_geo:WaterContentTest>
             </procedure>
         </Test>
     </measurement>
-    
+
     <!-- A samplingFeature group associates sampling features and is a way to identify, for example, paired boreholes and CPT soundings -->
 
     <group>
