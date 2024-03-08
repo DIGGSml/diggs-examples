@@ -5,7 +5,8 @@
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.6/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6-dev/Diggs.xsd" gml:id="NewAvengers">
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 http://diggsml.org/schemas/2.6/Diggs.xsd"
+    gml:id="NewAvengers">
 
     <gml:description>
         Example file using New Avengers Project Data - Compaction Grouting
@@ -75,6 +76,7 @@
                     <associatedFile>
                         <AssociatedFile gml:id="sfile">
                             <gml:name>Compaction Consensus Guide</gml:name>
+                            <fileURL/>
                         </AssociatedFile>
                     </associatedFile>
                     <strengthDesign uom="psi">1000</strengthDesign>
@@ -87,7 +89,8 @@
                             <diggs_geo:gradingData>
                                 <diggs_geo:Grading gml:id="ag1">
                                     <diggs_geo:particleSize uom="mm">19.1</diggs_geo:particleSize>
-                                    <diggs_geo:percentPassing uom="%"> 100</diggs_geo:percentPassing>
+                                    <diggs_geo:percentPassing uom="%">
+                                        100</diggs_geo:percentPassing>
                                 </diggs_geo:Grading>
                             </diggs_geo:gradingData>
                             <diggs_geo:gradingData>
@@ -145,7 +148,8 @@
                             <diggs_geo:gradingData>
                                 <diggs_geo:Grading gml:id="ag10">
                                     <diggs_geo:particleSize uom="mm">7</diggs_geo:particleSize>
-                                    <diggs_geo:percentPassing uom="%"> 100</diggs_geo:percentPassing>
+                                    <diggs_geo:percentPassing uom="%">
+                                        100</diggs_geo:percentPassing>
                                 </diggs_geo:Grading>
                             </diggs_geo:gradingData>
                             <diggs_geo:gradingData>

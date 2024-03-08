@@ -13,8 +13,8 @@
             <name>Seismic line E001a + milliseconds</name>
             <scope>Seismic time-section E001a</scope>
             <componentReferenceSystem xlink:href="http://E001a.xml#lsrs-1"/> <!-- In this example, the spatial coordinate system 
-                references the linear spatial reference system defined for the seismic section's GP_Trackline ampling feature -->
-            <componentReferenceSystem xlink:href="urn:diggs:def:crs:DIGGS:0.1:TWTms"/>
+                references the linear spatial reference system defined for the seismic section's GP_Trackline sampling feature -->
+            <componentReferenceSystem xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/twtt.xml#diggs-crs-TWTms"/>
         </CompoundCRS>
     </dictionaryEntry>
 </Dictionary>

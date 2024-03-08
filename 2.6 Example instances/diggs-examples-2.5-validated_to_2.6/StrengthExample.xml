@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diggs xmlns="http://diggsml.org/schemas/2.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6-dev/Diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 http://diggsml.org/schemas/2.6/Diggs.xsd"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.6/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
@@ -43,20 +43,20 @@
                 </TestResult>
             </outcome>
             <procedure>
-                <diggs_geo:TriaxialTest gml:id="triax1">
+                <TriaxialTest gml:id="triax1">
                     <gml:description>Test description</gml:description>
                     <testProcedureEquipment>
-                        <diggs_geo:TriaxialTestEquipment gml:id="ID143">
+                        <TriaxialTestEquipment gml:id="ID143">
                             <gml:name codeSpace="http://www.oxygenxml.com/">Triaxitator 100</gml:name>
                             <modelNumber xml:lang="en-US">100</modelNumber>
-                            <diggs_geo:loadCellCapacity uom="kN">300</diggs_geo:loadCellCapacity>
-                            <diggs_geo:massOfTopPorousStone uom="g"
-                                >50</diggs_geo:massOfTopPorousStone>
-                            <diggs_geo:massOfTopCap uom="g">10</diggs_geo:massOfTopCap>
-                            <diggs_geo:pistonDiameter uom="cm">3</diggs_geo:pistonDiameter>
-                            <diggs_geo:poreWaterPressureDeviceMeetsUndrainedSpecs>true</diggs_geo:poreWaterPressureDeviceMeetsUndrainedSpecs>
-                            <diggs_geo:pressureTransducerType>pressureTransducerType1</diggs_geo:pressureTransducerType>
-                        </diggs_geo:TriaxialTestEquipment>
+                            <loadCellCapacity uom="kN">300</loadCellCapacity>
+                            <massOfTopPorousStone uom="g"
+                                >50</massOfTopPorousStone>
+                            <massOfTopCap uom="g">10</massOfTopCap>
+                            <pistonDiameter uom="cm">3</pistonDiameter>
+                            <poreWaterPressureDeviceMeetsUndrainedSpecs>true</poreWaterPressureDeviceMeetsUndrainedSpecs>
+                            <pressureTransducerType>pressureTransducerType1</pressureTransducerType>
+                        </TriaxialTestEquipment>
                     </testProcedureEquipment>
                     <specimen>
                         <SoilSpecimen xml:lang="en-US" gml:id="ID223">
@@ -166,504 +166,504 @@
                             <specimenType>intact</specimenType>
                         </SoilSpecimen>
                     </specimen>
-                    <diggs_geo:triaxialTestType codeSpace="http://www.diggsml.org">CU</diggs_geo:triaxialTestType>
-                    <diggs_geo:trial>
-                        <diggs_geo:TriaxialTestTrial xml:lang="en-US" gml:id="ID275">
+                    <triaxialTestType codeSpace="http://www.diggsml.org">CU</triaxialTestType>
+                    <trial>
+                        <TriaxialTestTrial xml:lang="en-US" gml:id="ID275">
                             <specimenRef xlink:href="#ID223"/>
-                            <diggs_geo:filterInfo>
-                                <diggs_geo:FilterInfo xml:lang="en-US" gml:id="ID281">
-                                    <diggs_geo:filterPaperConfiguration>strips</diggs_geo:filterPaperConfiguration>
-                                    <diggs_geo:filterPaperDisksUsed>true</diggs_geo:filterPaperDisksUsed>
-                                    <diggs_geo:filterPaperType>No.54</diggs_geo:filterPaperType>
-                                    <diggs_geo:loadCarriedbyFilterPaperStrips uom="kN/m"
-                                        >0.19</diggs_geo:loadCarriedbyFilterPaperStrips>
-                                    <diggs_geo:perimeterCarriedbyFilterPaperStrips uom="cm"
-                                        >5.3</diggs_geo:perimeterCarriedbyFilterPaperStrips>
-                                </diggs_geo:FilterInfo>
-                            </diggs_geo:filterInfo>
-                            <diggs_geo:membraneInfo>
-                                <diggs_geo:MembraneInfo gml:id="ID283">
-                                    <diggs_geo:membraneMaterial>latex</diggs_geo:membraneMaterial>
-                                    <diggs_geo:membraneThickness uom="mm"
-                                        >1.8</diggs_geo:membraneThickness>
-                                    <diggs_geo:membraneYoungsModulus uom="kPa"
-                                        >5</diggs_geo:membraneYoungsModulus>
-                                    <diggs_geo:membraneYoungsmodulusDetermination>assigned</diggs_geo:membraneYoungsmodulusDetermination>
-                                    <diggs_geo:numberOfMembranesUsed>2</diggs_geo:numberOfMembranesUsed>
-                                    <diggs_geo:unstretchedMembraneCircumference uom="cm"
-                                        >8.9</diggs_geo:unstretchedMembraneCircumference>
-                                    <diggs_geo:unstretchedMembraneLength uom="cm"
-                                        >10</diggs_geo:unstretchedMembraneLength>
-                                </diggs_geo:MembraneInfo>
-                            </diggs_geo:membraneInfo>
-                            <diggs_geo:saturationStage>
-                                <diggs_geo:TriaxialTestSaturationStage gml:id="ID285">
-                                    <diggs_geo:automatedSaturationEquipmentUsed>false</diggs_geo:automatedSaturationEquipmentUsed>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID286">
-                                            <diggs_geo:incrementNumber>1</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >20</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID287">
-                                            <diggs_geo:incrementNumber>2</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >40</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID288">
-                                            <diggs_geo:incrementNumber>3</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >60</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:bValueEndOfSaturation>0.3</diggs_geo:bValueEndOfSaturation>
-                                    <diggs_geo:initialSaturation uom="%"
-                                        >68</diggs_geo:initialSaturation>
-                                    <diggs_geo:maximumBackPressureApplied uom="psi"
-                                        >60</diggs_geo:maximumBackPressureApplied>
-                                    <diggs_geo:saturationMethod codeSpace="http://www.oxygenxml.com/">wet method</diggs_geo:saturationMethod>
-                                </diggs_geo:TriaxialTestSaturationStage>
-                            </diggs_geo:saturationStage>
-                            <diggs_geo:consolidationStage>
-                                <diggs_geo:TriaxialTestConsolidationStage gml:id="ID29A">
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                            <filterInfo>
+                                <FilterInfo xml:lang="en-US" gml:id="ID281">
+                                    <filterPaperConfiguration>strips</filterPaperConfiguration>
+                                    <filterPaperDisksUsed>true</filterPaperDisksUsed>
+                                    <filterPaperType>No.54</filterPaperType>
+                                    <loadCarriedbyFilterPaperStrips uom="kN/m"
+                                        >0.19</loadCarriedbyFilterPaperStrips>
+                                    <perimeterCarriedbyFilterPaperStrips uom="cm"
+                                        >5.3</perimeterCarriedbyFilterPaperStrips>
+                                </FilterInfo>
+                            </filterInfo>
+                            <membraneInfo>
+                                <MembraneInfo gml:id="ID283">
+                                    <membraneMaterial>latex</membraneMaterial>
+                                    <membraneThickness uom="mm"
+                                        >1.8</membraneThickness>
+                                    <membraneYoungsModulus uom="kPa"
+                                        >5</membraneYoungsModulus>
+                                    <membraneYoungsmodulusDetermination>assigned</membraneYoungsmodulusDetermination>
+                                    <numberOfMembranesUsed>2</numberOfMembranesUsed>
+                                    <unstretchedMembraneCircumference uom="cm"
+                                        >8.9</unstretchedMembraneCircumference>
+                                    <unstretchedMembraneLength uom="cm"
+                                        >10</unstretchedMembraneLength>
+                                </MembraneInfo>
+                            </membraneInfo>
+                            <saturationStage>
+                                <TriaxialTestSaturationStage gml:id="ID285">
+                                    <automatedSaturationEquipmentUsed>false</automatedSaturationEquipmentUsed>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID286">
+                                            <incrementNumber>1</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >20</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID287">
+                                            <incrementNumber>2</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >40</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID288">
+                                            <incrementNumber>3</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >60</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <bValueEndOfSaturation>0.3</bValueEndOfSaturation>
+                                    <initialSaturation uom="%"
+                                        >68</initialSaturation>
+                                    <maximumBackPressureApplied uom="psi"
+                                        >60</maximumBackPressureApplied>
+                                    <saturationMethod codeSpace="http://www.oxygenxml.com/">wet method</saturationMethod>
+                                </TriaxialTestSaturationStage>
+                            </saturationStage>
+                            <consolidationStage>
+                                <TriaxialTestConsolidationStage gml:id="ID29A">
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID291">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >0</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.15</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >0</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.15</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID293">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >1</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.25</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >1</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.25</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID295">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >2</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.35</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:specimenCrossSectionalAreaCalculationMethod codeSpace="http://www.oxygenxml.com/">specimenCrossSectionalAreaCalculationMethod0</diggs_geo:specimenCrossSectionalAreaCalculationMethod>
-                                    <diggs_geo:effectiveStressEndofConsolidationStage uom="Pa"
-                                        >0</diggs_geo:effectiveStressEndofConsolidationStage>
-                                    <diggs_geo:t50 uom="s">0</diggs_geo:t50>
-                                    <diggs_geo:specimenHeightChangeAfterConsolidation uom="m"
-                                        >0</diggs_geo:specimenHeightChangeAfterConsolidation>
-                                    <diggs_geo:t50Method codeSpace="http://www.oxygenxml.com/">t50Method0</diggs_geo:t50Method>
-                                </diggs_geo:TriaxialTestConsolidationStage>
-                            </diggs_geo:consolidationStage>
-                            <diggs_geo:shearStage>
-                                <diggs_geo:TriaxialTestShearStage gml:id="ID305">
-                                    <diggs_geo:axialStrainAtFailure uom="%"
-                                        >10</diggs_geo:axialStrainAtFailure>
-                                    <diggs_geo:deviatorStressAtFailure uom="kPa"
-                                        >25</diggs_geo:deviatorStressAtFailure>
-                                    <diggs_geo:failureCriterion>maximum deviator stress</diggs_geo:failureCriterion>
-                                    <diggs_geo:modeOfFailure>bulging</diggs_geo:modeOfFailure>
-                                    <diggs_geo:totalPorewaterPressureAtFailure uom="psi"
-                                        >70</diggs_geo:totalPorewaterPressureAtFailure>
-                                    <diggs_geo:porewaterPressureStartOfShearing uom="Pa"
-                                        >0</diggs_geo:porewaterPressureStartOfShearing>
-                                    <diggs_geo:rateOfAxialStrainDuringShear uom="%/hr"
-                                        >1</diggs_geo:rateOfAxialStrainDuringShear>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US" gml:id="ID311">
-                                            <diggs_geo:axialLoad uom="kN">10</diggs_geo:axialLoad>
-                                            <diggs_geo:axialDeflection uom="mm">0</diggs_geo:axialDeflection>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >0</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="kPa"
-                                                >40</diggs_geo:inducedPoreWaterPressure>
-                                            <diggs_geo:totalCellPressure uom="kPa"
-                                                >100</diggs_geo:totalCellPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US" gml:id="ID313">
-                                            <diggs_geo:deviatorStress uom="kPa"
-                                                >32</diggs_geo:deviatorStress>
-                                            <diggs_geo:axialStrain uom="%">2</diggs_geo:axialStrain>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >10</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="psi"
-                                                >40</diggs_geo:inducedPoreWaterPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >2</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.35</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <specimenCrossSectionalAreaCalculationMethod codeSpace="http://www.oxygenxml.com/">specimenCrossSectionalAreaCalculationMethod0</specimenCrossSectionalAreaCalculationMethod>
+                                    <effectiveStressEndofConsolidationStage uom="Pa"
+                                        >0</effectiveStressEndofConsolidationStage>
+                                    <t50 uom="s">0</t50>
+                                    <specimenHeightChangeAfterConsolidation uom="m"
+                                        >0</specimenHeightChangeAfterConsolidation>
+                                    <t50Method codeSpace="http://www.oxygenxml.com/">t50Method0</t50Method>
+                                </TriaxialTestConsolidationStage>
+                            </consolidationStage>
+                            <shearStage>
+                                <TriaxialTestShearStage gml:id="ID305">
+                                    <axialStrainAtFailure uom="%"
+                                        >10</axialStrainAtFailure>
+                                    <deviatorStressAtFailure uom="kPa"
+                                        >25</deviatorStressAtFailure>
+                                    <failureCriterion>maximum deviator stress</failureCriterion>
+                                    <modeOfFailure>bulging</modeOfFailure>
+                                    <totalPorewaterPressureAtFailure uom="psi"
+                                        >70</totalPorewaterPressureAtFailure>
+                                    <porewaterPressureStartOfShearing uom="Pa"
+                                        >0</porewaterPressureStartOfShearing>
+                                    <rateOfAxialStrainDuringShear uom="%/hr"
+                                        >1</rateOfAxialStrainDuringShear>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US" gml:id="ID311">
+                                            <axialLoad uom="kN">10</axialLoad>
+                                            <axialDeflection uom="mm">0</axialDeflection>
+                                            <elapsedTime uom="min"
+                                                >0</elapsedTime>
+                                            <inducedPoreWaterPressure uom="kPa"
+                                                >40</inducedPoreWaterPressure>
+                                            <totalCellPressure uom="kPa"
+                                                >100</totalCellPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US" gml:id="ID313">
+                                            <deviatorStress uom="kPa"
+                                                >32</deviatorStress>
+                                            <axialStrain uom="%">2</axialStrain>
+                                            <elapsedTime uom="min"
+                                                >10</elapsedTime>
+                                            <inducedPoreWaterPressure uom="psi"
+                                                >40</inducedPoreWaterPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID313A">
-                                            <diggs_geo:deviatorStress uom="kPa"
-                                                >60</diggs_geo:deviatorStress>
-                                            <diggs_geo:axialStrain uom="%">4</diggs_geo:axialStrain>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >20</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="psi"
-                                                >50</diggs_geo:inducedPoreWaterPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:slopeOfAngleOfFailureSurface uom="dega"
-                                        >5</diggs_geo:slopeOfAngleOfFailureSurface>
-                                    <diggs_geo:totalCellPressureDuringShearStage uom="psi"
-                                        >250</diggs_geo:totalCellPressureDuringShearStage>
-                                    <diggs_geo:undrainedShearStrengthAtFailure uom="kPa"
-                                        >12</diggs_geo:undrainedShearStrengthAtFailure>
-                                    <diggs_geo:areaCorrectionApplied>true</diggs_geo:areaCorrectionApplied>
-                                    <diggs_geo:areaCorrectionType>Central cylindrical bulging</diggs_geo:areaCorrectionType>
-                                    <diggs_geo:filterCorrectionApplied>true</diggs_geo:filterCorrectionApplied>
-                                    <diggs_geo:membraneCorrectionApplied>true</diggs_geo:membraneCorrectionApplied>
-                                    <diggs_geo:pistonFrictionCorrectionApplied>false</diggs_geo:pistonFrictionCorrectionApplied>
-                                    <diggs_geo:upliftCorrectionApplied>false</diggs_geo:upliftCorrectionApplied>
-                                </diggs_geo:TriaxialTestShearStage>
-                            </diggs_geo:shearStage>
-                        </diggs_geo:TriaxialTestTrial>
-                    </diggs_geo:trial>
-                    <diggs_geo:trial>
-                        <diggs_geo:TriaxialTestTrial xml:lang="en-US" gml:id="ID27">
+                                            <deviatorStress uom="kPa"
+                                                >60</deviatorStress>
+                                            <axialStrain uom="%">4</axialStrain>
+                                            <elapsedTime uom="min"
+                                                >20</elapsedTime>
+                                            <inducedPoreWaterPressure uom="psi"
+                                                >50</inducedPoreWaterPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <slopeOfAngleOfFailureSurface uom="dega"
+                                        >5</slopeOfAngleOfFailureSurface>
+                                    <totalCellPressureDuringShearStage uom="psi"
+                                        >250</totalCellPressureDuringShearStage>
+                                    <undrainedShearStrengthAtFailure uom="kPa"
+                                        >12</undrainedShearStrengthAtFailure>
+                                    <areaCorrectionApplied>true</areaCorrectionApplied>
+                                    <areaCorrectionType>Central cylindrical bulging</areaCorrectionType>
+                                    <filterCorrectionApplied>true</filterCorrectionApplied>
+                                    <membraneCorrectionApplied>true</membraneCorrectionApplied>
+                                    <pistonFrictionCorrectionApplied>false</pistonFrictionCorrectionApplied>
+                                    <upliftCorrectionApplied>false</upliftCorrectionApplied>
+                                </TriaxialTestShearStage>
+                            </shearStage>
+                        </TriaxialTestTrial>
+                    </trial>
+                    <trial>
+                        <TriaxialTestTrial xml:lang="en-US" gml:id="ID27">
                             <specimenRef xlink:href="#ID243"/>
-                            <diggs_geo:filterInfo>
-                                <diggs_geo:FilterInfo xml:lang="en-US" gml:id="ID28">
-                                    <diggs_geo:filterPaperConfiguration codeSpace="http://www.oxygenxml.com/">spiral</diggs_geo:filterPaperConfiguration>
-                                    <diggs_geo:filterPaperDisksUsed>true</diggs_geo:filterPaperDisksUsed>
-                                    <diggs_geo:filterPaperType codeSpace="http://www.oxygenxml.com/">No.54</diggs_geo:filterPaperType>
-                                    <diggs_geo:loadCarriedbyFilterPaperStrips uom="kN/m"
-                                        >0.19</diggs_geo:loadCarriedbyFilterPaperStrips>
-                                    <diggs_geo:perimeterCarriedbyFilterPaperStrips uom="cm"
-                                        >4.3</diggs_geo:perimeterCarriedbyFilterPaperStrips>
-                                </diggs_geo:FilterInfo>
-                            </diggs_geo:filterInfo>
-                            <diggs_geo:membraneInfo>
-                                <diggs_geo:MembraneInfo gml:id="ID29">
-                                    <diggs_geo:membraneMaterial>latex</diggs_geo:membraneMaterial>
-                                    <diggs_geo:membraneThickness uom="mm"
-                                        >1.8</diggs_geo:membraneThickness>
-                                    <diggs_geo:membraneYoungsModulus uom="kPa"
-                                        >5</diggs_geo:membraneYoungsModulus>
-                                    <diggs_geo:membraneYoungsmodulusDetermination>assigned</diggs_geo:membraneYoungsmodulusDetermination>
-                                    <diggs_geo:numberOfMembranesUsed>2</diggs_geo:numberOfMembranesUsed>
-                                    <diggs_geo:unstretchedMembraneCircumference uom="cm"
-                                        >8.9</diggs_geo:unstretchedMembraneCircumference>
-                                    <diggs_geo:unstretchedMembraneLength uom="cm"
-                                        >10</diggs_geo:unstretchedMembraneLength>
-                                </diggs_geo:MembraneInfo>
-                            </diggs_geo:membraneInfo>
-                            <diggs_geo:saturationStage>
-                                <diggs_geo:TriaxialTestSaturationStage gml:id="ID285A">
-                                    <diggs_geo:automatedSaturationEquipmentUsed>false</diggs_geo:automatedSaturationEquipmentUsed>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID286A">
-                                            <diggs_geo:incrementNumber>1</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >20</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID287A">
-                                            <diggs_geo:incrementNumber>2</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >40</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID288A">
-                                            <diggs_geo:incrementNumber>3</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >60</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:bValueEndOfSaturation>0.3</diggs_geo:bValueEndOfSaturation>
-                                    <diggs_geo:initialSaturation uom="%"
-                                        >68</diggs_geo:initialSaturation>
-                                    <diggs_geo:maximumBackPressureApplied uom="psi"
-                                        >60</diggs_geo:maximumBackPressureApplied>
-                                    <diggs_geo:saturationMethod>wet method</diggs_geo:saturationMethod>
-                                </diggs_geo:TriaxialTestSaturationStage>
-                            </diggs_geo:saturationStage>
-                            <diggs_geo:consolidationStage>
-                                <diggs_geo:TriaxialTestConsolidationStage gml:id="ID295A">
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                            <filterInfo>
+                                <FilterInfo xml:lang="en-US" gml:id="ID28">
+                                    <filterPaperConfiguration codeSpace="http://www.oxygenxml.com/">spiral</filterPaperConfiguration>
+                                    <filterPaperDisksUsed>true</filterPaperDisksUsed>
+                                    <filterPaperType codeSpace="http://www.oxygenxml.com/">No.54</filterPaperType>
+                                    <loadCarriedbyFilterPaperStrips uom="kN/m"
+                                        >0.19</loadCarriedbyFilterPaperStrips>
+                                    <perimeterCarriedbyFilterPaperStrips uom="cm"
+                                        >4.3</perimeterCarriedbyFilterPaperStrips>
+                                </FilterInfo>
+                            </filterInfo>
+                            <membraneInfo>
+                                <MembraneInfo gml:id="ID29">
+                                    <membraneMaterial>latex</membraneMaterial>
+                                    <membraneThickness uom="mm"
+                                        >1.8</membraneThickness>
+                                    <membraneYoungsModulus uom="kPa"
+                                        >5</membraneYoungsModulus>
+                                    <membraneYoungsmodulusDetermination>assigned</membraneYoungsmodulusDetermination>
+                                    <numberOfMembranesUsed>2</numberOfMembranesUsed>
+                                    <unstretchedMembraneCircumference uom="cm"
+                                        >8.9</unstretchedMembraneCircumference>
+                                    <unstretchedMembraneLength uom="cm"
+                                        >10</unstretchedMembraneLength>
+                                </MembraneInfo>
+                            </membraneInfo>
+                            <saturationStage>
+                                <TriaxialTestSaturationStage gml:id="ID285A">
+                                    <automatedSaturationEquipmentUsed>false</automatedSaturationEquipmentUsed>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID286A">
+                                            <incrementNumber>1</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >20</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID287A">
+                                            <incrementNumber>2</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >40</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID288A">
+                                            <incrementNumber>3</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >60</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <bValueEndOfSaturation>0.3</bValueEndOfSaturation>
+                                    <initialSaturation uom="%"
+                                        >68</initialSaturation>
+                                    <maximumBackPressureApplied uom="psi"
+                                        >60</maximumBackPressureApplied>
+                                    <saturationMethod>wet method</saturationMethod>
+                                </TriaxialTestSaturationStage>
+                            </saturationStage>
+                            <consolidationStage>
+                                <TriaxialTestConsolidationStage gml:id="ID295A">
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID291A">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >0</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.15</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >0</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.15</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID293A">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >1</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.25</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >1</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.25</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID295B">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >2</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.35</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:specimenCrossSectionalAreaCalculationMethod>ASTM Method B</diggs_geo:specimenCrossSectionalAreaCalculationMethod>
-                                    <diggs_geo:effectiveStressEndofConsolidationStage uom="Pa"
-                                        >0</diggs_geo:effectiveStressEndofConsolidationStage>
-                                    <diggs_geo:t50 uom="s">0</diggs_geo:t50>
-                                    <diggs_geo:specimenHeightChangeAfterConsolidation uom="m"
-                                        >0</diggs_geo:specimenHeightChangeAfterConsolidation>
-                                    <diggs_geo:t50Method>t50Method0</diggs_geo:t50Method>
-                                </diggs_geo:TriaxialTestConsolidationStage>
-                            </diggs_geo:consolidationStage>
-                            <diggs_geo:shearStage>
-                                <diggs_geo:TriaxialTestShearStage gml:id="ID305A">
-                                    <diggs_geo:axialStrainAtFailure uom="%"
-                                        >10</diggs_geo:axialStrainAtFailure>
-                                    <diggs_geo:deviatorStressAtFailure uom="kPa"
-                                        >25</diggs_geo:deviatorStressAtFailure>
-                                    <diggs_geo:failureCriterion>maximum deviator stress</diggs_geo:failureCriterion>
-                                    <diggs_geo:modeOfFailure>bulging</diggs_geo:modeOfFailure>
-                                    <diggs_geo:totalPorewaterPressureAtFailure uom="psi"
-                                        >70</diggs_geo:totalPorewaterPressureAtFailure>
-                                    <diggs_geo:porewaterPressureStartOfShearing uom="Pa"
-                                        >0</diggs_geo:porewaterPressureStartOfShearing>
-                                    <diggs_geo:rateOfAxialStrainDuringShear uom="%/hr"
-                                        >1</diggs_geo:rateOfAxialStrainDuringShear>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >2</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.35</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <specimenCrossSectionalAreaCalculationMethod>ASTM Method B</specimenCrossSectionalAreaCalculationMethod>
+                                    <effectiveStressEndofConsolidationStage uom="Pa"
+                                        >0</effectiveStressEndofConsolidationStage>
+                                    <t50 uom="s">0</t50>
+                                    <specimenHeightChangeAfterConsolidation uom="m"
+                                        >0</specimenHeightChangeAfterConsolidation>
+                                    <t50Method>t50Method0</t50Method>
+                                </TriaxialTestConsolidationStage>
+                            </consolidationStage>
+                            <shearStage>
+                                <TriaxialTestShearStage gml:id="ID305A">
+                                    <axialStrainAtFailure uom="%"
+                                        >10</axialStrainAtFailure>
+                                    <deviatorStressAtFailure uom="kPa"
+                                        >25</deviatorStressAtFailure>
+                                    <failureCriterion>maximum deviator stress</failureCriterion>
+                                    <modeOfFailure>bulging</modeOfFailure>
+                                    <totalPorewaterPressureAtFailure uom="psi"
+                                        >70</totalPorewaterPressureAtFailure>
+                                    <porewaterPressureStartOfShearing uom="Pa"
+                                        >0</porewaterPressureStartOfShearing>
+                                    <rateOfAxialStrainDuringShear uom="%/hr"
+                                        >1</rateOfAxialStrainDuringShear>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID311A">
-                                            <diggs_geo:axialLoad uom="kN">10</diggs_geo:axialLoad>
-                                            <diggs_geo:axialDeflection uom="mm">0</diggs_geo:axialDeflection>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >0</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="kPa"
-                                                >40</diggs_geo:inducedPoreWaterPressure>
-                                            <diggs_geo:totalCellPressure uom="kPa"
-                                                >100</diggs_geo:totalCellPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                            <axialLoad uom="kN">10</axialLoad>
+                                            <axialDeflection uom="mm">0</axialDeflection>
+                                            <elapsedTime uom="min"
+                                                >0</elapsedTime>
+                                            <inducedPoreWaterPressure uom="kPa"
+                                                >40</inducedPoreWaterPressure>
+                                            <totalCellPressure uom="kPa"
+                                                >100</totalCellPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID313B">
-                                             <diggs_geo:deviatorStress uom="kPa"
-                                                >32</diggs_geo:deviatorStress>
-                                            <diggs_geo:axialStrain uom="%">2</diggs_geo:axialStrain>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >10</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="psi"
-                                                >40</diggs_geo:inducedPoreWaterPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                             <deviatorStress uom="kPa"
+                                                >32</deviatorStress>
+                                            <axialStrain uom="%">2</axialStrain>
+                                            <elapsedTime uom="min"
+                                                >10</elapsedTime>
+                                            <inducedPoreWaterPressure uom="psi"
+                                                >40</inducedPoreWaterPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID313C">
-                                            <diggs_geo:deviatorStress uom="kPa"
-                                                >60</diggs_geo:deviatorStress>
-                                            <diggs_geo:axialStrain uom="%">4</diggs_geo:axialStrain>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >20</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="psi"
-                                                >50</diggs_geo:inducedPoreWaterPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:slopeOfAngleOfFailureSurface uom="dega"
-                                        >5</diggs_geo:slopeOfAngleOfFailureSurface>
-                                    <diggs_geo:totalCellPressureDuringShearStage uom="psi"
-                                        >250</diggs_geo:totalCellPressureDuringShearStage>
-                                    <diggs_geo:undrainedShearStrengthAtFailure uom="kPa"
-                                        >12</diggs_geo:undrainedShearStrengthAtFailure>
-                                    <diggs_geo:areaCorrectionApplied>true</diggs_geo:areaCorrectionApplied>
-                                    <diggs_geo:areaCorrectionType>Slip plane</diggs_geo:areaCorrectionType>
-                                    <diggs_geo:filterCorrectionApplied>true</diggs_geo:filterCorrectionApplied>
-                                    <diggs_geo:membraneCorrectionApplied>true</diggs_geo:membraneCorrectionApplied>
-                                    <diggs_geo:pistonFrictionCorrectionApplied>false</diggs_geo:pistonFrictionCorrectionApplied>
-                                    <diggs_geo:upliftCorrectionApplied>false</diggs_geo:upliftCorrectionApplied>
-                                </diggs_geo:TriaxialTestShearStage>
-                            </diggs_geo:shearStage>
-                        </diggs_geo:TriaxialTestTrial>
-                    </diggs_geo:trial>
-                    <diggs_geo:trial>
-                        <diggs_geo:TriaxialTestTrial xml:lang="en-US" gml:id="ID27B">
+                                            <deviatorStress uom="kPa"
+                                                >60</deviatorStress>
+                                            <axialStrain uom="%">4</axialStrain>
+                                            <elapsedTime uom="min"
+                                                >20</elapsedTime>
+                                            <inducedPoreWaterPressure uom="psi"
+                                                >50</inducedPoreWaterPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <slopeOfAngleOfFailureSurface uom="dega"
+                                        >5</slopeOfAngleOfFailureSurface>
+                                    <totalCellPressureDuringShearStage uom="psi"
+                                        >250</totalCellPressureDuringShearStage>
+                                    <undrainedShearStrengthAtFailure uom="kPa"
+                                        >12</undrainedShearStrengthAtFailure>
+                                    <areaCorrectionApplied>true</areaCorrectionApplied>
+                                    <areaCorrectionType>Slip plane</areaCorrectionType>
+                                    <filterCorrectionApplied>true</filterCorrectionApplied>
+                                    <membraneCorrectionApplied>true</membraneCorrectionApplied>
+                                    <pistonFrictionCorrectionApplied>false</pistonFrictionCorrectionApplied>
+                                    <upliftCorrectionApplied>false</upliftCorrectionApplied>
+                                </TriaxialTestShearStage>
+                            </shearStage>
+                        </TriaxialTestTrial>
+                    </trial>
+                    <trial>
+                        <TriaxialTestTrial xml:lang="en-US" gml:id="ID27B">
                             <specimenRef xlink:href="#ID243"/>
-                            <diggs_geo:filterInfo>
-                                <diggs_geo:FilterInfo xml:lang="en-US" gml:id="ID28B">
-                                    <diggs_geo:filterPaperConfiguration codeSpace="http://www.oxygenxml.com/">spiral</diggs_geo:filterPaperConfiguration>
-                                    <diggs_geo:filterPaperDisksUsed>true</diggs_geo:filterPaperDisksUsed>
-                                    <diggs_geo:filterPaperType codeSpace="http://www.oxygenxml.com/">No.54</diggs_geo:filterPaperType>
-                                    <diggs_geo:loadCarriedbyFilterPaperStrips uom="kN/m"
-                                        >0.19</diggs_geo:loadCarriedbyFilterPaperStrips>
-                                    <diggs_geo:perimeterCarriedbyFilterPaperStrips uom="cm"
-                                        >4.3</diggs_geo:perimeterCarriedbyFilterPaperStrips>
-                                </diggs_geo:FilterInfo>
-                            </diggs_geo:filterInfo>
-                            <diggs_geo:membraneInfo>
-                                <diggs_geo:MembraneInfo gml:id="ID29B">
-                                    <diggs_geo:membraneMaterial>latex</diggs_geo:membraneMaterial>
-                                    <diggs_geo:membraneThickness uom="mm"
-                                        >1.8</diggs_geo:membraneThickness>
-                                    <diggs_geo:membraneYoungsModulus uom="kPa"
-                                        >5</diggs_geo:membraneYoungsModulus>
-                                    <diggs_geo:membraneYoungsmodulusDetermination>assigned</diggs_geo:membraneYoungsmodulusDetermination>
-                                    <diggs_geo:numberOfMembranesUsed>2</diggs_geo:numberOfMembranesUsed>
-                                    <diggs_geo:unstretchedMembraneCircumference uom="cm"
-                                        >8.9</diggs_geo:unstretchedMembraneCircumference>
-                                    <diggs_geo:unstretchedMembraneLength uom="cm"
-                                        >10</diggs_geo:unstretchedMembraneLength>
-                                </diggs_geo:MembraneInfo>
-                            </diggs_geo:membraneInfo>
-                            <diggs_geo:saturationStage>
-                                <diggs_geo:TriaxialTestSaturationStage gml:id="ID285B">
-                                    <diggs_geo:automatedSaturationEquipmentUsed>false</diggs_geo:automatedSaturationEquipmentUsed>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID286B">
-                                            <diggs_geo:incrementNumber>1</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >20</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID287B">
-                                            <diggs_geo:incrementNumber>2</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >40</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:backPressureIncrement>
-                                        <diggs_geo:BackPressureIncrement gml:id="ID288B">
-                                            <diggs_geo:incrementNumber>3</diggs_geo:incrementNumber>
-                                            <diggs_geo:backPressureApplied uom="psi"
-                                                >60</diggs_geo:backPressureApplied>
-                                        </diggs_geo:BackPressureIncrement>
-                                    </diggs_geo:backPressureIncrement>
-                                    <diggs_geo:bValueEndOfSaturation>0.3</diggs_geo:bValueEndOfSaturation>
-                                    <diggs_geo:initialSaturation uom="%"
-                                        >68</diggs_geo:initialSaturation>
-                                    <diggs_geo:maximumBackPressureApplied uom="psi"
-                                        >60</diggs_geo:maximumBackPressureApplied>
-                                    <diggs_geo:saturationMethod>wet method</diggs_geo:saturationMethod>
-                                </diggs_geo:TriaxialTestSaturationStage>
-                            </diggs_geo:saturationStage>
-                            <diggs_geo:consolidationStage>
-                                <diggs_geo:TriaxialTestConsolidationStage gml:id="ID295C">
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                            <filterInfo>
+                                <FilterInfo xml:lang="en-US" gml:id="ID28B">
+                                    <filterPaperConfiguration codeSpace="http://www.oxygenxml.com/">spiral</filterPaperConfiguration>
+                                    <filterPaperDisksUsed>true</filterPaperDisksUsed>
+                                    <filterPaperType codeSpace="http://www.oxygenxml.com/">No.54</filterPaperType>
+                                    <loadCarriedbyFilterPaperStrips uom="kN/m"
+                                        >0.19</loadCarriedbyFilterPaperStrips>
+                                    <perimeterCarriedbyFilterPaperStrips uom="cm"
+                                        >4.3</perimeterCarriedbyFilterPaperStrips>
+                                </FilterInfo>
+                            </filterInfo>
+                            <membraneInfo>
+                                <MembraneInfo gml:id="ID29B">
+                                    <membraneMaterial>latex</membraneMaterial>
+                                    <membraneThickness uom="mm"
+                                        >1.8</membraneThickness>
+                                    <membraneYoungsModulus uom="kPa"
+                                        >5</membraneYoungsModulus>
+                                    <membraneYoungsmodulusDetermination>assigned</membraneYoungsmodulusDetermination>
+                                    <numberOfMembranesUsed>2</numberOfMembranesUsed>
+                                    <unstretchedMembraneCircumference uom="cm"
+                                        >8.9</unstretchedMembraneCircumference>
+                                    <unstretchedMembraneLength uom="cm"
+                                        >10</unstretchedMembraneLength>
+                                </MembraneInfo>
+                            </membraneInfo>
+                            <saturationStage>
+                                <TriaxialTestSaturationStage gml:id="ID285B">
+                                    <automatedSaturationEquipmentUsed>false</automatedSaturationEquipmentUsed>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID286B">
+                                            <incrementNumber>1</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >20</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID287B">
+                                            <incrementNumber>2</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >40</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <backPressureIncrement>
+                                        <BackPressureIncrement gml:id="ID288B">
+                                            <incrementNumber>3</incrementNumber>
+                                            <backPressureApplied uom="psi"
+                                                >60</backPressureApplied>
+                                        </BackPressureIncrement>
+                                    </backPressureIncrement>
+                                    <bValueEndOfSaturation>0.3</bValueEndOfSaturation>
+                                    <initialSaturation uom="%"
+                                        >68</initialSaturation>
+                                    <maximumBackPressureApplied uom="psi"
+                                        >60</maximumBackPressureApplied>
+                                    <saturationMethod>wet method</saturationMethod>
+                                </TriaxialTestSaturationStage>
+                            </saturationStage>
+                            <consolidationStage>
+                                <TriaxialTestConsolidationStage gml:id="ID295C">
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID291B">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >0</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.15</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >0</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.15</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID293B">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >1</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.25</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:consolidationIncrement>
-                                        <diggs_geo:ConsolidationIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >1</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.25</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <consolidationIncrement>
+                                        <ConsolidationIncrement xml:lang="en-US"
                                             gml:id="ID295D">
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >2</diggs_geo:elapsedTime>
-                                            <diggs_geo:volumeChange uom="cm3"
-                                                >0.35</diggs_geo:volumeChange>
-                                        </diggs_geo:ConsolidationIncrement>
-                                    </diggs_geo:consolidationIncrement>
-                                    <diggs_geo:specimenCrossSectionalAreaCalculationMethod>ASTM Method A</diggs_geo:specimenCrossSectionalAreaCalculationMethod>
-                                    <diggs_geo:effectiveStressEndofConsolidationStage uom="Pa"
-                                        >0</diggs_geo:effectiveStressEndofConsolidationStage>
-                                    <diggs_geo:t50 uom="s">0</diggs_geo:t50>
-                                    <diggs_geo:specimenHeightChangeAfterConsolidation uom="m"
-                                        >0</diggs_geo:specimenHeightChangeAfterConsolidation>
-                                    <diggs_geo:t50Method codeSpace="http:www.diggsml.org">Casagrande</diggs_geo:t50Method>
-                                </diggs_geo:TriaxialTestConsolidationStage>
-                            </diggs_geo:consolidationStage>
-                            <diggs_geo:shearStage>
-                                <diggs_geo:TriaxialTestShearStage gml:id="ID305B">
-                                    <diggs_geo:axialStrainAtFailure uom="%"
-                                        >10</diggs_geo:axialStrainAtFailure>
-                                    <diggs_geo:deviatorStressAtFailure uom="kPa"
-                                        >25</diggs_geo:deviatorStressAtFailure>
-                                    <diggs_geo:failureCriterion codeSpace="http://www.oxygenxml.com/">limiting strain</diggs_geo:failureCriterion>
-                                    <diggs_geo:modeOfFailure codeSpace="http://www.oxygenxml.com/">bulging</diggs_geo:modeOfFailure>
-                                    <diggs_geo:totalPorewaterPressureAtFailure uom="psi"
-                                        >70</diggs_geo:totalPorewaterPressureAtFailure>
-                                    <diggs_geo:porewaterPressureStartOfShearing uom="Pa"
-                                        >0</diggs_geo:porewaterPressureStartOfShearing>
-                                    <diggs_geo:rateOfAxialStrainDuringShear uom="%/hr"
-                                        >1</diggs_geo:rateOfAxialStrainDuringShear>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                            <elapsedTime uom="min"
+                                                >2</elapsedTime>
+                                            <volumeChange uom="cm3"
+                                                >0.35</volumeChange>
+                                        </ConsolidationIncrement>
+                                    </consolidationIncrement>
+                                    <specimenCrossSectionalAreaCalculationMethod>ASTM Method A</specimenCrossSectionalAreaCalculationMethod>
+                                    <effectiveStressEndofConsolidationStage uom="Pa"
+                                        >0</effectiveStressEndofConsolidationStage>
+                                    <t50 uom="s">0</t50>
+                                    <specimenHeightChangeAfterConsolidation uom="m"
+                                        >0</specimenHeightChangeAfterConsolidation>
+                                    <t50Method codeSpace="http:www.diggsml.org">Casagrande</t50Method>
+                                </TriaxialTestConsolidationStage>
+                            </consolidationStage>
+                            <shearStage>
+                                <TriaxialTestShearStage gml:id="ID305B">
+                                    <axialStrainAtFailure uom="%"
+                                        >10</axialStrainAtFailure>
+                                    <deviatorStressAtFailure uom="kPa"
+                                        >25</deviatorStressAtFailure>
+                                    <failureCriterion codeSpace="http://www.oxygenxml.com/">limiting strain</failureCriterion>
+                                    <modeOfFailure codeSpace="http://www.oxygenxml.com/">bulging</modeOfFailure>
+                                    <totalPorewaterPressureAtFailure uom="psi"
+                                        >70</totalPorewaterPressureAtFailure>
+                                    <porewaterPressureStartOfShearing uom="Pa"
+                                        >0</porewaterPressureStartOfShearing>
+                                    <rateOfAxialStrainDuringShear uom="%/hr"
+                                        >1</rateOfAxialStrainDuringShear>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID311D">
-                                            <diggs_geo:axialLoad uom="kN">10</diggs_geo:axialLoad>
-                                            <diggs_geo:axialDeflection uom="mm">0</diggs_geo:axialDeflection>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >0</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="kPa"
-                                                >40</diggs_geo:inducedPoreWaterPressure>
-                                            <diggs_geo:totalCellPressure uom="kPa"
-                                                >100</diggs_geo:totalCellPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                            <axialLoad uom="kN">10</axialLoad>
+                                            <axialDeflection uom="mm">0</axialDeflection>
+                                            <elapsedTime uom="min"
+                                                >0</elapsedTime>
+                                            <inducedPoreWaterPressure uom="kPa"
+                                                >40</inducedPoreWaterPressure>
+                                            <totalCellPressure uom="kPa"
+                                                >100</totalCellPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID313D">
-                                            <diggs_geo:deviatorStress uom="kPa"
-                                                >32</diggs_geo:deviatorStress>
-                                            <diggs_geo:axialStrain uom="%">2</diggs_geo:axialStrain>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >10</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="psi"
-                                                >40</diggs_geo:inducedPoreWaterPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:shearingIncrement>
-                                        <diggs_geo:ShearingIncrement xml:lang="en-US"
+                                            <deviatorStress uom="kPa"
+                                                >32</deviatorStress>
+                                            <axialStrain uom="%">2</axialStrain>
+                                            <elapsedTime uom="min"
+                                                >10</elapsedTime>
+                                            <inducedPoreWaterPressure uom="psi"
+                                                >40</inducedPoreWaterPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <shearingIncrement>
+                                        <ShearingIncrement xml:lang="en-US"
                                             gml:id="ID313E">
-                                            <diggs_geo:deviatorStress uom="kPa"
-                                                >60</diggs_geo:deviatorStress>
-                                            <diggs_geo:axialStrain uom="%">4</diggs_geo:axialStrain>
-                                            <diggs_geo:elapsedTime uom="min"
-                                                >20</diggs_geo:elapsedTime>
-                                            <diggs_geo:inducedPoreWaterPressure uom="psi"
-                                                >50</diggs_geo:inducedPoreWaterPressure>
-                                        </diggs_geo:ShearingIncrement>
-                                    </diggs_geo:shearingIncrement>
-                                    <diggs_geo:slopeOfAngleOfFailureSurface uom="dega"
-                                        >5</diggs_geo:slopeOfAngleOfFailureSurface>
-                                    <diggs_geo:totalCellPressureDuringShearStage uom="psi"
-                                        >250</diggs_geo:totalCellPressureDuringShearStage>
-                                    <diggs_geo:undrainedShearStrengthAtFailure uom="kPa"
-                                        >12</diggs_geo:undrainedShearStrengthAtFailure>
-                                   <diggs_geo:areaCorrectionApplied>true</diggs_geo:areaCorrectionApplied>
-                                    <diggs_geo:areaCorrectionType>Parabolic bulging</diggs_geo:areaCorrectionType>
-                                    <diggs_geo:filterCorrectionApplied>true</diggs_geo:filterCorrectionApplied>
-                                    <diggs_geo:membraneCorrectionApplied>true</diggs_geo:membraneCorrectionApplied>
-                                    <diggs_geo:pistonFrictionCorrectionApplied>false</diggs_geo:pistonFrictionCorrectionApplied>
-                                    <diggs_geo:upliftCorrectionApplied>false</diggs_geo:upliftCorrectionApplied>
-                                </diggs_geo:TriaxialTestShearStage>
-                            </diggs_geo:shearStage>
-                        </diggs_geo:TriaxialTestTrial>
-                    </diggs_geo:trial>
-                </diggs_geo:TriaxialTest>
+                                            <deviatorStress uom="kPa"
+                                                >60</deviatorStress>
+                                            <axialStrain uom="%">4</axialStrain>
+                                            <elapsedTime uom="min"
+                                                >20</elapsedTime>
+                                            <inducedPoreWaterPressure uom="psi"
+                                                >50</inducedPoreWaterPressure>
+                                        </ShearingIncrement>
+                                    </shearingIncrement>
+                                    <slopeOfAngleOfFailureSurface uom="dega"
+                                        >5</slopeOfAngleOfFailureSurface>
+                                    <totalCellPressureDuringShearStage uom="psi"
+                                        >250</totalCellPressureDuringShearStage>
+                                    <undrainedShearStrengthAtFailure uom="kPa"
+                                        >12</undrainedShearStrengthAtFailure>
+                                   <areaCorrectionApplied>true</areaCorrectionApplied>
+                                    <areaCorrectionType>Parabolic bulging</areaCorrectionType>
+                                    <filterCorrectionApplied>true</filterCorrectionApplied>
+                                    <membraneCorrectionApplied>true</membraneCorrectionApplied>
+                                    <pistonFrictionCorrectionApplied>false</pistonFrictionCorrectionApplied>
+                                    <upliftCorrectionApplied>false</upliftCorrectionApplied>
+                                </TriaxialTestShearStage>
+                            </shearStage>
+                        </TriaxialTestTrial>
+                    </trial>
+                </TriaxialTest>
             </procedure>
         </Test>
     </measurement>

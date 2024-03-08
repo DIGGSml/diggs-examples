@@ -5,7 +5,7 @@
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
     xmlns:diggs_geo="http://diggsml.org/schemas/2.6/geotechnical"
     xmlns:witsml="http://www.witsml.org/schemas/131"
-    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://raw.githubusercontent.com/DIGGSml/diggs-schema/2.6-dev/Diggs.xsd" gml:id="bcd">
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 http://diggsml.org/schemas/2.6/Diggs.xsd" gml:id="bcd">
 
     <documentInformation>
         <DocumentInformation gml:id="di">
@@ -306,7 +306,7 @@
                                 <PropertyParameters gml:id="pp1">
                                     <properties>
                                         <Property index="" gml:id="pp2">
-                                            <typeData>date time</typeData>
+                                            <typeData>dateTime</typeData>
                                             <propertyClass codeSpace="http://dictionary.xml">marsh_funnel_time</propertyClass>
                                             <uom>s</uom>
                                         </Property>
@@ -399,7 +399,7 @@
                                                 <LugeonStepDataPropertyParameters gml:id="lstslsdr1">
                                                   <properties>
                                                   <LugeonStepDataProperty index="1" gml:id="lsp11">
-                                                  <typeData>date time</typeData>
+                                                  <typeData>dateTime</typeData>
                                                   <propertyClass>elapsed_time</propertyClass>
                                                   <uom>min</uom>
                                                   </LugeonStepDataProperty>
