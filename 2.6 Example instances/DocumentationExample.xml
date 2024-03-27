@@ -1421,11 +1421,11 @@
                                         <PropertyParameters
                                             gml:id="pp_Water_Levels_Piezometer_B-001-0-20">
                                             <properties>
-                                                <Property index=""
+                                                <Property index="1"
                                                   gml:id="prop1_Water_Levels_Piezometer_B-001-0-20">
                                                   <gml:name>Depth to Water</gml:name>
                                                   <typeData>double</typeData>
-                                                  <propertyClass codeSpace="http://diggsml.org/prope/properties-diggs.xml#water_depth">Water Depthepth</propertyClass>
+                                                  <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_depth"/>
                                                   <uom>ft</uom>
                                                 </Property>
                                             </properties>

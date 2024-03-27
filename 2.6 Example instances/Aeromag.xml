@@ -108,7 +108,7 @@
                 </TestResult>
             </outcome>
             <procedure>
-                <ProcessedGeophysicalSurvey gml:id="am1">
+                <GeophysicalProcessing gml:id="am1">
                     <gml:name>Aeromag Survey</gml:name>
                     <role>
                         <Role>
@@ -154,7 +154,7 @@ The second vertical derivative of the total magnetic field was computed to enhan
                             <processStepName>Residual Magnetic Field, First and Second Vertical Derivative Grids</processStepName>
                         </ProcessingStep>
                     </processingSteps>
-                </ProcessedGeophysicalSurvey>
+                </GeophysicalProcessing>
             </procedure>
         </Test>
     </measurement>
