@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diggs xmlns="http://diggsml.org/schemas/2.6" xmlns:diggs="http://diggsml.org/schemas/2.6"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
+    xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
+    xmlns:diggs_geo="http://diggsml.org/schemas/2.6/geotechnical"
+    xmlns:witsml="http://www.witsml.org/schemas/131"
+    xsi:schemaLocation="http://diggsml.org/schemas/2.6 https://diggsml.org/schema-dev/Diggs.xsd" gml:id="bcd">
+<documentInformation>
+    <DocumentInformation gml:id="a1">
+        <creationDate>2024-05-16</creationDate>
+    </DocumentInformation>    
+</documentInformation>
+    
+    <project>
+        <Project gml:id="CT_12-OH1004">
+            <gml:name>OC 405 Widening</gml:name>
+            <gml:name codeSpace="Fugro">04.61170008</gml:name>
+        </Project>
+    </project>
+    
+    <samplingFeature>
+        <Sounding gml:id="s97">
+            <gml:name>97</gml:name>
+            <investigationTarget>Deep Foundation</investigationTarget>
+            <projectRef xlink:href="#CT_12-OH1004"/>
+            <referencePoint>
+                <PointLocation gml:id="rps97" srsName="def:crs:DIGGS:0.1:26911_8288" srsDimension="3">
+                    <gml:pos>380000 3750000 25.5</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="cls97" srsName="def:crs:DIGGS:0.1:26911_8288" srsDimension="3">
+                    <gml:posList>380000 3750000 25.5 380000 3750000 -45.75</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="lsrs79">
+                    <gml:identifier codeSpace="lsrs79">CT-lsrs79</gml:identifier>
+                    <glr:linearElement xlink:href="#cls79"/>
+                    <glr:lrm>
+                        <glr:LinearReferencingMethod gml:id="lrm-s79">
+                            <glr:name>chainage</glr:name>
+                            <glr:type>absolute</glr:type>
+                            <glr:units>ft</glr:units>
+                        </glr:LinearReferencingMethod>
+                    </glr:lrm>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <totalMeasuredDepth uom="ft">70.75</totalMeasuredDepth>
+        </Sounding>
+    </samplingFeature>
+    <samplingFeature>
+        <SteelPipePile gml:id="p97">
+            <gml:name>97</gml:name>
+            <gml:name codeSpace="Heat No.">89M2791</gml:name>
+            <gml:name codeSpace="Tag No.">B-85545-E</gml:name>
+            <investigationTarget>Deep Foundation</investigationTarget>
+            <projectRef xlink:href="#CT_12-OH1004"/>
+            <referencePoint>
+                <PointLocation gml:id="rp97" srsName="def:crs:DIGGS:0.1:26911_8288" srsDimension="3">
+                    <gml:pos>380000 3750000 36.75</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="clp97" srsName="def:crs:DIGGS:0.1:26911_8288" srsDimension="3">
+                    <gml:posList>380000 3750000 36.25 380000 3750000 -45.75</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="lsrp97">
+                    <gml:identifier codeSpace="lsr-97">CT-lsrp97</gml:identifier>
+                    <glr:linearElement xlink:href="#cl79"/>
+                    <glr:lrm xlink:href="#lrm-s79"/>
+               </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <samplingFeatureRef xlink:href="#s79"/>
+            <groundSurfaceElevation uom="ft">25.5</groundSurfaceElevation>
+            <cutoffElevation uom="ft">6.75</cutoffElevation>
+            <totalPileLength uom="ft">82</totalPileLength>
+            <lengthAboveGroundSurface uom="ft">11.25</lengthAboveGroundSurface>
+            <lengthBelowGroundSurface uom="ft">70.75</lengthBelowGroundSurface>
+            <intervalData>
+                <IntervalData>
+                    <intervalLocation>
+                        <LinearExtent gml:id="p79-int1" srsName="#lsrp97" srsDimension="1">
+                            <gml:posList>0 82</gml:posList>
+                        </LinearExtent>
+                    </intervalLocation>
+                    <widthAtTop uom="in">24</widthAtTop>
+                    <widthAtBottom uom="in">24</widthAtBottom>
+                </IntervalData>
+            </intervalData>
+            <productionPile>true</productionPile>
+            <testPile>true</testPile>
+            <nominalCapacity uom="klbf">680</nominalCapacity>
+            <finalTipElevation uom="ft">-45.25</finalTipElevation>
+            <wallThickness uom="in">0.5</wallThickness>
+            <openEnded>true</openEnded>
+            <splices>
+                <Splice>
+                    <spliceLocation>
+                        <PointLocation gml:id="sp1" srsName="#lsrp97" srsDimension="1">
+                            <gml:pos>57</gml:pos>
+                        </PointLocation>
+                    </spliceLocation>
+                </Splice>
+            </splices>  
+        </SteelPipePile>
+    </samplingFeature>
+    
+    <constructionActivity>
+        <PileDrivingActivity gml:id="pip97">
+            <investigationTarget>Deep Foundation</investigationTarget>
+            <projectRef xlink:href="#CT_12-OH1004"/>
+            <samplingFeatureRef xlink:href="#p97"/>
+            <constructionEnvironment>
+                <Environment gml:id="coe">
+                    <weather>sunny</weather>
+                </Environment>
+            </constructionEnvironment>
+            <activityDateTime>
+                <TimeInterval gml:id="act">
+                    <start>2019-10-18T12:30:00</start>
+                    <end>2019-10-18T12:55:00</end>
+                </TimeInterval>
+            </activityDateTime>
+            <totalDrivenLength uom="ft">70.75</totalDrivenLength>
+            <pileDrivingRecord>
+                <PileDrivingRecord gml:id="dr1">
+                    <pileTipLocation>
+                        <MultiPointLocation gml:id="dr1-l">
+                            <gml:posList>
+                                26
+                                27
+                                28
+                                29
+                                30
+                                70.75
+                            </gml:posList>
+                        </MultiPointLocation>
+                    </pileTipLocation>
+                    <pileDrivingRecordResults>
+                        <PileDrivingRecordResultSet>
+                            <pileDrivingRecordParameters>
+                                <PileDrivingRecordPropertyParameters gml:id="dr1p">
+                                    <properties>
+                                       <DriveRecordProperty index="1" gml:id="p1">
+                                            <typeData>integer</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#blow_count">Blow count</propertyClass>
+                                        </DriveRecordProperty>
+                                        <DriveRecordProperty index="2" gml:id="p2">
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#pen_increment">Penetration increment</propertyClass>                                            
+                                            <uom>ft</uom>
+                                        </DriveRecordProperty>
+                                        <DriveRecordProperty index="3" gml:id="p3">
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#stroke_">Stroke length</propertyClass>                                            
+                                            <uom>ft</uom>
+                                        </DriveRecordProperty>
+                                     </properties>
+                                </PileDrivingRecordPropertyParameters>
+                            </pileDrivingRecordParameters>
+                            <dataValues>
+                                11,1,7.5
+                                10,1,7.5
+                                11,1,7.5
+                                11,1,7.5
+                                12,1,7.5
+                                21,0.75,7.5
+                            </dataValues>
+                        </PileDrivingRecordResultSet>
+                    </pileDrivingRecordResults>
+                </PileDrivingRecord>
+            </pileDrivingRecord>
+        </PileDrivingActivity>
+    </constructionActivity>
+</Diggs>
