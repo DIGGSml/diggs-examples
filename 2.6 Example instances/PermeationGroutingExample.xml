@@ -1219,7 +1219,7 @@
                     </endTime>
                     <deliveryType>T.A.M.</deliveryType>
                     <injectionTerminatedBy>grout volume limit</injectionTerminatedBy>
-                    <strokeCount>543</strokeCount>
+                   <strokeCount>543</strokeCount>
                     <totalGroutTake uom="ft3">32.3</totalGroutTake>
                 </GroutStage>
             </groutStage>
