@@ -532,32 +532,32 @@
                     <hammerStartSetting>4</hammerStartSetting>
                     <hammerEndSetting>4</hammerEndSetting>
                     <effectiveLength uom="ft">78</effectiveLength>
-                    <crossSectionArea uom="in2">36.91</crossSectionArea>
+                    <crossSectionAreaAtGages uom="in2">36.91</crossSectionAreaAtGages>
                     <elasticModulus uom="kpsi">30000</elasticModulus>
-                    <specificWeight uom="lbf/ft3">492</specificWeight>
+                    <pileUnitWeight uom="klbf/ft3">492</pileUnitWeight>
                     <waveSpeed uom="ft/s">16807.9</waveSpeed>
                     <dampingConstant>0.7</dampingConstant>
-                    <distancePileTopToGauge uom="ft">4</distancePileTopToGauge>
+                    <distancePileTopToGage uom="ft">4</distancePileTopToGage>
                     <pdaInfo>
                         <PDAAccelerometer>
                             <gml:name>A3 (green)</gml:name>
                             <serialNo>K11281</serialNo>
-                            <calibrationConstant uom="ft/s">420</calibrationConstant>
+                            <calibrationConstant>420</calibrationConstant>
                         </PDAAccelerometer>
                         <PDAAccelerometer>
                             <gml:name>A4 (white)</gml:name>
                             <serialNo>K11285</serialNo>
-                            <calibrationConstant uom="ft/s">363</calibrationConstant>
+                            <calibrationConstant>363</calibrationConstant>
                         </PDAAccelerometer>
                         <PDAStrainTransducer>
                             <gml:name>F3 (green)</gml:name>
                             <serialNo>S492</serialNo>
-                            <calibrationConstant uom="klbf">142</calibrationConstant>
+                            <calibrationConstant>142</calibrationConstant>
                         </PDAStrainTransducer>
                         <PDAStrainTransducer>
                             <gml:name>F4 (white)</gml:name>
                             <serialNo>S493</serialNo>
-                            <calibrationConstant uom="klbf">143</calibrationConstant>
+                            <calibrationConstant>143</calibrationConstant>
                         </PDAStrainTransducer>
                     </pdaInfo>
                 </PDARecord>
