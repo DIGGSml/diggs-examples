@@ -289,7 +289,8 @@
                         </PileDrivingRecordResultSet>
                     </pileDrivingRecordResults>
                     <recordType>manual</recordType>
-                    <hammerCushion xlink:href="#Cushion1"/>
+                    <hammerRef xlink:href="#APE_D46-32"/>
+                    <hammerCushionRef xlink:href="#Cushion1"/>
                     <driveInterval>
                         <LinearExtent gml:id="di-97">
                             <gml:posList srsName="#lsrs97" srsDimension="1">22 70.75</gml:posList>
@@ -509,7 +510,8 @@
                             </dataValues>
                         </PDARecordResultSet>
                     </pdaRecordResults>
-                    <hammerCushion xlink:href="#cushion1"/>
+                    <hammerRef xlink:href="#APE_D46-32"/>
+                    <hammerCushionRef xlink:href="#Cushion1"/>
                     <driveInterval>
                         <LinearExtent gml:id="dipda-97">
                             <gml:posList srsName="#lsrs97" srsDimension="1">22 70.75</gml:posList>
