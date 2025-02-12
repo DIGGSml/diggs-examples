@@ -634,7 +634,7 @@
             <geophysicalMethod>seismic reflection</geophysicalMethod>
             <procedure>
                 <GP_FieldProcedure gml:id="seis-fp">
-                    <gml:description>Grid array of 21 geophones connected to Geometrics Geode Exploration eeismograph</gml:description>
+                    <gml:description>Grid array of 21 geophones connected to Geometrics Geode Exploration seismograph</gml:description>
                     <receiverEquipment>
                         <GP_Receiver gml:id="geophone-1-21">
                             <gml:description>All 21 geophones in this survey are reated as a group as all are functionally identical</gml:description>
@@ -850,7 +850,7 @@
                             <maxSourceReceiverSpacing uom="m">5</maxSourceReceiverSpacing>
                             <platformMovement>
                                 <PlatformMovement>
-                                    <samplingFeatiureRef xlink:href="#Borehole-1"/>
+                                    <samplingFeatureRef xlink:href="#Borehole-1"/>
                                     <locations>
                                         <MultiPointLocation gml:id="oyo-l" srsName="#B1-lsr-lrm"
                                             srsDimension="1">
