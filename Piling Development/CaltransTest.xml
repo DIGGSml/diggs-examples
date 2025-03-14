@@ -220,16 +220,16 @@
                                     <properties>
                                        <DriveRecordProperty index="1" gml:id="p1">
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">blow_count</propertyClass>
+                                           <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#blow_count">Blow Count</propertyClass>
                                         </DriveRecordProperty>
                                         <DriveRecordProperty index="2" gml:id="p2">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">pen_increment</propertyClass>                                            
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#pen_increment">Penetration Increment</propertyClass>                                            
                                             <uom>ft</uom>
                                         </DriveRecordProperty>
                                         <DriveRecordProperty index="3" gml:id="p3">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">stroke_length</propertyClass>                                            
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#stk_avg">Stroke Length</propertyClass>                                            
                                             <uom>ft</uom>
                                         </DriveRecordProperty>
                                      </properties>
@@ -368,80 +368,65 @@
                                     <properties>
                                         <PDARecordProperty index="1" gml:id="pda0">
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">bl_no</propertyClass>
-                                        </PDARecordProperty>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#bl_no">Blow Number</propertyClass>                                        </PDARecordProperty>
                                         <PDARecordProperty index="2" gml:id="pda1">
                                             <typeData>integer</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">blow_count</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#blow_count">Blow Count</propertyClass>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="3" gml:id="pda2">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">pen_increment</propertyClass>
-                                            <uom>ft</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#pen_increment">Penetration Increment</propertyClass>                                            <uom>ft</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="4" gml:id="pda3">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">stroke</propertyClass>
-                                        </PDARecordProperty>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#stroke">Stroke height</propertyClass>                                        </PDARecordProperty>
                                         <PDARecordProperty index="5" gml:id="pda4">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">bpm</propertyClass>
-                                            <uom>1/min</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#bpm">Blows per minute</propertyClass>                                            <uom>1/min</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="6" gml:id="pda5">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">rmx_avg</propertyClass>
-                                            <uom>klbf</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#rmx_avg">Average RMX</propertyClass>                                            <uom>klbf</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="7" gml:id="pda6">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">rmx_max</propertyClass>
-                                            <uom>klbf</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#rmx_max">Maximum RMX</propertyClass>                                            <uom>klbf</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="8" gml:id="pda7">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">rmx_min</propertyClass>
-                                            <uom>klbf</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#rmx_min">Minimum RMX</propertyClass>                                            <uom>klbf</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="9" gml:id="pda8">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">csx_avg</propertyClass>
-                                            <uom>kpsi</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#csx_avg">Average CSX</propertyClass>                                            <uom>kpsi</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="10" gml:id="pda9">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">csx_max</propertyClass>
-                                            <uom>kpsi</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#csx_max">Maximum CSX</propertyClass>                                            <uom>kpsi</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="11" gml:id="pda10">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">csx_min</propertyClass>
-                                            <uom>kpsi</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#csx_min">Minimum CSX</propertyClass>                                            <uom>kpsi</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="12" gml:id="pda11">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">tsx_avg</propertyClass>
-                                            <uom>kpsi</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#tsx_avg">Average TSX</propertyClass>                                            <uom>kpsi</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="13" gml:id="pda12">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">tsx_max</propertyClass>
-                                            <uom>kpsi</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#tsx_max">Maximum TSX</propertyClass>                                            <uom>kpsi</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="14" gml:id="pda13">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">tsx_min</propertyClass>
-                                            <uom>kpsi</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#tsx_min">Minimum TSX</propertyClass>                                            <uom>kpsi</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="15" gml:id="pda14">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">emx_avg</propertyClass>
-                                            <uom>1000 lbf.ft</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#emx_avg">Average EMX</propertyClass>                                            <uom>1000 lbf.ft</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="16" gml:id="pda15">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">emx_max</propertyClass>
-                                            <uom>1000 lbf.ft</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#emx_max">Maximum EMX</propertyClass>                                            <uom>1000 lbf.ft</uom>
                                         </PDARecordProperty>
                                         <PDARecordProperty index="17" gml:id="pda16">
                                             <typeData>double</typeData>
@@ -450,8 +435,7 @@
                                         </PDARecordProperty>
                                         <PDARecordProperty index="18" gml:id="pda17">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml">depth_flag</propertyClass>
-                                        </PDARecordProperty>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#emx_min">Minimum EMX</propertyClass>                                        </PDARecordProperty>
                                     </properties>
                                 </PDARecordPropertyParameters>
                             </pdaRecordParameters>
