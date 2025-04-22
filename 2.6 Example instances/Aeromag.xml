@@ -51,9 +51,9 @@
                                         >380300 3745100</gml:pos>
                                 </PointLocation>
                             </origin>
-                            <offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/26911">100
+                            <offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/26911" srsDimension="2">100
                                 25</offsetVector>
-                            <offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/26911">-25
+                            <offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/26911" srsDimension="2">-25
                                 100</offsetVector>
                         </RectifiedGrid>
                     </location>
