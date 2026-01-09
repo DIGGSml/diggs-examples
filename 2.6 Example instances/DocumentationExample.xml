@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Diggs xmlns="http://diggsml.org/schemas/2.6" xmlns:diggs="http://diggsml.org/schemas/2.6"
+<Diggs xml:lang="en" xmlns="http://diggsml.org/schemas/2.6" xmlns:diggs="http://diggsml.org/schemas/2.6"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
@@ -90,7 +90,7 @@
     <!-- Information for borehole 1 -->
 
     <samplingFeature>
-        <Borehole gml:id="Location_B-001-0-20">
+        <Borehole xml:lang="en" gml:id="Location_B-001-0-20">
             <gml:name>B-001-0-20</gml:name>
             <internalIdentifier codeSpace="OGC">B-001-0-20</internalIdentifier>
             <status>Final</status>
