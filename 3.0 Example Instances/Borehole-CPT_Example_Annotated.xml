@@ -6504,8 +6504,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS9E5-E93-4F81-A26-2823E">
 							<specimenRef xlink:href="#Specimen_B-01_0.00_C-1_SH____"/>
 							<shearStage>
@@ -6592,8 +6591,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS59D9-360-682-340B-25440">
 							<specimenRef xlink:href="#Specimen_B-01_33.00_C-10_SH____"/>
 							<shearStage>
@@ -6680,8 +6678,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS103D-1228-191A-5BAF-81A2">
 							<specimenRef xlink:href="#Specimen_B-01_38.00_C-11_SH____"/>
 							<shearStage>
@@ -6768,8 +6765,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS5E0A-757-221B-3CEC-38BB8">
 							<specimenRef xlink:href="#Specimen_B-01_43.00_C-12_SH____"/>
 							<shearStage>
@@ -6856,8 +6852,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGSA3BE-3EE-12FD-524E-3300D">
 							<specimenRef xlink:href="#Specimen_B-01_48.00_C-13_SH____"/>
 							<shearStage>
@@ -6944,8 +6939,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS660E-185A-289A-4458-E1A0">
 							<specimenRef xlink:href="#Specimen_B-01_53.00_C-14_SH____"/>
 							<shearStage>
@@ -7032,8 +7026,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS1CF8-18E6-3F3-920D-120F4">
 							<specimenRef xlink:href="#Specimen_B-01_63.00_C-16_SH____"/>
 							<shearStage>
@@ -7120,8 +7113,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS3584-1210-6E8-813E-6778D">
 							<specimenRef xlink:href="#Specimen_B-01_68.00_C-17_SH____"/>
 							<shearStage>
@@ -7208,8 +7200,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS3D67-1025-4500-460A-FB75">
 							<specimenRef xlink:href="#Specimen_B-01_78.00_C-19_SH____"/>
 							<shearStage>
@@ -7296,8 +7287,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS2FF4-6E6-2827-7010-FF48">
 							<specimenRef xlink:href="#Specimen_B-01_83.00_C-20_SH____"/>
 							<shearStage>
@@ -7384,8 +7374,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS9D6B-C48-96C-9932-28A4F">
 							<specimenRef xlink:href="#Specimen_B-01_93.00_C-22_SH____"/>
 							<shearStage>
@@ -7472,8 +7461,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS5D28-19-DC0-4FAB-28AD2">
 							<specimenRef xlink:href="#Specimen_B-01_98.00_C-23_SH____"/>
 							<shearStage>
@@ -7560,8 +7548,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS4FB2-6C0-6BC-3F9D-202C3">
 							<specimenRef xlink:href="#Specimen_B-01_4.00_C-3_SH____"/>
 							<shearStage>
@@ -7648,8 +7635,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS1545-A7D-758-A25E-44A18">
 							<specimenRef xlink:href="#Specimen_B-01_8.00_C-5_SH____"/>
 							<shearStage>
@@ -7736,8 +7722,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS2C6C-FC8-1CB5-EB1F-1D924">
 							<specimenRef xlink:href="#Specimen_B-01_13.00_C-6_SH____"/>
 							<shearStage>
@@ -7824,8 +7809,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS4BFF-101F-1AD5-B108-408AE">
 							<specimenRef xlink:href="#Specimen_B-01_18.00_C-7_SH____"/>
 							<shearStage>
@@ -7912,8 +7896,7 @@ MODIFIED: 2026-01-08 - Cleaned empty elements and added documentation
 							</conditionPostTest>
 						</SoilSpecimen>
 					</specimen>
-					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#">q</triaxialTestType>
-					<trial>
+					<triaxialTestType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/triaxType.xml#CD">Consolidated drained (single stage)</triaxialTestType>					<trial>
 						<TriaxialTestTrial gml:id="DGS8616-E6C-1D5F-D8C7-EC45">
 							<specimenRef xlink:href="#Specimen_B-01_23.00_C-8_SH____"/>
 							<shearStage>
