@@ -164,8 +164,8 @@
             <pileDrivingRecord>
                 <PileDrivingRecord gml:id="dr1">
                     <pileTipLocation>
-                        <MultiPointLocation gml:id="dr1-l">
-                            <gml:posList srsName="#lsrs97" srsDimension="1"> 22 23 24 25 26 27 28 29
+                        <MultiPointLocation gml:id="dr1-l" srsName="#lsrs97" srsDimension="1">
+                            <gml:posList> 22 23 24 25 26 27 28 29
                                 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52
                                 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 70.75
                             </gml:posList>
@@ -187,7 +187,7 @@
                                         </Property>
                                         <Property index="3" gml:id="p3">
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#stk_avg">Stroke Length</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#stroke">Stroke height</propertyClass>
                                             <uom>ft</uom>
                                         </Property>
                                     </properties>
@@ -250,8 +250,8 @@
                     <hammerRef xlink:href="#APE_D46-32"/>
                     <hammerCushionRef xlink:href="#Cushion1"/>
                     <driveInterval>
-                        <LinearExtent gml:id="di-97">
-                            <gml:posList srsName="#lsrs97" srsDimension="1">22 70.75</gml:posList>
+                        <LinearExtent gml:id="di-97" srsName="#lsrs97" srsDimension="1">
+                            <gml:posList>22 70.75</gml:posList>
                         </LinearExtent>
                     </driveInterval>
                     <initiationTime>2019-10-18T12:30:00</initiationTime>
@@ -263,8 +263,8 @@
             <pdaRecord>
                 <PDARecord gml:id="pdar">
                     <pileTipLocation>
-                        <MultiPointLocation gml:id="pda-1">
-                            <gml:posList srsName="#lsrs97" srsDimension="1"> 22 23 24 25 26 27 27.5
+                        <MultiPointLocation gml:id="pda-1" srsName="#lsrs97" srsDimension="1">
+                            <gml:posList> 22 23 24 25 26 27 27.5
                                 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
                                 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 70.75
                             </gml:posList>
@@ -299,6 +299,7 @@
                                             <propertyClass
                                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#stroke"
                                                 >Stroke height</propertyClass>
+                                            <uom>ft</uom>
                                         </Property>
                                         <Property index="5" gml:id="pda4">
                                             <typeData>double</typeData>
@@ -386,9 +387,7 @@
                                         </Property>
                                         <Property index="17" gml:id="pda16">
                                             <typeData>double</typeData>
-                                            <propertyClass
-                                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml"
-                                                >emx_min</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#emx_min">Minimum EMX</propertyClass>
                                             <uom>1000 lbf.ft</uom>
                                         </Property>
                                         <Property index="18" gml:id="pda17">
@@ -396,6 +395,7 @@
                                             <propertyClass
                                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/pil_properties.xml#emx_min"
                                                 >Minimum EMX</propertyClass>
+                                            <uom>1000 lbf.ft</uom>
                                         </Property>
                                     </properties>
                                 </PropertyParameters>
@@ -458,8 +458,8 @@
                     <hammerRef xlink:href="#APE_D46-32"/>
                     <hammerCushionRef xlink:href="#Cushion1"/>
                     <driveInterval>
-                        <LinearExtent gml:id="dipda-97">
-                            <gml:posList srsName="#lsrs97" srsDimension="1">22 70.75</gml:posList>
+                        <LinearExtent gml:id="dipda-97" srsName="#lsrs97" srsDimension="1">
+                            <gml:posList>22 70.75</gml:posList>
                         </LinearExtent>
                     </driveInterval>
                     <initiationTime>2019-10-18T12:36:00</initiationTime>
