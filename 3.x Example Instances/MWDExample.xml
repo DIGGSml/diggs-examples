@@ -64,8 +64,8 @@
         <BoreholeConstructionMethod gml:id="cm_bh_TEST_HOLE_1">
           <gml:name>Rotary drilling</gml:name>
           <location>
-            <LinearExtent gml:id="le_cm_bh_TEST_HOLE_1">
-              <gml:posList srsName="#lr_bh_TEST_HOLE_1" srsDimension="1">0 1.83</gml:posList>
+            <LinearExtent gml:id="le_cm_bh_TEST_HOLE_1" srsName="#lr_bh_TEST_HOLE_1" srsDimension="1">
+              <gml:posList>0 1.83</gml:posList>
             </LinearExtent>
           </location>
           <constructionEquipment>
@@ -123,55 +123,55 @@
                     <Property gml:id="prop1" index="1">
                       <propertyName>Measured Depth</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">measured_depth</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#depth">Measured Depth</propertyClass>
                       <uom>ft</uom>
                     </Property>
                     <Property gml:id="prop2" index="2">
                       <propertyName>Rate of Penetration</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">penetration_rate</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#penetration_rate">Penetration rate</propertyClass>
                       <uom>ft/min</uom>
                     </Property>
                     <Property gml:id="prop3" index="3">
                       <propertyName>New Rod Event</propertyName>
                       <typeData>boolean</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">event_new_rod</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#event_new_rod">New rod event</propertyClass>
                     </Property>
                     <Property gml:id="prop4" index="4">
                       <propertyName>Hydraulic Crowd Pressure</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">hydraulic_crowd_pressure</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_crowd_pressure">Hydraulic crowd operating pressure</propertyClass>
                       <uom>psi</uom>
                     </Property>
                     <Property gml:id="prop5" index="5">
                       <propertyName>Fluid Injection Pressure</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">fluid_injection_pressure</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_pressure">Fluid injection pressure</propertyClass>
                       <uom>psi</uom>
                       <nullValue reason="missing">9999</nullValue>
                     </Property>
                     <Property gml:id="prop6" index="6">
                       <propertyName>Hydraulic Torque Pressure</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">hydraulic_torque_pressure</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#hydraulic_torque_pressure">Hydraulic torque operating pressure</propertyClass>
                       <uom>psi</uom>
                     </Property>
                     <Property gml:id="prop7" index="7">
                       <propertyName>Holdback Pressure</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">holdback_pressure</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#holdback_pressure">Holdback pressure</propertyClass>
                       <uom>psi</uom>
                     </Property>
                     <Property gml:id="prop8" index="8">
                       <propertyName>Shaft Rotational Speed</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">rotation_shaft</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#rotation_shaft">Shaft rotational speed</propertyClass>
                       <uom>rpm</uom>
                     </Property>
                     <Property gml:id="prop9" index="9">
                       <propertyName>Fluid Injection Volume Rate</propertyName>
                       <typeData>double</typeData>
-                      <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml">fluid_injection_volume_rate</propertyClass>
+                      <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml#fluid_injection_volume_rate">Fluid injection volumetric flow rate, pumped inflow</propertyClass>
                       <uom>gal[US]/min</uom>
                     </Property>
                   </properties>
