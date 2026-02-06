@@ -33,7 +33,7 @@
             <gml:name>DIGGS-01</gml:name>
             <role>
                 <Role>
-                    <rolePerformed>Operator</rolePerformed>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#operator">Operator</rolePerformed>
                     <businessAssociate>
                         <BusinessAssociate gml:id="ct1">
                             <gml:name>MSTE</gml:name>
@@ -48,7 +48,7 @@
             </role>
             <role>
                 <Role>
-                    <rolePerformed>Operator</rolePerformed>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#operator">Operator</rolePerformed>
                     <businessAssociate>
                         <BusinessAssociate gml:id="ct2">
                             <gml:name>JKNO</gml:name>
@@ -60,14 +60,14 @@
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#p20-15001-DIGGS-01"/>
             <referencePoint>
-                <PointLocation gml:id="cpt1" srsName="urn:diggs:def:crs:DIGGS:0.1:26911_5703"
+                <PointLocation gml:id="cpt1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703"
                     srsDimension="3">
                     <gml:pos>387416.665116977 3742645.12297961 6</gml:pos>
                 </PointLocation>
             </referencePoint>
             <centerLine>
                 <LinearExtent gml:id="ls1" srsDimension="3"
-                    srsName="urn:diggs:def:crs:DIGGS:0.1:26911_5703">
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703">
                     <gml:posList>387416.665116977 3742645.12297961 6 387416.665116977
                         3742645.12297961 -29</gml:posList>
                 </LinearExtent>
@@ -113,7 +113,7 @@
                 <TestResult gml:id="mToTr1">
                     <location>
                         <MultiPointLocation srsName="#cptsr1" srsDimension="1" gml:id="mToTlMPL1">
-                            <gml:posList srsName="#cptsr1" srsDimension="1"> 0.025 0.050 0.075 0.100
+                            <gml:posList> 0.025 0.050 0.075 0.100
                                 0.125 0.150 0.175 0.200 0.225 0.250 0.275 0.300 0.325 0.350 0.375
                                 0.400 0.425 0.450 0.475 0.500 0.525 0.550 0.575 0.600 0.625 0.650
                                 0.675 0.700 0.725 0.750 0.775 0.800 0.825 0.850 0.875 0.900 0.925
@@ -272,35 +272,35 @@
                                         <Property index="1" gml:id="DIGGS-01-p1">
                                             <propertyName>qc (bar)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#tip_resistance">tip resistance</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tip_resistance">Tip Resistance</propertyClass>
                                             <uom>bar</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="2" gml:id="DIGGS-01-p2">
                                             <propertyName>qt (bar)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#tip_resistance_corrected">corrected tip resistance</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tip_resistance_corrected">Corrected Tip Resistance</propertyClass>
                                             <uom>bar</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="3" gml:id="DIGGS-01-p3">
                                             <propertyName>fs (bar)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#sleeve_friction">sleeve friction</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sleeve_friction">Sleeve Friction</propertyClass>
                                             <uom>bar</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="4" gml:id="DIGGS-01-p4">
                                             <propertyName>u (kPa)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#pore_pressure_u2">pore water pressure (u2)</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2">Pore Water Pressure (U2)</propertyClass>
                                             <uom>kPa</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="5" gml:id="DIGGS-01-p5">
                                             <propertyName>Rf (%)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#friction_ratio">friction ratio</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_ratio">Friction Ratio</propertyClass>
                                             <uom>%</uom>
                                             <reportable>true</reportable>
                                         </Property>
@@ -1754,35 +1754,36 @@
                                         <Property index="1" gml:id="ppd1-p1">
                                             <propertyName>Ueq (kPa)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#pore_pressure_equil">equilibrium pore water pressure (u0)</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_equil">Equilibrium Pore Water Pressure (U0)</propertyClass>
                                             <uom>kPa</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="2" gml:id="ppd1-p2">
                                             <propertyName>Apparent WT (m)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#water_depth_calc">calculated depth to water</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_depth">Water Depth</propertyClass>
                                             <uom>m</uom>
+                                            <measurementTechnique>calculated</measurementTechnique>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="3" gml:id="ppd1-p3">
                                             <propertyName>U50 (kPa)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#u50">u50</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#u50">U50</propertyClass>
                                             <uom>kPa</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="4" gml:id="ppd1-p4">
                                             <propertyName>t50 (s)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#t50">t50</propertyClass>
-                                            <uom>kPa</uom>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#t50">T50</propertyClass>
+                                            <uom>s</uom>
                                             <reportable>true</reportable>
                                         </Property>
-                                        <Property index="4" gml:id="ppd1-p5">
+                                        <Property index="5" gml:id="ppd1-p5">
                                             <propertyName>ch (cm2/min)</propertyName>
                                             <typeData>double</typeData>
-                                            <propertyClass codeSpace="http://diggsml.org/dictionaries/DIGGSTestPropertyDefinitions.xml#coef_consolidation_horiz">coefficient of horizontal consolidation (ch)</propertyClass>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_consolidation_horiz">Coefficient of Horizontal Consolidation (Ch)</propertyClass>
                                             <uom>cm2/min</uom>
                                             <reportable>true</reportable>
                                         </Property>
@@ -1854,7 +1855,7 @@
                                                 <Property index="1" gml:id="ppd1-pp1-p1">
                                                   <propertyName>u (kPa)</propertyName>
                                                   <typeData>double</typeData>
-                                                  <propertyClass codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/properties.xml">u2_pore_pressure</propertyClass>
+                                                    <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2">Pore Water Pressure (U2)</propertyClass>
                                                   <uom>kPa</uom>
                                                 </Property>
                                             </properties>
