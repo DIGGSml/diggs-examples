@@ -80,13 +80,7 @@
                         <LinearSpatialReferenceSystem gml:id="T1-lsr">
                             <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:T1-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#T1-cl"/>
-                            <glr:lrm>
-                                <glr:LinearReferencingMethod gml:id="T1-lsr-lrm">
-                                    <glr:name>chainage</glr:name>
-                                    <glr:type>absolute</glr:type>
-                                    <glr:units>m</glr:units>
-                                </glr:LinearReferencingMethod>
-                            </glr:lrm>
+                            <lrm xlink:href="#distance_m"/>
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>receivers</sensorMix>
@@ -114,13 +108,7 @@
                         <LinearSpatialReferenceSystem gml:id="T2-lsr">
                             <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:T2-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#T2-cl"/>
-                            <glr:lrm>
-                                <glr:LinearReferencingMethod gml:id="T2-lsr-lrm">
-                                    <glr:name>chainage</glr:name>
-                                    <glr:type>absolute</glr:type>
-                                    <glr:units>m</glr:units>
-                                </glr:LinearReferencingMethod>
-                            </glr:lrm>
+                            <lrm xlink:href="#distance_m"/>
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>receivers</sensorMix>
@@ -148,13 +136,7 @@
                         <LinearSpatialReferenceSystem gml:id="T3-lsr">
                             <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:T1-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#T3-cl"/>
-                            <glr:lrm>
-                                <glr:LinearReferencingMethod gml:id="T3-lsr-lrm">
-                                    <glr:name>chainage</glr:name>
-                                    <glr:type>absolute</glr:type>
-                                    <glr:units>m</glr:units>
-                                </glr:LinearReferencingMethod>
-                            </glr:lrm>
+                            <lrm xlink:href="#distance_m"/>
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>receivers</sensorMix>
@@ -182,13 +164,7 @@
                         <LinearSpatialReferenceSystem gml:id="SA-lsr">
                             <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:SA-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#SA-cl"/>
-                            <glr:lrm>
-                                <glr:LinearReferencingMethod gml:id="SA-lsr-lrm">
-                                    <glr:name>chainage</glr:name>
-                                    <glr:type>absolute</glr:type>
-                                    <glr:units>m</glr:units>
-                                </glr:LinearReferencingMethod>
-                            </glr:lrm>
+                            <lrm xlink:href="#distance_m"/>
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>sources</sensorMix>
@@ -197,7 +173,7 @@
             </trackline>
             <trackline>
                 <GP_Trackline gml:id="SB">
-                    <gml:name>SA</gml:name>
+                    <gml:name>SB</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
@@ -216,13 +192,7 @@
                         <LinearSpatialReferenceSystem gml:id="SB-lsr">
                             <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:SB-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#SB-cl"/>
-                            <glr:lrm>
-                                <glr:LinearReferencingMethod gml:id="SB-lsr-lrm">
-                                    <glr:name>chainage</glr:name>
-                                    <glr:type>absolute</glr:type>
-                                    <glr:units>m</glr:units>
-                                </glr:LinearReferencingMethod>
-                            </glr:lrm>
+                            <lrm xlink:href="#distance_m"/>
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>sources</sensorMix>
@@ -231,7 +201,7 @@
             </trackline>
             <trackline>
                 <GP_Trackline gml:id="SC">
-                    <gml:name>SA</gml:name>
+                    <gml:name>SC</gml:name>
                     <investigationTarget>Natural Ground</investigationTarget>
                     <projectRef xlink:href="#proj2"/>
                     <referencePoint>
@@ -250,13 +220,7 @@
                         <LinearSpatialReferenceSystem gml:id="SC-lsr">
                             <gml:identifier codeSpace="http://diggsml.org/def/authorities.xml#DIGGS">DIGGS:SC-lsr</gml:identifier>
                             <glr:linearElement xlink:href="#SC-cl"/>
-                            <glr:lrm>
-                                <glr:LinearReferencingMethod gml:id="SC-lsr-lrm">
-                                    <glr:name>chainage</glr:name>
-                                    <glr:type>absolute</glr:type>
-                                    <glr:units>m</glr:units>
-                                </glr:LinearReferencingMethod>
-                            </glr:lrm>
+                            <lrm xlink:href="#distance_m"/>
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>sources</sensorMix>
@@ -814,6 +778,7 @@
                 </GP_FieldProcedure>
             </procedure>
         </GeophysicalFieldSurvey>
+        
     </measurement>
     <measurement>
         <GeophysicalFieldSurvey gml:id="oyo">
