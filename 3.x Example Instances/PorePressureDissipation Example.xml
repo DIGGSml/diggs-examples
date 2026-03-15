@@ -80,10 +80,10 @@
                         <LinearReferencingMethod gml:id="md_m">
                             <gml:description>Absolute measured depth from top of borehole or sounding in meters. Measurements are cumulative 3D distance along the borehole/sounding centerline from the first coordinate (typically top of hole or rig datum) proceeding downward through the hole. Suitable for vertical, slanted, and deviated boreholes and soundings.</gml:description>
                             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m</gml:identifier>
-                            <diggs:name>trueMeters</diggs:name>
-                            <diggs:type>absolute</diggs:type>
-                            <diggs:units>m</diggs:units>
-                            <diggs:positiveDirection>downward</diggs:positiveDirection>
+                            <name>trueMeters</name>
+                            <type>absolute</type>
+                            <units>m</units>
+                            <positiveDirection>downward</positiveDirection>
                         </LinearReferencingMethod>
                     </lrm>
                 </LinearSpatialReferenceSystem>
@@ -270,35 +270,35 @@
                                 <PropertyParameters gml:id="mTrRsPPP1">
                                     <properties>
                                         <Property index="1" gml:id="DIGGS-01-p1">
-                                            <propertyName>qc (bar)</propertyName>
+                                            <propertyName>qc</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tip_resistance">Tip Resistance</propertyClass>
                                             <uom>bar</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="2" gml:id="DIGGS-01-p2">
-                                            <propertyName>qt (bar)</propertyName>
+                                            <propertyName>qt</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#tip_resistance_corrected">Corrected Tip Resistance</propertyClass>
                                             <uom>bar</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="3" gml:id="DIGGS-01-p3">
-                                            <propertyName>fs (bar)</propertyName>
+                                            <propertyName>fs</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sleeve_friction">Sleeve Friction</propertyClass>
                                             <uom>bar</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="4" gml:id="DIGGS-01-p4">
-                                            <propertyName>u (kPa)</propertyName>
+                                            <propertyName>u2</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2">Pore Water Pressure (U2)</propertyClass>
                                             <uom>kPa</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="5" gml:id="DIGGS-01-p5">
-                                            <propertyName>Rf (%)</propertyName>
+                                            <propertyName>Rf</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_ratio">Friction Ratio</propertyClass>
                                             <uom>%</uom>
@@ -1721,9 +1721,12 @@
                             <internalIdentifier codeSpace="conetec">571:T1500F15U500</internalIdentifier>
                         </Equipment>
                     </testProcedureEquipment>
-                    <netAreaRatioCorrection>0.8</netAreaRatioCorrection>
-                    <tipArea uom="cm2">15.0</tipArea>
-                </StaticConePenetrationTest>
+                    <penetrometerType>piezocone</penetrometerType>
+                    <distanceTipToSleeve uom="cm">15</distanceTipToSleeve>
+                    <diggs:netAreaRatioCorrection>0.8</diggs:netAreaRatioCorrection>
+                    <penetrationRate uom="cm/s">1</penetrationRate>
+                    <tipArea uom="cm2">15</tipArea>
+                    </StaticConePenetrationTest>
             </procedure>
         </Test>
     </measurement>
@@ -1752,14 +1755,14 @@
                                 <PropertyParameters gml:id="ppd1pp">
                                     <properties>
                                         <Property index="1" gml:id="ppd1-p1">
-                                            <propertyName>Ueq (kPa)</propertyName>
+                                            <propertyName>Ueq</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_equil">Equilibrium Pore Water Pressure (U0)</propertyClass>
                                             <uom>kPa</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="2" gml:id="ppd1-p2">
-                                            <propertyName>Apparent WT (m)</propertyName>
+                                            <propertyName>Apparent WT</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_depth">Water Depth</propertyClass>
                                             <uom>m</uom>
@@ -1767,21 +1770,21 @@
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="3" gml:id="ppd1-p3">
-                                            <propertyName>U50 (kPa)</propertyName>
+                                            <propertyName>u50</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#u50">U50</propertyClass>
                                             <uom>kPa</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="4" gml:id="ppd1-p4">
-                                            <propertyName>t50 (s)</propertyName>
+                                            <propertyName>t50</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#t50">T50</propertyClass>
                                             <uom>s</uom>
                                             <reportable>true</reportable>
                                         </Property>
                                         <Property index="5" gml:id="ppd1-p5">
-                                            <propertyName>ch (cm2/min)</propertyName>
+                                            <propertyName>ch</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coef_consolidation_horiz">Coefficient of Horizontal Consolidation (Ch)</propertyClass>
                                             <uom>cm2/min</uom>
@@ -1853,7 +1856,7 @@
                                         <PropertyParameters gml:id="ppd1-pp1">
                                             <properties>
                                                 <Property index="1" gml:id="ppd1-pp1-p1">
-                                                  <propertyName>u (kPa)</propertyName>
+                                                  <propertyName>u</propertyName>
                                                   <typeData>double</typeData>
                                                     <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2">Pore Water Pressure (U2)</propertyClass>
                                                   <uom>kPa</uom>

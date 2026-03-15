@@ -14,6 +14,38 @@
             <gml:name>Monitoring Project</gml:name>
         </Project>
     </project>
+    
+    <samplingFeature>
+        <Borehole gml:id="Boring_1">
+            <gml:name>Boring 1</gml:name>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#p1"/>
+            <referencePoint>
+                <PointLocation gml:id="Boring_1_rp" srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326%262=http://www.opengis.net/def/crs/EPSG/0/5702"
+                    uomLabels="dega dega ftUS" axisLabels="latitude longitude height">
+                    <gml:pos>38.01979089 -83.84532853 797.753584</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent gml:id="Boring_1_cl" srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326%262=http://www.opengis.net/def/crs/EPSG/0/5702"
+                    uomLabels="dega dega ftUS" axisLabels="latitude longitude height">
+                    <gml:posList>38.01979089 -83.84532853 0 38.01979089 -83.84532853
+                        737.753584</gml:posList>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="Boring1_lsrs">
+                    <gml:identifier codeSpace="Geosetta">Boring1_lsrs</gml:identifier>
+                    <glr:linearElement xlink:href="#Boring_1_cl"/>
+                    <lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_ft"/>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <totalMeasuredDepth uom="ft">60</totalMeasuredDepth>
+        </Borehole>
+    </samplingFeature>
+   
     <samplingFeature>
         <Well gml:id="Piezometer_PZ-B-03-23">
             <gml:name>PZ-B-03-23 Piezometer</gml:name>
@@ -23,25 +55,25 @@
                 <PointLocation gml:id="p2-PZ-B-03-23" srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326%262=http://www.opengis.net/def/crs/EPSG/0/5702"
                     uomLabels="dega dega ftUS" axisLabels="latitude longitude height">
-                    <gml:pos>38.01979089 -83.84532853 797.753584</gml:pos>
+                    <gml:pos>38.01979089 -83.84532853 799</gml:pos>
                 </PointLocation>
             </referencePoint>
             <centerLine>
                 <LinearExtent gml:id="cl-PZ-B-03-23" srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326%262=http://www.opengis.net/def/crs/EPSG/0/5702"
                     uomLabels="dega dega ftUS" axisLabels="latitude longitude height">
-                    <gml:posList>38.01979089 -83.84532853 0 38.01979089 -83.84532853
-                        -50</gml:posList>
+                    <gml:posList>38.01979089 -83.84532853 799.0 38.01979089 -83.84532853
+                        749.0</gml:posList>
                 </LinearExtent>
             </centerLine>
             <linearReferencing>
-                <LinearSpatialReferenceSystem gml:id="Boring1_lsrs_PZ-B-03-23">
+                <LinearSpatialReferenceSystem gml:id="PZ-B-03-23_lsrs">
                     <gml:identifier codeSpace="Geosetta">Boring1_lsrs_PZ-B-03-23</gml:identifier>
                     <glr:linearElement xlink:href="#cl-PZ-B-03-23"/>
                     <lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_ft"/>
                 </LinearSpatialReferenceSystem>
             </linearReferencing>
-            <samplingFeatureRef/>
+            <samplingFeatureRef xlink:href="#Boring_1"/>
             <opening>
                 <WellOpening gml:id="wo1">
                     <openInterval>
@@ -51,13 +83,101 @@
                     </openInterval>
                 </WellOpening>
             </opening>
+            <wellDepth uom="ft">50</wellDepth>
         </Well>
     </samplingFeature>
+    
+    <samplingActivity>
+        <SamplingActivity gml:id="CORE_SA_B-030_0.00_2.00_SH">
+            <gml:name>C-1</gml:name>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#p1"/>
+            <samplingFeatureRef xlink:href="#Boring_1"/>
+            <samplingLocation>
+                <LinearExtent gml:id="DGS1A9B-16C8-2BDC-B255-5345B" srsDimension="1" srsName="#lsr-B-030">
+                    <gml:posList>0.00 2.00</gml:posList>
+                </LinearExtent>
+            </samplingLocation>
+            <activityType>collect</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="SampleProduced_B-030_0.00_2.00_SH">
+                    <location>
+                        <LinearExtent gml:id="DGS774-3EE-4AA9-3546-4BA8C" srsDimension="1" srsName="#lsr-B-030">
+                            <gml:posList>0.00 2.00</gml:posList>
+                        </LinearExtent>
+                    </location>
+                </SampleProduced>
+            </sampleProduced>
+            <samplingMethod>
+                <Specification gml:id="DGS64AC-A82-2E32-76F1-647D">
+                    <gml:name>SH</gml:name>
+                </Specification>
+            </samplingMethod>
+        </SamplingActivity>
+    </samplingActivity>
+    
+    <sample>
+        <Sample gml:id="Sample_B-030_0.00_C-1_SH_">
+            <gml:name>C-1</gml:name>
+            <internalIdentifier codeSpace="OGC"/>
+            <projectRef xlink:href="#p1"/>
+            <samplingActivityRef xlink:href="#CORE_SA_B-030_0.00_2.00_SH"/>
+            <sampleProducedRef xlink:href="#SampleProduced_B-030_0.00_2.00_SH"/>
+        </Sample>
+    </sample>
+    
+    <measurement>
+        <Test gml:id="DGS1AE8-1651-2E49-DD50-62E92">
+            <gml:name/>
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#p1"/>
+            <samplingFeatureRef xlink:href="#Boring_1"/>
+            <outcome>
+                <TestResult gml:id="DGS34A2-367-41AA-80F4-42600">
+                    <location>
+                        <LinearExtent srsDimension="1" srsName="#Boring1_lsrs" gml:id="DGS40D2-1154-1B23-2F7B-570BF">
+                            <gml:posList>0.00 2.00</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters gml:id="DGS2EC5-193B-B61-85DC-4E96E">
+                                    <properties>
+                                        <Property index="1" gml:id="DGS1741-627-412B-6317-6454A">
+                                            <propertyName/>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_natural">Natural Water Content</propertyClass>
+                                            <uom>%</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues cs="," decimal="." ts=" ">21.94</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <diggs:WaterContentTest gml:id="DGS88A0-695-4189-A4B0-58B2">
+                    <specimen>
+                        <SoilSpecimen gml:id="DGS8EB7-948-17CF-834E-31AF7">
+                            <gml:description/>
+                            <gml:name>C-1</gml:name>
+                            <sampleRef xlink:href="#Sample_B-030_0.00_C-1_SH_"/>
+                        </SoilSpecimen>
+                    </specimen>
+                </diggs:WaterContentTest>
+            </procedure>
+        </Test>
+    </measurement>
+    
+    
     <measurement>
         <Monitor gml:id="Water_Levels_PZ-B-03-23">
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#p1"/>
-            <samplingFeatureRef xlink:href="#bh1"/>
+            <samplingFeatureRef xlink:href="#Piezometer_PZ-B-03-23"/>
             <monitorLocation xlink:href="#rzl"/>
             <outcome>
                 <TemporalResult gml:id="Result_Water_Levels_PZ-B-03-23">
@@ -7664,7 +7784,8 @@
                                 2024-02-09T23:00:01 2024-02-09T22:00:01 2024-02-09T21:00:01
                                 2024-02-09T20:00:01 2024-02-09T19:00:01 2024-02-09T18:00:01
                                 2024-02-09T17:00:01 2024-02-09T16:00:01 2024-02-09T15:00:01
-                                2024-02-09T14:00:01 2024-02-09T13:00:01</timePositionList>
+                                2024-02-09T14:00:01 2024-02-09T13:00:01
+                            </timePositionList>
                         </TimePositionList>
                     </timeDomain>
                     <results>
