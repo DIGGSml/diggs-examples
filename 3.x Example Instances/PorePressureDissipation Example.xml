@@ -13,7 +13,7 @@
 
     <project>
         <Project gml:id="p20-15001-DIGGS-01">
-            <gml:name>Test Site #1</gml:name>
+            <gml:name>Pore Pressure Dissipation</gml:name>
             <projectDateTimeSpan>
                 <TimeInterval gml:id="pti1">
                     <start>2019-08-16</start>
@@ -30,16 +30,101 @@
 
     <samplingFeature>
         <Sounding gml:id="DIGGS-01">
+
+            <!-- ============================================================
+             AbstractFeatureBaseType / AbstractNamedFeatureType properties
+             gml:description always precedes gml:name
+             ============================================================ -->
+            <gml:description>CPT sounding performed to characterize subsurface stratigraphy and
+            geotechnical properties for foundation design of the Highway 1 bridge replacement
+            project.</gml:description>
+            <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/features.xml#DIGGS-01</gml:identifier>
             <gml:name>DIGGS-01</gml:name>
+            <gml:name codeSpace="https://example.org/def/clientids#project">CPT-B-04</gml:name>
+
+            <diggs:internalIdentifier codeSpace="https://example.org/def/internalids#conetec">CON-2019-0814-04</diggs:internalIdentifier>
+
+            <diggs:status codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/status.xml#reviewed">reviewed</diggs:status>
+
+            <diggs:implementationStatus codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/implementationStatus.xml#final">final</diggs:implementationStatus>
+
+            <!-- associatedFile (maxOccurs unbounded) -->
+            <!-- AssociatedFileType extends AbstractNamedObjectType: gml:description?, gml:identifier?, gml:name+ -->
+            <!-- then: contact*, fileURL, fileType?, creatingApplication?, documentType?, fileDate?,  -->
+            <!--       fileStructure?, mimeType?, compression?, encryption?                           -->
+            <associatedFile>
+                <AssociatedFile gml:id="af1">
+                    <gml:description>Original field log PDF for sounding DIGGS-01</gml:description>
+                    <gml:name>CPT Field Log</gml:name>
+                    <contact xlink:href="#ct1"/>
+                    <fileURL>https://example.org/files/DIGGS-01_field_log.pdf</fileURL>
+                    <fileType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/fileTypes.xml">pdf</fileType>
+                    <documentType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/documentTypes.xml">field log</documentType>
+                    <fileDate>2019-08-16</fileDate>
+                    <mimeType>application/pdf</mimeType>
+                </AssociatedFile>
+            </associatedFile>
+            <associatedFile>
+                <AssociatedFile gml:id="af2">
+                    <gml:description>Geotechnical interpretation report including soil behavior type
+                    classification and derived parameters</gml:description>
+                    <gml:name>CPT Interpretation Report</gml:name>
+                    <fileURL>https://example.org/files/DIGGS-01_interpretation.pdf</fileURL>
+                    <fileType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/fileTypes.xml">pdf</fileType>
+                    <creatingApplication>
+                        <SoftwareApplication gml:id="sw1">
+                            <gml:name>CLiq</gml:name>
+                            <version>2.1.4</version>
+                        </SoftwareApplication>
+                    </creatingApplication>
+                    <documentType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/documentTypes.xml">interpretation report</documentType>
+                    <fileDate>2019-08-22</fileDate>
+                    <mimeType>application/pdf</mimeType>
+                </AssociatedFile>
+            </associatedFile>
+
+            <!-- role (maxOccurs unbounded) — RoleType: rolePerformed, timePerformed, remark, businessAssociate -->
             <role>
                 <Role>
                     <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#operator">Operator</rolePerformed>
+                    <timePerformed>
+                        <TimeInterval gml:id="role1t">
+                            <start>2019-08-16T09:17:00-08:00</start>
+                            <end>2019-08-16T13:42:00-08:00</end>
+                        </TimeInterval>
+                    </timePerformed>
                     <businessAssociate>
+                        <!-- BusinessAssociateType: gml:description?, gml:identifier?, gml:name+,    -->
+                        <!--   internalIdentifier?, status?, associatedFile*, remark*                 -->
+                        <!--   then: title?, address*, emailAddress*, phoneNumber*, associatedWith*   -->
                         <BusinessAssociate gml:id="ct1">
                             <gml:name>MSTE</gml:name>
+                            <title codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/titles.xml">Field Technician</title>
+                            <address>
+                                <Address gml:id="addr1">
+                                    <streetAddress>1234 Industrial Blvd</streetAddress>
+                                    <city>Richmond</city>
+                                    <state>CA</state>
+                                    <country>USA</country>
+                                    <postalCode>94804</postalCode>
+                                </Address>
+                            </address>
+                            <emailAddress type="business">mste@conetec.com</emailAddress>
+                            <phoneNumber type="mobile">1-510-555-0101</phoneNumber>
                             <associatedWith>
                                 <BusinessAssociate gml:id="conetec">
                                     <gml:name>ConeTec</gml:name>
+                                    <address>
+                                        <Address gml:id="addr_conetec">
+                                            <streetAddress>6545 Kitimat Road</streetAddress>
+                                            <city>Mississauga</city>
+                                            <province>Ontario</province>
+                                            <country>Canada</country>
+                                            <postalCode>L5N 2B8</postalCode>
+                                        </Address>
+                                    </address>
+                                    <emailAddress type="business">info@conetec.com</emailAddress>
+                                    <phoneNumber type="voice">1-905-555-0200</phoneNumber>
                                 </BusinessAssociate>
                             </associatedWith>
                         </BusinessAssociate>
@@ -49,22 +134,203 @@
             <role>
                 <Role>
                     <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#operator">Operator</rolePerformed>
+                    <timePerformed>
+                        <TimeInterval gml:id="role2t">
+                            <start>2019-08-16T09:17:00-08:00</start>
+                            <end>2019-08-16T13:42:00-08:00</end>
+                        </TimeInterval>
+                    </timePerformed>
                     <businessAssociate>
                         <BusinessAssociate gml:id="ct2">
                             <gml:name>JKNO</gml:name>
+                            <emailAddress type="business">jkno@conetec.com</emailAddress>
+                            <phoneNumber type="mobile">510-555-0102</phoneNumber>
                             <associatedWith xlink:href="#conetec"/>
                         </BusinessAssociate>
                     </businessAssociate>
                 </Role>
             </role>
+            <role>
+                <Role>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#client">Client</rolePerformed>
+                    <businessAssociate>
+                        <BusinessAssociate gml:id="ba_client">
+                            <gml:description>California state agency responsible for highway design
+                            and construction.</gml:description>
+                            <gml:name>California Department of Transportation</gml:name>
+                            <gml:name codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/abbrev.xml">Caltrans</gml:name>
+                            <address>
+                                <Address gml:id="addr_caltrans">
+                                    <number>1120</number>
+                                    <streetAddress>N Street</streetAddress>
+                                    <city>Sacramento</city>
+                                    <state>CA</state>
+                                    <country>USA</country>
+                                    <postalCode>95814</postalCode>
+                                </Address>
+                            </address>
+                        </BusinessAssociate>
+                    </businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#geotechnicalEngineer">Geotechnical Engineer of Record</rolePerformed>
+                    <remark>
+                        <Remark>
+                            <content>Engineer of Record supervised all field operations and reviewed
+                            final CPT data prior to release.</content>
+                            <remarkDateTime>2019-08-20</remarkDateTime>
+                        </Remark>
+                    </remark>
+                    <businessAssociate>
+                        <BusinessAssociate gml:id="ba_ger">
+                            <gml:name>Terracon Consultants, Inc.</gml:name>
+                            <emailAddress type="business">geotech@terracon.com</emailAddress>
+                        </BusinessAssociate>
+                    </businessAssociate>
+                </Role>
+            </role>
+
+            <!-- remark (maxOccurs unbounded) — RemarkType: content, author, remarkDateTime -->
+            <remark>
+                <Remark>
+                    <content>Sounding encountered refusal on a cobble layer at 33.4 m depth; advanced
+                    through with pre-drill for final 1.6 m to reach target depth.</content>
+                    <author xlink:href="#ct1"/>
+                    <remarkDateTime>2019-08-16T14:30:00-08:00</remarkDateTime>
+                </Remark>
+            </remark>
+            <remark>
+                <Remark>
+                    <content>Water encountered at 4.2 m below ground surface during
+                    sounding.</content>
+                    <author xlink:href="#ct2"/>
+                    <remarkDateTime>2019-08-16T10:05:00-08:00</remarkDateTime>
+                </Remark>
+            </remark>
+
+            <!-- ============================================================
+             AbstractSamplingFeatureType properties
+             ============================================================ -->
+
+            <!-- investigationTarget (maxOccurs unbounded) -->
             <investigationTarget>Natural Ground</investigationTarget>
+
+            <!-- projectRef (minOccurs 1, maxOccurs unbounded) -->
             <projectRef xlink:href="#p20-15001-DIGGS-01"/>
+
+            <!-- originalProjectRef (minOccurs 0, maxOccurs 1) -->
+            <originalProjectRef xlink:href="#p19-14892-DIGGS-01"/>
+
+            <!-- associatedProjectRef (minOccurs 0, maxOccurs unbounded) -->
+            <associatedProjectRef xlink:href="#p20-15002-DIGGS-01"/>
+            <associatedProjectRef xlink:href="#p20-15003-DIGGS-01"/>
+
+            <!-- programRef (minOccurs 0, maxOccurs 1) -->
+            <programRef xlink:href="#prog-caltrans-2019-sf-bay"/>
+
+            <!-- environment (maxOccurs unbounded) — EnvironmentType fields used directly -->
+            <environment>
+                <Environment gml:id="env1">
+                    <gml:name>Conditions at Start of Sounding</gml:name>
+                    <dateTime>2019-08-16T09:00:00-08:00</dateTime>
+                    <ambientTemperature uom="degC">18.5</ambientTemperature>
+                    <barometricPressure uom="kPa">1013.2</barometricPressure>
+                    <humidity uom="%">62</humidity>
+                    <weather>Clear, sunny</weather>
+                    <windSpeed uom="m/s">2.1</windSpeed>
+                </Environment>
+            </environment>
+            <environment>
+                <Environment gml:id="env2">
+                    <gml:name>Conditions at Completion of Sounding</gml:name>
+                    <dateTime>2019-08-16T13:45:00-08:00</dateTime>
+                    <ambientTemperature uom="degC">22.0</ambientTemperature>
+                    <weather>Partly cloudy</weather>
+                    <windSpeed uom="m/s">3.5</windSpeed>
+                    <otherEnvironmentalProperty>
+                        <Parameter gml:id="env2p1">
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cloudCover">Cloud Cover</parameterName>
+                            <parameterValue>40</parameterValue>
+                            <parameterUnits>%</parameterUnits>
+                        </Parameter>
+                    </otherEnvironmentalProperty>
+                </Environment>
+            </environment>
+
+            <!-- otherSamplingFeatureProperty (maxOccurs unbounded) — ParameterType fields -->
+            <otherSamplingFeatureProperty>
+                <Parameter gml:id="osfp1">
+                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coneDiameter">Cone Diameter</parameterName>
+                    <parameterValue>35.68</parameterValue>
+                    <parameterUnits>mm</parameterUnits>
+                </Parameter>
+            </otherSamplingFeatureProperty>
+            <otherSamplingFeatureProperty>
+                <Parameter gml:id="osfp2">
+                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#areaRatio">Cone Net Area Ratio (a_n)</parameterName>
+                    <parameterValue>0.80</parameterValue>
+                </Parameter>
+            </otherSamplingFeatureProperty>
+            <otherSamplingFeatureProperty>
+                <Parameter gml:id="osfp3">
+                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pushRate">CPT Push Rate</parameterName>
+                    <parameterValue>2.0</parameterValue>
+                    <parameterUnits>cm/s</parameterUnits>
+                </Parameter>
+            </otherSamplingFeatureProperty>
+
+            <!-- locality (minOccurs 0, maxOccurs 1) — LocalityType fields -->
+            <locality>
+                <Locality gml:id="loc1">
+                    <address>
+                        <Address gml:id="addr_site">
+                            <streetAddress>Highway 1 at Miller Creek Road</streetAddress>
+                            <city>San Rafael</city>
+                            <state>CA</state>
+                            <county>Marin</county>
+                            <country>USA</country>
+                            <postalCode>94903</postalCode>
+                        </Address>
+                    </address>
+                    <quadrangle>San Quentin 7.5-minute USGS Quadrangle</quadrangle>
+                    <route>State Route 1</route>
+                    <station uom="ft">185420</station>
+                    <offset uom="ft">12.5</offset>
+                    <offsetDirection>right</offsetDirection>
+                    <otherLocalityProperty>
+                        <Parameter gml:id="locp1">
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#siteName">Site Name</parameterName>
+                            <parameterValue>Highway 1 Bridge Replacement Site</parameterValue>
+                        </Parameter>
+                    </otherLocalityProperty>
+                </Locality>
+            </locality>
+
+            <!-- referencePoint (minOccurs 1) -->
             <referencePoint>
-                <PointLocation gml:id="cpt1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703"
+                <PointLocation gml:id="cpt1"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703"
                     srsDimension="3">
                     <gml:pos>387416.665116977 3742645.12297961 6</gml:pos>
                 </PointLocation>
             </referencePoint>
+
+            <!-- localCoordinates (minOccurs 0, maxOccurs 1) — LocalCoordinateType: easting/northing/elevation (choice) -->
+            <localCoordinates>
+                <LocalCoordinate>
+                    <diggs:easting uom="m">142.35</diggs:easting>
+                    <diggs:northing uom="m">78.12</diggs:northing>
+                    <diggs:elevation uom="m">6.00</diggs:elevation>
+                </LocalCoordinate>
+            </localCoordinates>
+
+            <!-- ============================================================
+             AbstractLinearSamplingFeatureType properties
+             ============================================================ -->
+
+            <!-- centerLine (minOccurs 1, maxOccurs unbounded) -->
             <centerLine>
                 <LinearExtent gml:id="ls1" srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703">
@@ -72,13 +338,17 @@
                         3742645.12297961 -29</gml:posList>
                 </LinearExtent>
             </centerLine>
+
+            <!-- linearReferencing (minOccurs 0, maxOccurs unbounded) -->
             <linearReferencing>
                 <LinearSpatialReferenceSystem gml:id="cptsr1">
                     <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">cptsr1</gml:identifier>
                     <glr:linearElement xlink:href="#ls1"/>
                     <lrm>
                         <LinearReferencingMethod gml:id="md_m">
-                            <gml:description>Absolute measured depth from top of borehole or sounding in meters. Measurements are cumulative 3D distance along the borehole/sounding centerline from the first coordinate (typically top of hole or rig datum) proceeding downward through the hole. Suitable for vertical, slanted, and deviated boreholes and soundings.</gml:description>
+                            <gml:description>Absolute measured depth from top of sounding in meters.
+                            Cumulative 3D distance along centerline from first coordinate,
+                            proceeding downward.</gml:description>
                             <gml:identifier codeSpace="https://diggsml.org/def/authorities.xml#DIGGS">https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m</gml:identifier>
                             <name>trueMeters</name>
                             <type>absolute</type>
@@ -88,12 +358,248 @@
                     </lrm>
                 </LinearSpatialReferenceSystem>
             </linearReferencing>
+
+            <!-- plunge (minOccurs 0) — near-vertical with slight inclination -->
+            <plunge uom="dega">-88.5</plunge>
+
+            <!-- bearing (minOccurs 0) — direction of plunge, clockwise from north -->
+            <bearing uom="dega">195.0</bearing>
+
+            <!-- ============================================================
+             SoundingType-specific properties
+             ============================================================ -->
+
+            <!-- whenConstructed (minOccurs 0, maxOccurs 1) -->
             <whenConstructed>
                 <TimeInterval gml:id="fwc1">
                     <start>2019-08-16T09:17:00-08:00</start>
+                    <end>2019-08-16T13:42:00-08:00</end>
                 </TimeInterval>
             </whenConstructed>
+
+            <!-- totalMeasuredDepth (minOccurs 0) -->
             <totalMeasuredDepth uom="m">35</totalMeasuredDepth>
+
+            <!-- soundingPurpose (minOccurs 0, maxOccurs 1) -->
+            <soundingPurpose codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/soundingPurpose.xml#CPT">CPT</soundingPurpose>
+
+            <!-- backfill (minOccurs 0, maxOccurs 1) -->
+            <backfill>
+                <Backfill gml:id="bf1">
+                    <gml:description>Tremie-grouted with neat cement from bottom to surface after
+                    completion of sounding.</gml:description>
+                    <gml:name>Neat Cement Grout Backfill</gml:name>
+                    <diggs:backfillDateTime>
+                        <TimeInterval gml:id="bft1">
+                            <start>2019-08-16T14:00:00-08:00</start>
+                            <end>2019-08-16T14:45:00-08:00</end>
+                        </TimeInterval>
+                    </diggs:backfillDateTime>
+
+                    <backfillLayer>
+                        <BackfillLayer gml:id="oin">
+                            <diggs:backfillInterval>
+                                <LinearExtent gml:id="bfls1" srsDimension="1"
+                                    srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                                    <gml:posList>0 35</gml:posList>
+                                </LinearExtent>
+                            </diggs:backfillInterval>
+                            <diggs:backfillMaterial codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/backfillMaterial.xml#cementGrout">cement grout</diggs:backfillMaterial>
+                        </BackfillLayer>
+                    </backfillLayer>
+                </Backfill>
+            </backfill>
+
+            <!-- casing (minOccurs 0, maxOccurs unbounded) -->
+            <casing>
+                <Casing gml:id="cas1">
+                    <gml:description>Steel drive casing installed through surficial fill to competent
+                    native ground prior to CPT advance.</gml:description>
+                    <gml:name>Surface Casing</gml:name>
+                    <casingLocation>
+                        <LinearExtent gml:id="casls1" srsDimension="1"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                            <gml:posList>0 3.0</gml:posList>
+                        </LinearExtent>
+                    </casingLocation>
+                    <diggs:casingOutsideDiameter uom="mm">73.0</diggs:casingOutsideDiameter>
+                    <diggs:casingInsideDiameter uom="mm">66.0</diggs:casingInsideDiameter>
+                    <diggs:casingMaterial codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/casingMaterial.xml#steel">steel</diggs:casingMaterial>
+                </Casing>
+            </casing>
+            <casing>
+                <Casing gml:id="cas2">
+                    <gml:description>Temporary casing installed through cobble layer encountered at
+                    33.0 to 33.4 m depth.</gml:description>
+                    <gml:name>Intermediate Casing at Cobble Zone</gml:name>
+                    <diggs:casingLocation>
+                        <LinearExtent gml:id="casls2" srsDimension="1"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                            <gml:posList>33.0 33.4</gml:posList>
+                        </LinearExtent>
+                    </diggs:casingLocation>
+                    <diggs:casingOutsideDiameter uom="mm">57.0</diggs:casingOutsideDiameter>
+                    <diggs:casingInsideDiameter uom="mm">50.0</diggs:casingInsideDiameter>
+                    <diggs:casingMaterial codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/casingMaterial.xml#steel">steel</diggs:casingMaterial>
+                </Casing>
+            </casing>
+
+            <!-- constructionMethod (minOccurs 0, maxOccurs unbounded) -->
+            <constructionMethod>
+                <SoundingConstructionMethod gml:id="scm1">
+                    <gml:description>Standard CPT push per ASTM D5778 at 2 cm/s constant rate, 0 to
+                    33.0 m depth.</gml:description>
+                    <gml:name>Standard CPT Advance</gml:name>
+                    <diggs:location>
+                        <LinearExtent gml:id="scmls1" srsDimension="1"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                            <gml:posList>0 33.0</gml:posList>
+                        </LinearExtent>
+                    </diggs:location>
+                    <methodTime>
+                        <TimeInterval gml:id="scmt1">
+                            <start>2019-08-16T09:17:00-08:00</start>
+                            <end>2019-08-16T12:30:00-08:00</end>
+                        </TimeInterval>
+                    </methodTime>
+                    <constructionMethod>
+                        <Specification gml:id="spec1">
+                            <gml:description>Continuous electric CPT push at 2 cm/s per ASTM
+                            D5778</gml:description>
+                            <gml:name>ASTM D5778 Electric CPT</gml:name>
+                            <diggs:standardReferenceNumber>ASTM
+                                D5778-20</diggs:standardReferenceNumber>
+                        </Specification>
+                    </constructionMethod>
+                    <constructionEquipment>
+                        <DrillRig gml:id="rig1">
+                            <gml:description>20-tonne track-mounted CPT rig</gml:description>
+                            <gml:name>ConeTec Track Rig CT-05</gml:name>
+                            <diggs:class
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentType.xml#CPTRig"
+                                >CPT Rig</diggs:class>
+                        </DrillRig>
+                    </constructionEquipment>
+                </SoundingConstructionMethod>
+            </constructionMethod>
+            <constructionMethod>
+                <SoundingConstructionMethod gml:id="scm2">
+                    <gml:description>Rotary pre-drill used to advance through cobble obstruction;
+                    CPT resumed below at 33.4 m.</gml:description>
+                    <gml:name>Pre-drill Through Cobble Layer</gml:name>
+                    <diggs:location>
+                        <LinearExtent gml:id="scmls2" srsDimension="1"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                            <gml:posList>33.0 33.4</gml:posList>
+                        </LinearExtent>
+                    </diggs:location>
+                    <methodTime>
+                        <TimeInterval gml:id="scmt2">
+                            <start>2019-08-16T12:30:00-08:00</start>
+                            <end>2019-08-16T13:10:00-08:00</end>
+                        </TimeInterval>
+                    </methodTime>
+                    <constructionMethod>
+                        <Specification gml:id="spec2">
+                            <gml:name>Rotary Wash Pre-Drill</gml:name>
+                            <diggs:shortMethodName>preDrill</diggs:shortMethodName>
+                        </Specification>
+                    </constructionMethod>
+                </SoundingConstructionMethod>
+            </constructionMethod>
+
+            <!-- constructionEvent (minOccurs 0, maxOccurs unbounded) — SoundingEventType -->
+            <!-- Inherits from AbstractEventType: location?, time?, infoRecorded*            -->
+            <!-- Adds: casingBottom?, soundingBottom?                                        -->
+            <constructionEvent>
+                <SoundingEvent gml:id="se1">
+                    <gml:name>Start of Sounding</gml:name>
+                    <time>
+                        <TimeInterval gml:id="set1">
+                            <start>2019-08-16T09:17:00-08:00</start>
+                        </TimeInterval>
+                    </time>
+                    <soundingBottom>
+                        <PointLocation gml:id="se1bot"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1"
+                            srsDimension="1">
+                            <gml:pos>0.00</gml:pos>
+                        </PointLocation>
+                    </soundingBottom>
+                </SoundingEvent>
+            </constructionEvent>
+            <constructionEvent>
+                <SoundingEvent gml:id="se2">
+                    <gml:description>Free water observed entering the annulus at 4.2 m
+                    depth.</gml:description>
+                    <gml:name>Groundwater Encountered</gml:name>
+                    <diggs:location>
+                        <LinearExtent gml:id="se2ls" srsDimension="1"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                            <gml:posList>4.2 4.2</gml:posList>
+                        </LinearExtent>
+                    </diggs:location>
+                    <time>
+                        <TimeInterval gml:id="set2">
+                            <start>2019-08-16T10:05:00-08:00</start>
+                        </TimeInterval>
+                    </time>
+                    <infoRecorded>
+                        <Parameter gml:id="se2ir1">
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#depthToWater">Depth to Water</parameterName>
+                            <parameterValue>4.2</parameterValue>
+                            <parameterUnits>m</parameterUnits>
+                        </Parameter>
+                    </infoRecorded>
+                    <soundingBottom>
+                        <PointLocation gml:id="se2bot"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1"
+                            srsDimension="1">
+                            <gml:pos>4.20</gml:pos>
+                        </PointLocation>
+                    </soundingBottom>
+                </SoundingEvent>
+            </constructionEvent>
+            <constructionEvent>
+                <SoundingEvent gml:id="se3">
+                    <gml:description>CPT probe encountered cobble refusal. Casing driven through
+                    obstruction; CPT advanced to target depth thereafter.</gml:description>
+                    <gml:name>Cobble Refusal and Casing Set</gml:name>
+                    <diggs:location>
+                        <LinearExtent gml:id="se3ls" srsDimension="1"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1">
+                            <gml:posList>33.0 33.4</gml:posList>
+                        </LinearExtent>
+                    </diggs:location>
+                    <time>
+                        <TimeInterval gml:id="set3">
+                            <start>2019-08-16T12:25:00-08:00</start>
+                            <end>2019-08-16T13:15:00-08:00</end>
+                        </TimeInterval>
+                    </time>
+                    <infoRecorded>
+                        <Parameter gml:id="se3ir1">
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#obstructionType">Obstruction Type</parameterName>
+                            <parameterValue>Cobble</parameterValue>
+                        </Parameter>
+                    </infoRecorded>
+                    <casingBottom>
+                        <PointLocation gml:id="se3casbot"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1"
+                            srsDimension="1">
+                            <gml:pos>33.40</gml:pos>
+                        </PointLocation>
+                    </casingBottom>
+                    <soundingBottom>
+                        <PointLocation gml:id="se3sndbot"
+                            srsName="https://diggsml.org/def/crs/DIGGS/0.1/lrs.xml#cptsr1"
+                            srsDimension="1">
+                            <gml:pos>33.40</gml:pos>
+                        </PointLocation>
+                    </soundingBottom>
+                </SoundingEvent>
+            </constructionEvent>
+
         </Sounding>
     </samplingFeature>
 
@@ -113,155 +619,154 @@
                 <TestResult gml:id="mToTr1">
                     <location>
                         <MultiPointLocation srsName="#cptsr1" srsDimension="1" gml:id="mToTlMPL1">
-                            <gml:posList> 0.025 0.050 0.075 0.100
-                                0.125 0.150 0.175 0.200 0.225 0.250 0.275 0.300 0.325 0.350 0.375
-                                0.400 0.425 0.450 0.475 0.500 0.525 0.550 0.575 0.600 0.625 0.650
-                                0.675 0.700 0.725 0.750 0.775 0.800 0.825 0.850 0.875 0.900 0.925
-                                0.950 0.975 1.000 1.025 1.050 1.075 1.100 1.125 1.150 1.175 1.200
-                                1.225 1.250 1.275 1.300 1.325 1.350 1.375 1.400 1.425 1.450 1.475
-                                1.500 1.525 1.550 1.575 1.600 1.625 1.650 1.675 1.700 1.725 1.750
-                                1.775 1.800 1.825 1.850 1.875 1.900 1.925 1.950 1.975 2.000 2.025
-                                2.050 2.075 2.100 2.125 2.150 2.175 2.200 2.225 2.250 2.275 2.300
-                                2.325 2.350 2.375 2.400 2.425 2.450 2.475 2.500 2.525 2.550 2.575
-                                2.600 2.625 2.650 2.675 2.700 2.725 2.750 2.775 2.800 2.825 2.850
-                                2.875 2.900 2.925 2.950 2.975 3.000 3.025 3.050 3.075 3.100 3.125
-                                3.150 3.175 3.200 3.225 3.250 3.275 3.300 3.325 3.350 3.375 3.400
-                                3.425 3.450 3.475 3.500 3.525 3.550 3.575 3.600 3.625 3.650 3.675
-                                3.700 3.725 3.750 3.775 3.800 3.825 3.850 3.875 3.900 3.925 3.950
-                                3.975 4.000 4.025 4.050 4.075 4.100 4.125 4.150 4.175 4.200 4.225
-                                4.250 4.275 4.300 4.325 4.350 4.375 4.400 4.425 4.450 4.475 4.500
-                                4.525 4.550 4.575 4.600 4.625 4.650 4.675 4.700 4.725 4.750 4.775
-                                4.800 4.825 4.850 4.875 4.900 4.925 4.950 4.975 5.000 5.025 5.050
-                                5.075 5.100 5.125 5.150 5.175 5.200 5.225 5.250 5.275 5.300 5.325
-                                5.350 5.375 5.400 5.425 5.450 5.475 5.500 5.525 5.550 5.575 5.600
-                                5.625 5.650 5.675 5.700 5.725 5.750 5.775 5.800 5.825 5.850 5.875
-                                5.900 5.925 5.950 5.975 6.000 6.025 6.050 6.075 6.100 6.125 6.150
-                                6.175 6.200 6.225 6.250 6.275 6.300 6.325 6.350 6.375 6.400 6.425
-                                6.450 6.475 6.500 6.525 6.550 6.575 6.600 6.625 6.650 6.675 6.700
-                                6.725 6.750 6.775 6.800 6.825 6.850 6.875 6.900 6.925 6.950 6.975
-                                7.000 7.025 7.050 7.075 7.100 7.125 7.150 7.175 7.200 7.225 7.250
-                                7.275 7.300 7.325 7.350 7.375 7.400 7.425 7.450 7.475 7.500 7.525
-                                7.550 7.575 7.600 7.625 7.650 7.675 7.700 7.725 7.750 7.775 7.800
-                                7.825 7.850 7.875 7.900 7.925 7.950 7.975 8.000 8.025 8.050 8.075
-                                8.100 8.125 8.150 8.175 8.200 8.225 8.250 8.275 8.300 8.325 8.350
-                                8.375 8.400 8.425 8.450 8.475 8.500 8.525 8.550 8.575 8.600 8.625
-                                8.650 8.675 8.700 8.725 8.750 8.775 8.800 8.825 8.850 8.875 8.900
-                                8.925 8.950 8.975 9.000 9.025 9.050 9.075 9.100 9.125 9.150 9.175
-                                9.200 9.225 9.250 9.275 9.300 9.325 9.350 9.375 9.400 9.425 9.450
-                                9.475 9.500 9.525 9.550 9.575 9.600 9.625 9.650 9.675 9.700 9.725
-                                9.750 9.775 9.800 9.825 9.850 9.875 9.900 9.925 9.950 9.975 10.000
-                                10.025 10.050 10.075 10.100 10.125 10.150 10.175 10.200 10.225
-                                10.250 10.275 10.300 10.325 10.350 10.375 10.400 10.425 10.450
-                                10.475 10.500 10.525 10.550 10.575 10.600 10.625 10.650 10.675
-                                10.700 10.725 10.750 10.775 10.800 10.825 10.850 10.875 10.900
-                                10.925 10.950 10.975 11.000 11.025 11.050 11.075 11.100 11.125
-                                11.150 11.175 11.200 11.225 11.250 11.275 11.300 11.325 11.350
-                                11.375 11.400 11.425 11.450 11.475 11.500 11.525 11.550 11.575
-                                11.600 11.625 11.650 11.675 11.700 11.725 11.750 11.775 11.800
-                                11.825 11.850 11.875 11.900 11.925 11.950 11.975 12.000 12.025
-                                12.050 12.075 12.100 12.125 12.150 12.175 12.200 12.225 12.250
-                                12.275 12.300 12.325 12.350 12.375 12.400 12.425 12.450 12.475
-                                12.500 12.525 12.550 12.575 12.600 12.625 12.650 12.675 12.700
-                                12.725 12.750 12.775 12.800 12.825 12.850 12.875 12.900 12.925
-                                12.950 12.975 13.000 13.025 13.050 13.075 13.100 13.125 13.150
-                                13.175 13.200 13.225 13.250 13.275 13.300 13.325 13.350 13.375
-                                13.400 13.425 13.450 13.475 13.500 13.525 13.550 13.575 13.600
-                                13.625 13.650 13.675 13.700 13.725 13.750 13.775 13.800 13.825
-                                13.850 13.875 13.900 13.925 13.950 13.975 14.000 14.025 14.050
-                                14.075 14.100 14.125 14.150 14.175 14.200 14.225 14.250 14.275
-                                14.300 14.325 14.350 14.375 14.400 14.425 14.450 14.475 14.500
-                                14.525 14.550 14.575 14.600 14.625 14.650 14.675 14.700 14.725
-                                14.750 14.775 14.800 14.825 14.850 14.875 14.900 14.925 14.950
-                                14.975 15.000 15.025 15.050 15.075 15.100 15.125 15.150 15.175
-                                15.200 15.225 15.250 15.275 15.300 15.325 15.350 15.375 15.400
-                                15.425 15.450 15.475 15.500 15.525 15.550 15.575 15.600 15.625
-                                15.650 15.675 15.700 15.725 15.750 15.775 15.800 15.825 15.850
-                                15.875 15.900 15.925 15.950 15.975 16.000 16.025 16.050 16.075
-                                16.100 16.125 16.150 16.175 16.200 16.225 16.250 16.275 16.300
-                                16.325 16.350 16.375 16.400 16.425 16.450 16.475 16.500 16.525
-                                16.550 16.575 16.600 16.625 16.650 16.675 16.700 16.725 16.750
-                                16.775 16.800 16.825 16.850 16.875 16.900 16.925 16.950 16.975
-                                17.000 17.025 17.050 17.075 17.100 17.125 17.150 17.175 17.200
-                                17.225 17.250 17.275 17.300 17.325 17.350 17.375 17.400 17.425
-                                17.450 17.475 17.500 17.525 17.550 17.575 17.600 17.625 17.650
-                                17.675 17.700 17.725 17.750 17.775 17.800 17.825 17.850 17.875
-                                17.900 17.925 17.950 17.975 18.000 18.025 18.050 18.075 18.100
-                                18.125 18.150 18.175 18.200 18.225 18.250 18.275 18.300 18.325
-                                18.350 18.375 18.400 18.425 18.450 18.475 18.500 18.525 18.550
-                                18.575 18.600 18.625 18.650 18.675 18.700 18.725 18.750 18.775
-                                18.800 18.825 18.850 18.875 18.900 18.925 18.950 18.975 19.000
-                                19.025 19.050 19.075 19.100 19.125 19.150 19.175 19.200 19.225
-                                19.250 19.275 19.300 19.325 19.350 19.375 19.400 19.425 19.450
-                                19.475 19.500 19.525 19.550 19.575 19.600 19.625 19.650 19.675
-                                19.700 19.725 19.750 19.775 19.800 19.825 19.850 19.875 19.900
-                                19.925 19.950 19.975 20.000 20.025 20.050 20.075 20.100 20.125
-                                20.150 20.175 20.200 20.225 20.250 20.275 20.300 20.325 20.350
-                                20.375 20.400 20.425 20.450 20.475 20.500 20.525 20.550 20.575
-                                20.600 20.625 20.650 20.675 20.700 20.725 20.750 20.775 20.800
-                                20.825 20.850 20.875 20.900 20.925 20.950 20.975 21.000 21.025
-                                21.050 21.075 21.100 21.125 21.150 21.175 21.200 21.225 21.250
-                                21.275 21.300 21.325 21.350 21.375 21.400 21.425 21.450 21.475
-                                21.500 21.525 21.550 21.575 21.600 21.625 21.650 21.675 21.700
-                                21.725 21.750 21.775 21.800 21.825 21.850 21.875 21.900 21.925
-                                21.950 21.975 22.000 22.025 22.050 22.075 22.100 22.125 22.150
-                                22.175 22.200 22.225 22.250 22.275 22.300 22.325 22.350 22.375
-                                22.400 22.425 22.450 22.475 22.500 22.525 22.550 22.575 22.600
-                                22.625 22.650 22.675 22.700 22.725 22.750 22.775 22.800 22.825
-                                22.850 22.875 22.900 22.925 22.950 22.975 23.000 23.025 23.050
-                                23.075 23.100 23.125 23.150 23.175 23.200 23.225 23.250 23.275
-                                23.300 23.325 23.350 23.375 23.400 23.425 23.450 23.475 23.500
-                                23.525 23.550 23.575 23.600 23.625 23.650 23.675 23.700 23.725
-                                23.750 23.775 23.800 23.825 23.850 23.875 23.900 23.925 23.950
-                                23.975 24.000 24.025 24.050 24.075 24.100 24.125 24.150 24.175
-                                24.200 24.225 24.250 24.275 24.300 24.325 24.350 24.375 24.400
-                                24.425 24.450 24.475 24.500 24.525 24.550 24.575 24.600 24.625
-                                24.650 24.675 24.700 24.725 24.750 24.775 24.800 24.825 24.850
-                                24.875 24.900 24.925 24.950 24.975 25.000 25.025 25.050 25.075
-                                25.100 25.125 25.150 25.175 25.200 25.225 25.250 25.275 25.300
-                                25.325 25.350 25.375 25.400 25.425 25.450 25.475 25.500 25.525
-                                25.550 25.575 25.600 25.625 25.650 25.675 25.700 25.725 25.750
-                                25.775 25.800 25.825 25.850 25.875 25.900 25.925 25.950 25.975
-                                26.000 26.025 26.050 26.075 26.100 26.125 26.150 26.175 26.200
-                                26.225 26.250 26.275 26.300 26.325 26.350 26.375 26.400 26.425
-                                26.450 26.475 26.500 26.525 26.550 26.575 26.600 26.625 26.650
-                                26.675 26.700 26.725 26.750 26.775 26.800 26.825 26.850 26.875
-                                26.900 26.925 26.950 26.975 27.000 27.025 27.050 27.075 27.100
-                                27.125 27.150 27.175 27.200 27.225 27.250 27.275 27.300 27.325
-                                27.350 27.375 27.400 27.425 27.450 27.475 27.500 27.525 27.550
-                                27.575 27.600 27.625 27.650 27.675 27.700 27.725 27.750 27.775
-                                27.800 27.825 27.850 27.875 27.900 27.925 27.950 27.975 28.000
-                                28.025 28.050 28.075 28.100 28.125 28.150 28.175 28.200 28.225
-                                28.250 28.275 28.300 28.325 28.350 28.375 28.400 28.425 28.450
-                                28.475 28.500 28.525 28.550 28.575 28.600 28.625 28.650 28.675
-                                28.700 28.725 28.750 28.775 28.800 28.825 28.850 28.875 28.900
-                                28.925 28.950 28.975 29.000 29.025 29.050 29.075 29.100 29.125
-                                29.150 29.175 29.200 29.225 29.250 29.275 29.300 29.325 29.350
-                                29.375 29.400 29.425 29.450 29.475 29.500 29.525 29.550 29.575
-                                29.600 29.625 29.650 29.675 29.700 29.725 29.750 29.775 29.800
-                                29.825 29.850 29.875 29.900 29.925 29.950 29.975 30.000 30.025
-                                30.050 30.075 30.100 30.125 30.150 30.175 30.200 30.225 30.250
-                                30.275 30.300 30.325 30.350 30.375 30.400 30.425 30.450 30.475
-                                30.500 30.525 30.550 30.575 30.600 30.625 30.650 30.675 30.700
-                                30.725 30.750 30.775 30.800 30.825 30.850 30.875 30.900 30.925
-                                30.950 30.975 31.000 31.025 31.050 31.075 31.100 31.125 31.150
-                                31.175 31.200 31.225 31.250 31.275 31.300 31.325 31.350 31.375
-                                31.400 31.425 31.450 31.475 31.500 31.525 31.550 31.575 31.600
-                                31.625 31.650 31.675 31.700 31.725 31.750 31.775 31.800 31.825
-                                31.850 31.875 31.900 31.925 31.950 31.975 32.000 32.025 32.050
-                                32.075 32.100 32.125 32.150 32.175 32.200 32.225 32.250 32.275
-                                32.300 32.325 32.350 32.375 32.400 32.425 32.450 32.475 32.500
-                                32.525 32.550 32.575 32.600 32.625 32.650 32.675 32.700 32.725
-                                32.750 32.775 32.800 32.825 32.850 32.875 32.900 32.925 32.950
-                                32.975 33.000 33.025 33.050 33.075 33.100 33.125 33.150 33.175
-                                33.200 33.225 33.250 33.275 33.300 33.325 33.350 33.375 33.400
-                                33.425 33.450 33.475 33.500 33.525 33.550 33.575 33.600 33.625
-                                33.650 33.675 33.700 33.725 33.750 33.775 33.800 33.825 33.850
-                                33.875 33.900 33.925 33.950 33.975 34.000 34.025 34.050 34.075
-                                34.100 34.125 34.150 34.175 34.200 34.225 34.250 34.275 34.300
-                                34.325 34.350 34.375 34.400 34.425 34.450 34.475 34.500 34.525
-                                34.550 34.575 34.600 34.625 34.650 34.675 34.700 34.725 34.750
-                                34.775 34.800 34.825 34.850 34.875 34.900 34.925 34.950 34.975
-                                35.000 </gml:posList>
+                            <gml:posList> 0.025 0.050 0.075 0.100 0.125 0.150 0.175 0.200 0.225
+                                0.250 0.275 0.300 0.325 0.350 0.375 0.400 0.425 0.450 0.475 0.500
+                                0.525 0.550 0.575 0.600 0.625 0.650 0.675 0.700 0.725 0.750 0.775
+                                0.800 0.825 0.850 0.875 0.900 0.925 0.950 0.975 1.000 1.025 1.050
+                                1.075 1.100 1.125 1.150 1.175 1.200 1.225 1.250 1.275 1.300 1.325
+                                1.350 1.375 1.400 1.425 1.450 1.475 1.500 1.525 1.550 1.575 1.600
+                                1.625 1.650 1.675 1.700 1.725 1.750 1.775 1.800 1.825 1.850 1.875
+                                1.900 1.925 1.950 1.975 2.000 2.025 2.050 2.075 2.100 2.125 2.150
+                                2.175 2.200 2.225 2.250 2.275 2.300 2.325 2.350 2.375 2.400 2.425
+                                2.450 2.475 2.500 2.525 2.550 2.575 2.600 2.625 2.650 2.675 2.700
+                                2.725 2.750 2.775 2.800 2.825 2.850 2.875 2.900 2.925 2.950 2.975
+                                3.000 3.025 3.050 3.075 3.100 3.125 3.150 3.175 3.200 3.225 3.250
+                                3.275 3.300 3.325 3.350 3.375 3.400 3.425 3.450 3.475 3.500 3.525
+                                3.550 3.575 3.600 3.625 3.650 3.675 3.700 3.725 3.750 3.775 3.800
+                                3.825 3.850 3.875 3.900 3.925 3.950 3.975 4.000 4.025 4.050 4.075
+                                4.100 4.125 4.150 4.175 4.200 4.225 4.250 4.275 4.300 4.325 4.350
+                                4.375 4.400 4.425 4.450 4.475 4.500 4.525 4.550 4.575 4.600 4.625
+                                4.650 4.675 4.700 4.725 4.750 4.775 4.800 4.825 4.850 4.875 4.900
+                                4.925 4.950 4.975 5.000 5.025 5.050 5.075 5.100 5.125 5.150 5.175
+                                5.200 5.225 5.250 5.275 5.300 5.325 5.350 5.375 5.400 5.425 5.450
+                                5.475 5.500 5.525 5.550 5.575 5.600 5.625 5.650 5.675 5.700 5.725
+                                5.750 5.775 5.800 5.825 5.850 5.875 5.900 5.925 5.950 5.975 6.000
+                                6.025 6.050 6.075 6.100 6.125 6.150 6.175 6.200 6.225 6.250 6.275
+                                6.300 6.325 6.350 6.375 6.400 6.425 6.450 6.475 6.500 6.525 6.550
+                                6.575 6.600 6.625 6.650 6.675 6.700 6.725 6.750 6.775 6.800 6.825
+                                6.850 6.875 6.900 6.925 6.950 6.975 7.000 7.025 7.050 7.075 7.100
+                                7.125 7.150 7.175 7.200 7.225 7.250 7.275 7.300 7.325 7.350 7.375
+                                7.400 7.425 7.450 7.475 7.500 7.525 7.550 7.575 7.600 7.625 7.650
+                                7.675 7.700 7.725 7.750 7.775 7.800 7.825 7.850 7.875 7.900 7.925
+                                7.950 7.975 8.000 8.025 8.050 8.075 8.100 8.125 8.150 8.175 8.200
+                                8.225 8.250 8.275 8.300 8.325 8.350 8.375 8.400 8.425 8.450 8.475
+                                8.500 8.525 8.550 8.575 8.600 8.625 8.650 8.675 8.700 8.725 8.750
+                                8.775 8.800 8.825 8.850 8.875 8.900 8.925 8.950 8.975 9.000 9.025
+                                9.050 9.075 9.100 9.125 9.150 9.175 9.200 9.225 9.250 9.275 9.300
+                                9.325 9.350 9.375 9.400 9.425 9.450 9.475 9.500 9.525 9.550 9.575
+                                9.600 9.625 9.650 9.675 9.700 9.725 9.750 9.775 9.800 9.825 9.850
+                                9.875 9.900 9.925 9.950 9.975 10.000 10.025 10.050 10.075 10.100
+                                10.125 10.150 10.175 10.200 10.225 10.250 10.275 10.300 10.325
+                                10.350 10.375 10.400 10.425 10.450 10.475 10.500 10.525 10.550
+                                10.575 10.600 10.625 10.650 10.675 10.700 10.725 10.750 10.775
+                                10.800 10.825 10.850 10.875 10.900 10.925 10.950 10.975 11.000
+                                11.025 11.050 11.075 11.100 11.125 11.150 11.175 11.200 11.225
+                                11.250 11.275 11.300 11.325 11.350 11.375 11.400 11.425 11.450
+                                11.475 11.500 11.525 11.550 11.575 11.600 11.625 11.650 11.675
+                                11.700 11.725 11.750 11.775 11.800 11.825 11.850 11.875 11.900
+                                11.925 11.950 11.975 12.000 12.025 12.050 12.075 12.100 12.125
+                                12.150 12.175 12.200 12.225 12.250 12.275 12.300 12.325 12.350
+                                12.375 12.400 12.425 12.450 12.475 12.500 12.525 12.550 12.575
+                                12.600 12.625 12.650 12.675 12.700 12.725 12.750 12.775 12.800
+                                12.825 12.850 12.875 12.900 12.925 12.950 12.975 13.000 13.025
+                                13.050 13.075 13.100 13.125 13.150 13.175 13.200 13.225 13.250
+                                13.275 13.300 13.325 13.350 13.375 13.400 13.425 13.450 13.475
+                                13.500 13.525 13.550 13.575 13.600 13.625 13.650 13.675 13.700
+                                13.725 13.750 13.775 13.800 13.825 13.850 13.875 13.900 13.925
+                                13.950 13.975 14.000 14.025 14.050 14.075 14.100 14.125 14.150
+                                14.175 14.200 14.225 14.250 14.275 14.300 14.325 14.350 14.375
+                                14.400 14.425 14.450 14.475 14.500 14.525 14.550 14.575 14.600
+                                14.625 14.650 14.675 14.700 14.725 14.750 14.775 14.800 14.825
+                                14.850 14.875 14.900 14.925 14.950 14.975 15.000 15.025 15.050
+                                15.075 15.100 15.125 15.150 15.175 15.200 15.225 15.250 15.275
+                                15.300 15.325 15.350 15.375 15.400 15.425 15.450 15.475 15.500
+                                15.525 15.550 15.575 15.600 15.625 15.650 15.675 15.700 15.725
+                                15.750 15.775 15.800 15.825 15.850 15.875 15.900 15.925 15.950
+                                15.975 16.000 16.025 16.050 16.075 16.100 16.125 16.150 16.175
+                                16.200 16.225 16.250 16.275 16.300 16.325 16.350 16.375 16.400
+                                16.425 16.450 16.475 16.500 16.525 16.550 16.575 16.600 16.625
+                                16.650 16.675 16.700 16.725 16.750 16.775 16.800 16.825 16.850
+                                16.875 16.900 16.925 16.950 16.975 17.000 17.025 17.050 17.075
+                                17.100 17.125 17.150 17.175 17.200 17.225 17.250 17.275 17.300
+                                17.325 17.350 17.375 17.400 17.425 17.450 17.475 17.500 17.525
+                                17.550 17.575 17.600 17.625 17.650 17.675 17.700 17.725 17.750
+                                17.775 17.800 17.825 17.850 17.875 17.900 17.925 17.950 17.975
+                                18.000 18.025 18.050 18.075 18.100 18.125 18.150 18.175 18.200
+                                18.225 18.250 18.275 18.300 18.325 18.350 18.375 18.400 18.425
+                                18.450 18.475 18.500 18.525 18.550 18.575 18.600 18.625 18.650
+                                18.675 18.700 18.725 18.750 18.775 18.800 18.825 18.850 18.875
+                                18.900 18.925 18.950 18.975 19.000 19.025 19.050 19.075 19.100
+                                19.125 19.150 19.175 19.200 19.225 19.250 19.275 19.300 19.325
+                                19.350 19.375 19.400 19.425 19.450 19.475 19.500 19.525 19.550
+                                19.575 19.600 19.625 19.650 19.675 19.700 19.725 19.750 19.775
+                                19.800 19.825 19.850 19.875 19.900 19.925 19.950 19.975 20.000
+                                20.025 20.050 20.075 20.100 20.125 20.150 20.175 20.200 20.225
+                                20.250 20.275 20.300 20.325 20.350 20.375 20.400 20.425 20.450
+                                20.475 20.500 20.525 20.550 20.575 20.600 20.625 20.650 20.675
+                                20.700 20.725 20.750 20.775 20.800 20.825 20.850 20.875 20.900
+                                20.925 20.950 20.975 21.000 21.025 21.050 21.075 21.100 21.125
+                                21.150 21.175 21.200 21.225 21.250 21.275 21.300 21.325 21.350
+                                21.375 21.400 21.425 21.450 21.475 21.500 21.525 21.550 21.575
+                                21.600 21.625 21.650 21.675 21.700 21.725 21.750 21.775 21.800
+                                21.825 21.850 21.875 21.900 21.925 21.950 21.975 22.000 22.025
+                                22.050 22.075 22.100 22.125 22.150 22.175 22.200 22.225 22.250
+                                22.275 22.300 22.325 22.350 22.375 22.400 22.425 22.450 22.475
+                                22.500 22.525 22.550 22.575 22.600 22.625 22.650 22.675 22.700
+                                22.725 22.750 22.775 22.800 22.825 22.850 22.875 22.900 22.925
+                                22.950 22.975 23.000 23.025 23.050 23.075 23.100 23.125 23.150
+                                23.175 23.200 23.225 23.250 23.275 23.300 23.325 23.350 23.375
+                                23.400 23.425 23.450 23.475 23.500 23.525 23.550 23.575 23.600
+                                23.625 23.650 23.675 23.700 23.725 23.750 23.775 23.800 23.825
+                                23.850 23.875 23.900 23.925 23.950 23.975 24.000 24.025 24.050
+                                24.075 24.100 24.125 24.150 24.175 24.200 24.225 24.250 24.275
+                                24.300 24.325 24.350 24.375 24.400 24.425 24.450 24.475 24.500
+                                24.525 24.550 24.575 24.600 24.625 24.650 24.675 24.700 24.725
+                                24.750 24.775 24.800 24.825 24.850 24.875 24.900 24.925 24.950
+                                24.975 25.000 25.025 25.050 25.075 25.100 25.125 25.150 25.175
+                                25.200 25.225 25.250 25.275 25.300 25.325 25.350 25.375 25.400
+                                25.425 25.450 25.475 25.500 25.525 25.550 25.575 25.600 25.625
+                                25.650 25.675 25.700 25.725 25.750 25.775 25.800 25.825 25.850
+                                25.875 25.900 25.925 25.950 25.975 26.000 26.025 26.050 26.075
+                                26.100 26.125 26.150 26.175 26.200 26.225 26.250 26.275 26.300
+                                26.325 26.350 26.375 26.400 26.425 26.450 26.475 26.500 26.525
+                                26.550 26.575 26.600 26.625 26.650 26.675 26.700 26.725 26.750
+                                26.775 26.800 26.825 26.850 26.875 26.900 26.925 26.950 26.975
+                                27.000 27.025 27.050 27.075 27.100 27.125 27.150 27.175 27.200
+                                27.225 27.250 27.275 27.300 27.325 27.350 27.375 27.400 27.425
+                                27.450 27.475 27.500 27.525 27.550 27.575 27.600 27.625 27.650
+                                27.675 27.700 27.725 27.750 27.775 27.800 27.825 27.850 27.875
+                                27.900 27.925 27.950 27.975 28.000 28.025 28.050 28.075 28.100
+                                28.125 28.150 28.175 28.200 28.225 28.250 28.275 28.300 28.325
+                                28.350 28.375 28.400 28.425 28.450 28.475 28.500 28.525 28.550
+                                28.575 28.600 28.625 28.650 28.675 28.700 28.725 28.750 28.775
+                                28.800 28.825 28.850 28.875 28.900 28.925 28.950 28.975 29.000
+                                29.025 29.050 29.075 29.100 29.125 29.150 29.175 29.200 29.225
+                                29.250 29.275 29.300 29.325 29.350 29.375 29.400 29.425 29.450
+                                29.475 29.500 29.525 29.550 29.575 29.600 29.625 29.650 29.675
+                                29.700 29.725 29.750 29.775 29.800 29.825 29.850 29.875 29.900
+                                29.925 29.950 29.975 30.000 30.025 30.050 30.075 30.100 30.125
+                                30.150 30.175 30.200 30.225 30.250 30.275 30.300 30.325 30.350
+                                30.375 30.400 30.425 30.450 30.475 30.500 30.525 30.550 30.575
+                                30.600 30.625 30.650 30.675 30.700 30.725 30.750 30.775 30.800
+                                30.825 30.850 30.875 30.900 30.925 30.950 30.975 31.000 31.025
+                                31.050 31.075 31.100 31.125 31.150 31.175 31.200 31.225 31.250
+                                31.275 31.300 31.325 31.350 31.375 31.400 31.425 31.450 31.475
+                                31.500 31.525 31.550 31.575 31.600 31.625 31.650 31.675 31.700
+                                31.725 31.750 31.775 31.800 31.825 31.850 31.875 31.900 31.925
+                                31.950 31.975 32.000 32.025 32.050 32.075 32.100 32.125 32.150
+                                32.175 32.200 32.225 32.250 32.275 32.300 32.325 32.350 32.375
+                                32.400 32.425 32.450 32.475 32.500 32.525 32.550 32.575 32.600
+                                32.625 32.650 32.675 32.700 32.725 32.750 32.775 32.800 32.825
+                                32.850 32.875 32.900 32.925 32.950 32.975 33.000 33.025 33.050
+                                33.075 33.100 33.125 33.150 33.175 33.200 33.225 33.250 33.275
+                                33.300 33.325 33.350 33.375 33.400 33.425 33.450 33.475 33.500
+                                33.525 33.550 33.575 33.600 33.625 33.650 33.675 33.700 33.725
+                                33.750 33.775 33.800 33.825 33.850 33.875 33.900 33.925 33.950
+                                33.975 34.000 34.025 34.050 34.075 34.100 34.125 34.150 34.175
+                                34.200 34.225 34.250 34.275 34.300 34.325 34.350 34.375 34.400
+                                34.425 34.450 34.475 34.500 34.525 34.550 34.575 34.600 34.625
+                                34.650 34.675 34.700 34.725 34.750 34.775 34.800 34.825 34.850
+                                34.875 34.900 34.925 34.950 34.975 35.000 </gml:posList>
                         </MultiPointLocation>
                     </location>
                     <results>
@@ -1726,7 +2231,7 @@
                     <diggs:netAreaRatioCorrection>0.8</diggs:netAreaRatioCorrection>
                     <penetrationRate uom="cm/s">1</penetrationRate>
                     <tipArea uom="cm2">15</tipArea>
-                    </StaticConePenetrationTest>
+                </StaticConePenetrationTest>
             </procedure>
         </Test>
     </measurement>
@@ -1858,7 +2363,7 @@
                                                 <Property index="1" gml:id="ppd1-pp1-p1">
                                                   <propertyName>u</propertyName>
                                                   <typeData>double</typeData>
-                                                    <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2">Pore Water Pressure (U2)</propertyClass>
+                                                  <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pore_pressure_u2">Pore Water Pressure (U2)</propertyClass>
                                                   <uom>kPa</uom>
                                                 </Property>
                                             </properties>

@@ -170,9 +170,7 @@
                 </diggs:WaterContentTest>
             </procedure>
         </Test>
-    </measurement>
-    
-    
+    </measurement> 
     <measurement>
         <Monitor gml:id="Water_Levels_PZ-B-03-23">
             <investigationTarget>Natural Ground</investigationTarget>
@@ -7846,4 +7844,5 @@
             </procedure>
         </Monitor>
     </measurement>
+
 </Diggs>

@@ -10,12 +10,29 @@
             <creationDate>2023-10-01</creationDate>
         </DocumentInformation>
     </documentInformation>
-
+<samplingFeature>
+    <Station gml:id="Station_ims_xtn_r3c">
+        <gml:name>Location 1</gml:name>
+        <projectRef xlink:href="#proj1"/>
+        <referencePoint>
+            <PointLocation  srsDimension="3"
+                srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703">
+                <gml:pos>380150 3750700 23.13</gml:pos>
+            </PointLocation>
+        </referencePoint>
+        <whenOccupied>
+            <TimeInterval gml:idd="sti">
+                <start>2021-05-23</start>
+            </TimeInterval>
+        </whenOccupied>
+        <type>Sampling station</type>
+    </Station>
+</samplingFeature>
     <samplingFeature>
         <GP_Trackline gml:id="Trackline-1">
             <gml:name>Trackline 1</gml:name>
             <investigationTarget>Natural Ground</investigationTarget>
-            <projectRef xlink:href="#proj1"/>
+            <projectRef xlink:href="#proj2"/>
             <referencePoint>
                 <PointLocation gml:id="Trackline1-rp" srsDimension="2"
                     srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
@@ -52,7 +69,7 @@
         <GP_MultiTrack gml:id="Multitrack">
             <gml:name>3DSurvey Tracks</gml:name>
             <investigationTarget>Natural Ground</investigationTarget>
-            <projectRef xlink:href="#proj2"/>
+            <projectRef xlink:href="#proj1"/>
             <referencePoint>
                 <PointLocation gml:id="Multitrack-rp" srsDimension="2"
                     srsName="http://www.opengis.net/def/crs/EPSG/0/26911">
@@ -84,6 +101,11 @@
                         </LinearSpatialReferenceSystem>
                     </linearReferencing>
                     <sensorMix>receivers</sensorMix>
+                    <whenTracklineOccupied>
+                        <TimeInterval gml:id="wt1">
+                            <start>2022-04-22</start>
+                        </TimeInterval>
+                    </whenTracklineOccupied>
                     <totalTracklineLength uom="m">180</totalTracklineLength>
                 </GP_Trackline>
             </trackline>
@@ -777,8 +799,7 @@
                     </configurations>
                 </GP_FieldProcedure>
             </procedure>
-        </GeophysicalFieldSurvey>
-        
+        </GeophysicalFieldSurvey>       
     </measurement>
     <measurement>
         <GeophysicalFieldSurvey gml:id="oyo">

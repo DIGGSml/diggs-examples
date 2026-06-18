@@ -22,12 +22,37 @@
         </Project>
     </project>
 
+    <samplingFeature>
+        <GP_ArealSurvey gml:id="GP_ArealSurvey_bbg_yyp_r3c">
+            <gml:name>Aeromag Survey Area</gml:name>
+            <projectRef xlink:href="#Burnt"/>
+            <referencePoint xlink:href="#opl"/>
+            <featureExtent>
+                <PlanarSurface gml:id="ps1" srsName="http://www.opengis.net/def/crs/EPSG/0/26911" srsDimension="2">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                380200 3745000
+                                381200 3745000
+                                381200 3746000
+                                380200 3746000
+                                380200 3745000
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </PlanarSurface>
+            </featureExtent>
+            <sensorMix>receivers</sensorMix>
+            <totalSurveyArea uom="km2">1</totalSurveyArea>
+        </GP_ArealSurvey>
+    </samplingFeature>, wh
 
     <measurement>
         <Test gml:id="amt">
             <gml:name>Aeormagnetic Survey Results</gml:name>
             <investigationTarget>Natural Ground</investigationTarget>
             <projectRef xlink:href="#Burnt"/>
+            <samplingFeatureRef xlink:href="#GP_ArealSurvey_bbg_yyp_r3c"/>
             <resultTime>
                 <TimeInterval gml:id="ti1">
                     <start>2008-03-13</start>
@@ -46,9 +71,8 @@
                             </limits>
                             <axisLabels>easting northing</axisLabels>
                             <origin>
-                                <PointLocation gml:id="opl">
-                                    <gml:pos srsName="http://www.opengis.net/def/crs/EPSG/0/26911"
-                                        >380300 3745100</gml:pos>
+                                <PointLocation gml:id="opl"  srsName="http://www.opengis.net/def/crs/EPSG/0/26911" srsDimension="2">
+                                    <gml:pos>380300 3745100</gml:pos>
                                 </PointLocation>
                             </origin>
                             <offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/26911" srsDimension="2">100

@@ -12,6 +12,7 @@
 
     <project>
         <Project gml:id="CT_12-OH1004">
+            <gml:name>Pile Driving Example</gml:name>
             <gml:name>OC 405 Widening</gml:name>
             <gml:name codeSpace="Fugro">04.61170008</gml:name>
         </Project>
