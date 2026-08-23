@@ -80,12 +80,27 @@
                 </LinearSpatialReferenceSystem>
             </linearReferencing>
             <samplingFeatureRef xlink:href="#s97"/>
-            <groundSurfaceElevation uom="ft">25.5</groundSurfaceElevation>
-            <cutoffElevation uom="ft">6.75</cutoffElevation>
+            <groundSurfaceElevation>
+                <PointLocation gml:id="pl-p97-groundSurfaceElevation" srsName="http://www.opengis.net/def/crs/EPSG/0/6360"
+                    srsDimension="1" axisLabels="height" uomLabels="ft">
+                    <gml:pos>25.5</gml:pos>
+                </PointLocation>
+            </groundSurfaceElevation>
+            <cutoffElevation>
+                <PointLocation gml:id="pl-p97-cutoffElevation" srsName="http://www.opengis.net/def/crs/EPSG/0/6360"
+                    srsDimension="1" axisLabels="height" uomLabels="ft">
+                    <gml:pos>6.75</gml:pos>
+                </PointLocation>
+            </cutoffElevation>
             <totalPileLength uom="ft">82</totalPileLength>
             <lengthAboveGroundSurface uom="ft">11.25</lengthAboveGroundSurface>
             <lengthBelowGroundSurface uom="ft">70.75</lengthBelowGroundSurface>
-            <finalTipElevation uom="ft">-45.25</finalTipElevation>
+            <finalTipElevation>
+                <PointLocation gml:id="pl-p97-finalTipElevation" srsName="http://www.opengis.net/def/crs/EPSG/0/6360"
+                    srsDimension="1" axisLabels="height" uomLabels="ft">
+                    <gml:pos>-45.25</gml:pos>
+                </PointLocation>
+            </finalTipElevation>
             <taperInterval>
                 <Taper>
                     <intervalLocation>
