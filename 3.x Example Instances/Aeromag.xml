@@ -45,7 +45,7 @@
             <sensorMix>receivers</sensorMix>
             <totalSurveyArea uom="km2">1</totalSurveyArea>
         </GP_ArealSurvey>
-    </samplingFeature>, wh
+    </samplingFeature>
 
     <measurement>
         <Test gml:id="amt">

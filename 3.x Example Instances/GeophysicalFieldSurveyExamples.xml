@@ -21,7 +21,7 @@
             </PointLocation>
         </referencePoint>
         <whenOccupied>
-            <TimeInterval gml:idd="sti">
+            <TimeInterval gml:id="sti">
                 <start>2021-05-23</start>
             </TimeInterval>
         </whenOccupied>
