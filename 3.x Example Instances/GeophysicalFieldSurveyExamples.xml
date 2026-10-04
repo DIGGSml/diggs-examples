@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:g3.3="http://www.opengis.net/gml/3.3/ce"
     xmlns:glr="http://www.opengis.net/gml/3.3/lr" xmlns:glrov="http://www.opengis.net/gml/3.3/lrov"
-    xsi:schemaLocation="http://diggsml.org/schemas/3 http://diggsml.org/schemas/3.0.0/Diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd"
     gml:id="bcd">
     <documentInformation>
         <DocumentInformation gml:id="bcd-di">
