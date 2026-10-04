@@ -15,7 +15,7 @@
         <gml:name>Location 1</gml:name>
         <projectRef xlink:href="#proj1"/>
         <referencePoint>
-            <PointLocation  srsDimension="3"
+            <PointLocation gml:id="rp-Station_ims_xtn_ric" srsDimension="3"
                 srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/26911%262=http://www.opengis.net/def/crs/EPSG/0/5703">
                 <gml:pos>380150 3750700 23.13</gml:pos>
             </PointLocation>
