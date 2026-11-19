@@ -2,6 +2,7 @@
 *.xpr
 *.DS_Store
 *.zip
+!SaudiTestCase.xml.zip
 LICENSE
 *.xlsx
 workingInstances/
