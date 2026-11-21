@@ -2721,11 +2721,10 @@
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#DRC-NG-942"/>
-                    <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-201-proc">
+                            <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
@@ -2743,11 +2742,10 @@
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1-brt" gridIndex="14 21"/>
-                    <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-202-proc">
+                            <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
@@ -2765,11 +2763,10 @@
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#DRC-G2" gridIndex="10 3"/>
-                    <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-203-proc">
+                            <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
@@ -2787,11 +2784,10 @@
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1" gridIndex="5 24"/>
-                    <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-204-proc">
+                            <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
@@ -2809,14 +2805,12 @@
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-ZLT"/>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#zone_load_test">Zone load test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#riltpd-brt"/>
                     <plannedProcedure>
                         <ZoneLoadTest gml:id="dm-ZLT-201-proc">
                             <maxTestStress uom="kPa">225</maxTestStress>
                         </ZoneLoadTest>
                     </plannedProcedure>
-                    <testLoadPercentDesignLoad uom="%">150</testLoadPercentDesignLoad>
                 </DesignMeasurement>
             </design>
             <design>
@@ -2833,19 +2827,6 @@
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PIT"/>
-                    <plannedEquipment>
-                        <Equipment gml:id="eq-PIT-hammer">
-                            <gml:name>Hand-held hammer, one pound, with integral cushion</gml:name>
-                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#low_strain_impact_hammer">Low-Strain Impact Hammer</class>
-                        </Equipment>
-                    </plannedEquipment>
-                    <plannedEquipment>
-                        <Equipment gml:id="eq-PIT-accelerometer">
-                            <gml:name>Accelerometer fixed to the pile head with wax, PIT Collector</gml:name>
-                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#accelerometer">accelerometer</class>
-                        </Equipment>
-                    </plannedEquipment>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#low_strain_integrity_test">Low strain integrity test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1"/>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1-at"/>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1-bif"/>
@@ -2867,6 +2848,18 @@
                     </measurementLocation>
                     <plannedProcedure>
                         <LowStrainIntegrityTest gml:id="dm-PIT-proc">
+                            <testProcedureEquipment>
+                                <Equipment gml:id="eq-PIT-hammer">
+                                    <gml:name>Hand-held hammer, one pound, with integral cushion</gml:name>
+                                    <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#low_strain_impact_hammer">Low-Strain Impact Hammer</class>
+                                </Equipment>
+                            </testProcedureEquipment>
+                            <testProcedureEquipment>
+                                <Equipment gml:id="eq-PIT-accelerometer">
+                                    <gml:name>Accelerometer fixed to the pile head with wax, PIT Collector</gml:name>
+                                    <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#accelerometer">accelerometer</class>
+                                </Equipment>
+                            </testProcedureEquipment>
                             <testMethod>pulse echo</testMethod>
                             <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                             <headPreparation>cut and ground</headPreparation>
@@ -3435,7 +3428,7 @@
                     </remark>
                     <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">RI column</appliesToFeatureType>
                     <appliesToMeasurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</appliesToMeasurementKind>
-                    <measurementMethod xlink:href="#spec-ms-cmc"/>
+                    <measurementMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
                     <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#applied_stress">Applied Stress</recordingParameter>
                     <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">settlement</recordingParameter>
                 </MeasurementSpecification>
