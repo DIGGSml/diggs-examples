@@ -2717,7 +2717,7 @@
                     <gml:name>PLT-201 plate load test design - shunt reactor foundations</gml:name>
                     <remark>
                         <Remark>
-                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the shunt reactor foundations (realized on CMC-942, zone-sr) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. samplingFeatureDesignRef cites the design of the column tested; the plan fixes only the group.</content>
+                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the shunt reactor foundations (realized on CMC-942, zone-sr) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. The reports fix only the group; samplingFeatureDesignRef cites the single-position design of the column tested.</content>
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
@@ -2739,12 +2739,12 @@
                     <gml:name>PLT-202 plate load test design - main building raft foundation</gml:name>
                     <remark>
                         <Remark>
-                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the main building raft (realized on CMC-80, zone-brt) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. samplingFeatureDesignRef cites the design of the column tested; the plan fixes only the group.</content>
+                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the main building raft (realized on CMC-80, zone-brt) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. The reports fix only the group; samplingFeatureDesignRef names the grid node of the column tested (gridIndex).</content>
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
                     <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
-                    <samplingFeatureDesignRef xlink:href="#DRC-G1-brt"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-brt" gridIndex="14 21"/>
                     <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-202-proc">
@@ -2761,12 +2761,12 @@
                     <gml:name>PLT-203 plate load test design - power transformer foundations</gml:name>
                     <remark>
                         <Remark>
-                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the power transformer foundations (realized on CMC-1043, zone-pt) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. samplingFeatureDesignRef cites the design of the column tested; the plan fixes only the group.</content>
+                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the power transformer foundations (realized on CMC-1043, zone-pt) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. The reports fix only the group; samplingFeatureDesignRef names the grid node of the column tested (gridIndex).</content>
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
                     <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
-                    <samplingFeatureDesignRef xlink:href="#DRC-G2"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G2" gridIndex="10 3"/>
                     <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-203-proc">
@@ -2783,12 +2783,12 @@
                     <gml:name>PLT-204 plate load test design - remaining outdoor foundations</gml:name>
                     <remark>
                         <Remark>
-                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the remaining outdoor foundations (realized on CMC-666, zone-ra) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. samplingFeatureDesignRef cites the design of the column tested; the plan fixes only the group.</content>
+                            <content>One plate load test is planned per group: main building raft, power transformer foundations, shunt reactor foundations and remaining outdoor foundations; this design is the remaining outdoor foundations (realized on CMC-666, zone-ra) test. Planned maximum stress 225 kPa, one and a half times the 150 kPa design bearing pressure; it is applied to a column head, which is conservative for the column since it carries only part of the platform load. No performance criterion is stated for the test. Planned plate diameter 620 mm; the realized tests state other diameters. The plate is placed on the exposed column head on a sand bed. The reports fix only the group; samplingFeatureDesignRef names the grid node of the column tested (gridIndex).</content>
                         </Remark>
                     </remark>
                     <programSpecificationRef xlink:href="#MS-PLT"/>
                     <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">Plate load test</measurementKind>
-                    <samplingFeatureDesignRef xlink:href="#DRC-G1"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1" gridIndex="5 24"/>
                     <measurementMethod xlink:href="#spec-ms-cmc"/>
                     <plannedProcedure>
                         <PlateLoadTest gml:id="dm-PLT-204-proc">
