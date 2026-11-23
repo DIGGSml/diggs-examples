@@ -2943,6 +2943,7 @@
                                     <content>Owner minimum compressive strength for construction, 30 MPa, applied to all 41 field batches. A structural minimum, not a durability one.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <statistic>minimum</statistic>
                             <statisticScope>evidence</statisticScope>
                             <operator>ge</operator>
@@ -2971,6 +2972,7 @@
                                     <content>Durability-governing minimum for Very Severe/Severe exposure, independent of which admixture row applies; matches DGM-MIX-A strengthDesign.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <statistic>minimum</statistic>
                             <statisticScope>evidence</statisticScope>
                             <operator>ge</operator>
@@ -2999,6 +3001,7 @@
                                     <content>Same limit as crit-grout-strength-qc-min (30 MPa), stated at the mean statistic rather than the per-batch minimum. The achieved value is evidence and is not restated here as the limit.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <statistic>mean</statistic>
                             <statisticScope>population</statisticScope>
                             <operator>ge</operator>
@@ -3027,6 +3030,7 @@
                                     <content>A fixed 0.10% ceiling across every exposure row. The limit is read as the water-soluble chloride content, as a mass fraction of the cement; acid-soluble chloride is a distinct quantity and no acid-soluble limit is modelled. A mix-composition requirement, shown by testing; no such test is presented, so the criterion is not evaluated (see ev-grout-mix-a).</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3045,6 +3049,7 @@
                                     <content>Minimum binding material content 390 kg/m3, the value DGM-MIX-A uses as its binder content. A mix-proportioning requirement verified from the batch record, not a tested property. The property is direction-neutral; the minimum is carried by operator/limit.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3063,6 +3068,7 @@
                                     <content>Maximum W/BM 0.40, the value DGM-MIX-A uses as its water/binding-material ratio (distinct from waterCementRatio=0.4348, which excludes the SCM replacement from the denominator). A mix-proportioning requirement verified from the batch record, not a tested property. The property is direction-neutral; the maximum is carried by operator/limit.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3080,6 +3086,7 @@
                                     <content>Slump is measured before placement. It is not stated whether the test is once per batch or for every CMC; the criterion is stated per placement. Not evaluated: no slump records.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>within</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3099,6 +3106,7 @@
                                     <content>Compressive strength testing at a minimum of 1 sampling per 100 m3 of concrete placed, stated as a rate (0.01 per m3). Not evaluated: one averaged strength is reported per age per casting date, so the number of samplings cannot be shown.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3117,6 +3125,7 @@
                                     <content>Discharge of concrete shall be completed within 3 hours (180 minutes) after the introduction of mixing water. Not evaluated: only the date of casting is recorded for each batch, not the batching or placement times.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3147,6 +3156,7 @@
                                     <content>The source states a strict inequality, carried as gt. No test method for demonstrating it is named, and no density criterion is modelled. The design value is 60 MPa (DesignRILTP/youngsModulus); this acceptance limit is separate. Not evaluated: there is no LTP modulus evidence.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>gt</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3177,6 +3187,7 @@
                                     <content>Allowable settlement of the foundation on the finished LTP over the CMC network (platform, columns and ground together) at the 150 kPa design pressure, not a property of the platform fill alone. The compared value is the settlement at 150 kPa on the loading leg of m-ZLT-201, interpolated from the loading increments. Evaluated in ev-zone-load-test.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3216,6 +3227,7 @@
                                     <content>Allowable settlement of the foundation on the finished LTP over the CMC network, at the 150 kPa design pressure; limit 25 mm for isolated foundations. Not evaluated.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3265,6 +3277,7 @@
                                     <content>Not evaluated: the deviation needs the designed setting-out coordinates, which are not available. The as-built coordinates alone cannot give a deviation; the offsets of the as-built columns from the idealized layout grids are an artefact of how those grids were fitted (median 0.19 m), not setting-out error.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3283,6 +3296,7 @@
                                     <content>Owner minimum length 10 m. An absolute as-built length, distinct from crit-col-length-deviation, which compares length with the design length. A hard requirement: it is a member of crit-col-acceptance.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3301,6 +3315,7 @@
                                     <content>Length against design: as-built column length minus the design length of the DesignRIColumn the column cites. ASSUMPTION: no permitted shortfall is stated, so a column should be no shorter than designed (limit 0 m). Driving may stop short of the design depth only at refusal, so this is one member of crit-col-depth-or-refusal. A failed check here is not by itself a non-conformance; it becomes one only if refusal cannot be shown for that column.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3320,6 +3335,7 @@
                                     <content>The column is acceptable if it reached its design length or stopped at refusal. Satisfied where the length member is satisfied; otherwise it depends on the refusal member, which can be evaluated only where an installation record exists (CMC-430 stopped at refusal and is satisfied; CMC-1097 was still advancing and is not satisfied) and is undetermined elsewhere. The refusal member's subject is the column's construction activity; its verdict applies to the column through the activity's samplingFeatureRef.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <logicalOperator>or</logicalOperator>
                             <component xlink:href="#crit-col-length-deviation"/>
                             <component xlink:href="#crit-col-refusal"/>
@@ -3337,6 +3353,7 @@
                                     <content>Each check cites the bearing layer as its evidenceObservationRef. A column is assigned to a site model by its plan position against the model footprints (Transformers first, then Buildings, otherwise Default Site). The loose clayey layers are not separately modelled.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3360,6 +3377,7 @@
                                     <content>Checks are by declaration. The pile integrity tests detect cracks and section changes and do not measure inclination, and no inclination was recorded.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3379,6 +3397,7 @@
                                     <content>The three requirements a column must meet together: the 10 m owner minimum length is a hard requirement; the column must not stop short of the top of the bearing layer; and it must have reached its design depth or refusal. Position and verticality are separate criteria and are not part of this combination.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <logicalOperator>and</logicalOperator>
                             <component xlink:href="#crit-col-length-min"/>
                             <component xlink:href="#crit-col-embedment"/>
@@ -3414,6 +3433,7 @@
                                     <content>Evaluated only for the six columns that have an installation record (CMC-430, CMC-1097, CMC-942, CMC-666, CMC-80, CMC-1043). Each check's subject is the column's construction activity (constructionActivityRef); it compares the depth the tool gained in the two minutes of downward push that end when it first reaches its maximum depth (the pause at total depth is not part of the window) with the limit. All six records are SYNTHETIC: no drilling records exist for this project. Every other column has no record and is not evaluated.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>lt</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3452,6 +3472,7 @@
                                     <content>Maximum test stress of one and a half times the design bearing pressure of 150 kN/m2, so 225 kPa. Read as a minimum the test must reach: a test taken above it still conforms (PLT-204 went to about 294 kPa and is flagged on its record). Compared with the maxTestStress of each plate load test's procedure, converted to kPa. Certificates that state loading in kgf/cm2 are compared after conversion, so PLT-201's recorded 2.25 kgf/cm2 (220.6 kPa) falls 4.4 kPa short of 225 kPa. Evaluated in ev-load-tests.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3470,6 +3491,7 @@
                                     <content>Load is applied in at least three increments. Counts the loading increments recorded in the test's procedure; unloading increments are not counted. Evaluated in ev-load-tests.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3487,6 +3509,7 @@
                                     <content>Each load increment is held for a minimum of 15 minutes (900 s), taken from the first to the last reading of the increment; the shortest hold over the loading increments is compared. The stabilization half is crit-plt-stabilization. Evaluated in ev-load-tests.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <statistic>minimum</statistic>
                             <statisticScope>series</statisticScope>
                             <operator>ge</operator>
@@ -3507,6 +3530,7 @@
                                     <content>Each increment is held until the rate of settlement is less than 0.02 mm per 5-minute interval. Read as: at the end of each loading increment the settlement gained over the last five minutes is below 0.02 mm, and the largest of them over the loading increments is compared. Readings are three minutes apart, so the settlement five minutes before the last reading is interpolated. This tests the recorded readings; the stabilizationCriterion recorded on each increment restates the limit and is not the evidence. Evaluated in ev-load-tests.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <statistic>maximum</statistic>
                             <statisticScope>series</statisticScope>
                             <operator>lt</operator>
@@ -3539,6 +3563,7 @@
                                     <content>The zone load test is taken to at least 150 percent of the design bearing pressure: 225 kPa. Compared with the maxTestStress of the zone load test's procedure. Evaluated in ev-zone-load-test against m-ZLT-201: 225 kPa reached.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3569,6 +3594,7 @@
                                     <content>The plan is 55 test locations (dm-PIT). Compared with the number of integrity tests made: 55, of which 39 were at planned locations, 11 at locations that replaced planned ones and 5 at locations that were not in the plan.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3586,6 +3612,7 @@
                                     <content>Each test is made at a planned location: the horizontal distance between the column tested and the planned node the test realizes (realizesGridIndex, in the grid of dm-PIT) is within 0.20 m, the limit of crit-col-position. A test with no planned node is outside the limit. A test outside the limit is not rejected: the relocations were made for access or age and are accepted as is.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3604,6 +3631,7 @@
                                     <content>The average of the records of at least three impacts, with the number of impacts of an averaged record recorded. Compared with the averagedImpactCount of each test's procedure (15 to 19).</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3621,6 +3649,7 @@
                                     <content>Test no sooner than 7 days after casting. Age is taken from the end of the column's whenConstructed interval to the date tested. CMC-295 was cast on 2024-12-16 and tested on 2024-12-21, at 5 days; CMC-584 and CMC-551 at 7 days. CMC-576 (cast 2024-12-14) was skipped as not having reached its 7th day. A member of crit-pit-age-or-strength.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3639,6 +3668,7 @@
                                     <content>75 percent of design strength, taking the design strength as 38 MPa (strengthDesign of DGM-MIX-A) in place of the 25 MPa structural value: 28.5 MPa. Compared with the compressive strength of the cylinders of the column's batch (groutRef) tested no later than the date the column was tested. Cylinders were tested at 7 and 28 days, so a column tested before its batch's 7-day cylinders has no strength result at its test age; the strength is then not known and the criterion is not shown to be met. For CMC-295 (batch 41, 7-day cylinders tested 2024-12-23, 33.7 MPa) the strength at the test is not known. A member of crit-pit-age-or-strength.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>ge</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3658,6 +3688,7 @@
                                     <content>Age or strength is enough, whichever is reached first. A column younger than 7 days whose strength at the test is not known does not satisfy it; that is a non-conformance of the test conditions, not evidence of a defect, and is accepted as is where the record is otherwise good.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <logicalOperator>or</logicalOperator>
                             <component xlink:href="#crit-pit-age-min"/>
                             <component xlink:href="#crit-pit-strength-at-test"/>
@@ -3670,6 +3701,7 @@
                                     <content>ASSUMPTION: the toe depth read from a record is the depth of its deepest reflection, found working up from the bottom of the record at its first amplitude maximum, not the length marker the software places; it is acceptable within 10 percent of the length of the column. Without sign; compared with the length the tester entered into the equipment for the column (the referenceLength of the test's procedure), taken as the as-built length of the column.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3688,6 +3720,7 @@
                                     <content>ASSUMPTION: a reflection above the toe of the same sign as the impact (a reduction in impedance: a neck, a crack or poor concrete) whose height is more than 0.11 of the impact peak indicates a flaw to be reviewed, not rejected. Applies to a record whose amplification balances the toe reflection against the impact. Balanced is taken as a toe reflection between 0.5 and 2 times the impact peak (the evidenceCondition on relative_toe_amplitude; the band is an assumption). A record outside the band, or without a clear toe, is inconclusive, and a reflection above the limit on such a record is not counted as a flaw or a defect.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3715,6 +3748,7 @@
                                     <content>ASSUMPTION: a reflection above the toe of the same sign as the impact whose height is more than 0.25 of the impact peak indicates a defect. Applies to a record whose amplification balances the toe reflection against the impact; balanced is taken as a toe reflection between 0.5 and 2 times the impact peak (the band is an assumption). A record outside the band, or without a clear toe, is inconclusive and is not failed by this criterion.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <operator>le</operator>
                             <limit>
                                 <AuthorizedParameter>
@@ -3743,6 +3777,7 @@
                                     <content>The two limits on what a record shows: the toe depth agrees with the as-built length, and no reflection above the toe reaches the defect limit. crit-pit-flaw is not a member. The conditions of the test (count, location, impacts, age or strength) are separate criteria. A check of this composite is satisfied where both members are satisfied, not satisfied where either is not satisfied, waived where a member is waived (accepted as is) and none is not satisfied, and inconclusive otherwise.</content>
                                 </Remark>
                             </remark>
+                            <checkable>true</checkable>
                             <logicalOperator>and</logicalOperator>
                             <component xlink:href="#crit-pit-toe-depth"/>
                             <component xlink:href="#crit-pit-defect"/>
